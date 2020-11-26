@@ -1,0 +1,63 @@
+﻿@page "/Mechanics"
+
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.IO;
+
+<h2>Mechanics</h2>
+
+<div class="content-box mechanics-box">
+    <div class="page-tab-selector">
+        @if (mechanics != null)
+        {
+            @for (int i = 0; i < mechanics.Length; i++)
+            {
+                int iLock = i;
+                <button class="@(selectedIndex == i ? "active" : "")" @onclick="@(e => selectedIndex = iLock)">
+                    @mechanics[iLock].mechanicName
+                </button>
+            }
+        }
+    </div>
+    @if (mechanics != null)
+    {
+        @for (int i = 0; i < mechanics.Length; i++)
+        {
+            MechanicInfo info = mechanics[i];
+            <div class="mechanic-description @(i == selectedIndex ? "displayed" : "undisplayed")">
+                <div class="mechanic-description-body">
+                    <h3>@info.mechanicName</h3>
+                    @info.mechanicDescription
+                </div>
+                <div class="mechanic-features">
+                    @foreach (string str in info.mechanicFeatures)
+                    {
+                        <img src="@($"/hlw_card_images/{str}.full.png")"/>
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+
+    private class MechanicInfo
+    {
+        public string mechanicName { get; set; }
+        public string mechanicDescription { get; set; }
+        public string[] mechanicFeatures { get; set; }
+    }
+
+    private MechanicInfo[] mechanics;
+
+    private int selectedIndex = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using (FileStream fs = File.OpenRead("wwwroot/website_info/mechanics.json"))
+        {
+            mechanics = await JsonSerializer.DeserializeAsync<MechanicInfo[]>(fs);
+        }
+    }
+}

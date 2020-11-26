@@ -1,0 +1,11 @@
+﻿@page "/TokenBasicSpoiler"
+
+@inject Services.CardDatabaseService.CardDatabase CardDatabase
+
+<h2>Basics</h2>
+
+<SpoilerHolder cards="@CardDatabase.Basics" holderClass="basics_spoiler" />
+
+<h2>Tokens</h2>
+
+<SpoilerHolder cards="@CardDatabase.Tokens" holderClass="tokens_spoiler" />

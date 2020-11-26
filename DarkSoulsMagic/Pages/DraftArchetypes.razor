@@ -1,0 +1,87 @@
+﻿@page "/DraftInfo"
+
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.IO;
+
+<h2>Draft Info</h2>
+
+<div class="content-box draft-archetypes-box">
+    <div class="page-tab-selector">
+        @if (archetypes != null)
+        {
+            @for (int i = 0; i < archetypes.Length; i++)
+            {
+                int iLock = i;
+                <button class="@(selectedIndex == i ? "active" : "")" @onclick="@(e => selectedIndex = iLock)">
+                    <img src="mana_symbols/@($"mana_{archetypes[iLock].archetypeColorCode}.png")" />
+                </button>
+            }
+        }
+    </div>
+    @if (archetypes != null)
+    {
+        @for (int i = 0; i < archetypes.Length; i++)
+        {
+            ArchetypeInfo info = archetypes[i];
+            <div class="archetype-description @(i == selectedIndex ? "displayed" : "undisplayed")">
+                <div class="archetype-description-body">
+                    <h3>@info.archetypeName</h3>
+                    @info.archetypeDescription
+
+                    @{
+                        if (info.archetypeKeyCommons != null)
+                        {
+                            <h4>Key Commons:</h4>
+                            foreach (string cardName in info.archetypeKeyCommons)
+                            {
+                                <CardTooltip CardName="@cardName" />
+                                <br />
+                            }
+                        }
+                    }
+
+                    @{
+                        if (info.archetypeKeyUncommons != null)
+                        {
+                            <h4>Key Uncommons:</h4>
+                            foreach (string cardName in info.archetypeKeyUncommons)
+                            {
+                                <CardTooltip CardName="@cardName" />
+                                <br />
+                            }
+                        }
+                    }
+                </div>
+                <div>
+                    <img style="float: right;" src="@($"/hlw_card_images/{info.archetypeFeature}.full.png")" />
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+
+    private class ArchetypeInfo
+    {
+        public string archetypeName { get; set; }
+        public string archetypeColorCode { get; set; }
+        public string archetypeDescription { get; set; }
+        public string archetypeFeature { get; set; }
+        public string[] archetypeKeyCommons { get; set; }
+        public string[] archetypeKeyUncommons { get; set; }
+    }
+
+    private ArchetypeInfo[] archetypes;
+
+    private int selectedIndex = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using (FileStream fs = File.OpenRead("wwwroot/website_info/archetypes.json"))
+        {
+            archetypes = await JsonSerializer.DeserializeAsync<ArchetypeInfo[]>(fs);
+        }
+    }
+}

@@ -1,0 +1,87 @@
+﻿@using System.Text.RegularExpressions
+
+<div class="content-box spoiler-holder @holderClass @(fullInfo ? "full-info" : "") @(spaceBetween ? "space-between" : "")">
+    @{
+        IEnumerator<Card> enumerator = cards.GetEnumerator();
+        while (enumerator.MoveNext())
+        {
+            Card card = enumerator.Current;
+            string source = "/hlw_card_images/" + card.name + ".full.png";
+
+            <div class="individual-card-spoiler-info-holder">
+                <img class="card-image spoiler-render" src=@source alt="@(card.name)" />
+                <div class="individual-card-info">
+                    <h3>@card.name</h3>
+                    <h4>@card.typeLine</h4>
+                    <p>@((MarkupString)formatRulesText(card.text))</p>
+                    @if (card.flavorText.Length > 0)
+                    {
+                        <hr />
+                        <p><i>@((MarkupString)formatFlavorText(card.flavorText))</i></p>
+                    }
+                    @if (card.typeLine.ToLower().Contains("creature"))
+                    {
+                        <h2 class="power-toughness">@card.power/@card.toughness</h2>
+                    }
+                    <div class="mana-cost">
+                        @{ 
+                            List<string> symbols = new List<string>();
+                            Match match = Regex.Match(card.manacost, "^(?<generic>[0-9]*)(?<X>X*)(?<else>.*)");
+                            try
+                            {
+                                symbols.Add(match.Groups["generic"].Value);
+                            }
+                            catch { };
+                            try
+                            {
+                                for (int i = 0; i< match.Groups["X"].Length; i++)
+                                    symbols.Add("X");
+                            }
+                            catch { };
+                            try
+                            {
+                                for (int i = 0; i < match.Groups["else"].Length; i++)
+                                    symbols.Add(match.Groups["else"].Value.Substring(i,1));
+                            }
+                            catch { };
+
+                            foreach(string str in symbols)
+                            {
+                                <img src="@($"/mana_symbols/mana_{str}.png")" alt="@str"/>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string holderClass { get; set; }
+
+    [Parameter]
+    public IEnumerable<Card> cards { get; set; }
+
+    [Parameter]
+    public bool fullInfo { get; set; } = false;
+
+    [Parameter]
+    public bool spaceBetween { get; set; } = false;
+
+    private string formatRulesText(string text)
+    {
+        string reminderTextItalicized = Regex.Replace(text, "\\([^\\(\\)]+\\)", (e => "<span style=\"font-style: italic;\">" + e + "</span>"));
+        string newLinesInserted = Regex.Replace(reminderTextItalicized, "\\n", (e => "<br/>"));
+
+        return newLinesInserted;
+    }
+
+    private string formatFlavorText(string text)
+    {
+        string newLinesInserted = Regex.Replace(text, "\\n", (e => "<br/>"));
+
+        return newLinesInserted;
+    }
+}

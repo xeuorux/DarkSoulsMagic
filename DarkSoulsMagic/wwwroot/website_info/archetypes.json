@@ -1,0 +1,82 @@
+[
+  {
+    "archetypeName": "White/Blue Control",
+    "archetypeColorCode": "WU",
+    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeFeature": "Priscilla\u0027s Twinblade",
+    "archetypeKeyCommons": [ "Arrest", "Bell Gargoyles", "Essence Scatter" ],
+    "archetypeKeyUncommons": [ "A Cold and Gentle Place", "Dull Defender", "Darkmoon Favor" ]
+  },
+  {
+    "archetypeName": "Blue/Black Graveyard",
+    "archetypeColorCode": "UB",
+    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeFeature": "Shrewd Collectors",
+    "archetypeKeyCommons": [ "Brutal Incineration", "Sewer Nibbler", "Essence Scatter" ],
+    "archetypeKeyUncommons": [ "Hopeless Determination", "Demented Sorcerer", "Prized Drake" ]
+  },
+  {
+    "archetypeName": "Black/Red Desperation",
+    "archetypeColorCode": "BR",
+    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeFeature": "Relentless Marauder",
+    "archetypeKeyCommons": [ "Lightning Spear", "Brand with Undeath", "Darkwraith Warband" ],
+    "archetypeKeyUncommons": [ "Fallen Champion", "Batwing Demon", "Bloodied Shotel" ]
+  },
+  {
+    "archetypeName": "Red/Green Journey Aggro",
+    "archetypeColorCode": "RG",
+    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeFeature": "Dragon-Path Traveler",
+    "archetypeKeyCommons": [ "Lightning Spear", "Pyromantic Shaman", "Grave-Guard Wolf" ],
+    "archetypeKeyUncommons": [ "Path of Strength", "Dragon-Path Daredevil", "Crossing of Paths" ]
+  },
+  {
+    "archetypeName": "Green/White Voltron",
+    "archetypeColorCode": "GW",
+    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeFeature": "Pass On",
+    "archetypeKeyCommons": [ "Astora Elite", "Great Hammer", "Dragon-Path Adept" ],
+    "archetypeKeyUncommons": [ "Adorned Gargoyle", "Giant's Technique", "Murakumo" ]
+  },
+  {
+    "archetypeName": "White/Black Zombies",
+    "archetypeColorCode": "WB",
+    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeFeature": "Priest of Velka",
+    "archetypeKeyCommons": [ "Balder Knight", "Undead Steed", "Brutal Incineration" ],
+    "archetypeKeyUncommons": [ "Expendable's Vigil", "Undead-Burg Captain", "Hollow Victory" ]
+  },
+  {
+    "archetypeName": "Blue/Red Journey Tempo",
+    "archetypeColorCode": "UR",
+    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeFeature": "Stalking Phantom",
+    "archetypeKeyCommons": [ "Vinheim Agent", "Quelana's Pupil", "Doomsayer Sage" ],
+    "archetypeKeyUncommons": [ "Path of Violence", "Path of Brilliance", "Vinheim Handler" ]
+  },
+  {
+    "archetypeName": "Black/Green Sacrifice",
+    "archetypeColorCode": "BG",
+    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeFeature": "Thorned Slayer",
+    "archetypeKeyCommons": [ "Fading Sage", "Mushroom Family", "Hungering Knight" ],
+    "archetypeKeyUncommons": [ "Fallen Farmer", "Parasitic Wallhugger", "Blight Slime" ]
+  },
+  {
+    "archetypeName": "Red/White Buddies",
+    "archetypeColorCode": "RW",
+    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeFeature": "Brilliant Phantom",
+    "archetypeKeyCommons": [ "Evander's Phantom", "Warrior of Sunlight", "Astora Elite" ],
+    "archetypeKeyUncommons": [ "Companion's Experience", "Grim Mercenary", "Sunset on a Dying World" ]
+  },
+  {
+    "archetypeName": "Green/Blue Flash",
+    "archetypeColorCode": "GU",
+    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeFeature": "Darkroot Diviner",
+    "archetypeKeyCommons": [ "Reach the Bonfire", "Ambuscade", "Essence Scatter" ],
+    "archetypeKeyUncommons": [ "Instant Petrification", "Darkroot Tracker", "Sidetracked" ]
+  }
+]

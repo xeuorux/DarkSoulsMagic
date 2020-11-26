@@ -1,0 +1,19 @@
+.my-tooltip {
+    text-decoration: none;
+    position: relative;
+    color: cornflowerblue;
+    font-weight: bold;
+    cursor: help;
+}
+
+    .my-tooltip img {
+        display: none;
+    }
+
+    .my-tooltip:hover img {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        top: 0px;
+        left: 0px;
+    }

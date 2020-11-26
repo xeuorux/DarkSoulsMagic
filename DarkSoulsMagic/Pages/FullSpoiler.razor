@@ -1,0 +1,427 @@
+﻿@page "/CardSpoiler"
+
+@using System.Security.Cryptography;
+
+@inject Services.CardDatabaseService.CardDatabase CardDatabase
+
+<h2>Main Set</h2>
+
+<p class="spoiler-subtitle">
+    The cards which form the core of Hollows of Lordran.
+</p>
+
+<div class="spoiler-inputs">
+
+    <div class="content-box spoiler-inputs-box" style="padding-bottom: 20px;">
+        <h3>Display Options</h3>
+        <button @onclick="@(e => fullInfo = !fullInfo)">@buttonLabel</button>
+    </div>
+
+    <div class="content-box spoiler-inputs-box" style="width: 400px;">
+        <h3>Filters</h3>
+        <div style="display: flex;">
+            <div>
+                <div class="spoiler-inputs-section">
+                    <label for="name">Name</label>
+                    <br />
+                    <input id="name" @bind="@nameFilterText" @bind:event="oninput">
+                </div>
+
+                <div class="spoiler-inputs-section">
+                    <label for="text">Typeline</label>
+                    <br />
+                    <input id="text" @bind="typelineFilterText" @bind:event="oninput">
+                </div>
+
+                <div class="spoiler-inputs-section">
+                    <label for="text">Rules Text</label>
+                    <br />
+                    <input id="text" @bind="@rulesTextFilterText" @bind:event="oninput">
+                </div>
+
+                <div class="spoiler-inputs-section">
+                    <label for="flavor-text">Flavor Text</label>
+                    <br />
+                    <input id="flavor-text" @bind="@flavorTextFilterText" @bind:event="oninput">
+                </div>
+
+                <div class="spoiler-inputs-section spoiler-inputs-stats">
+                    <div>
+                        <label for="cmc">CMC</label>
+                        <br />
+                        <input class="short-input" id="cmc" @bind="@cmcFilterString" @bind:event="oninput">
+                    </div>
+
+                    <div>
+                        <label for="power">Power</label>
+                        <br />
+                        <input class="short-input" id="power" @bind="@powerFilterString" @bind:event="oninput">
+                    </div>
+
+                    <div>
+                        <label for="toughness">Toughness</label>
+                        <br />
+                        <input class="short-input" id="toughness" @bind="@toughnessFilterString" @bind:event="oninput">
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-left: 40px;">
+                <div class="spoiler-inputs-section">
+                    <label>Colors</label>
+                    <br />
+                    @for (int i = 0; i < Color.Colors.Length; i++)
+                    {
+                        Color color = Color.Colors[i];
+                        int iLock = i;
+                        <input type="checkbox" id="color-@iLock" @bind="@colorValues[iLock]" />
+                        <label for="color-@iLock">@color.name</label>
+                        <br />
+                    }
+                    <input type="checkbox" id="multicolor" @bind="@multicolorValue" />
+                    <label for="multicolor">Multicolor</label>
+                    <br />
+                    <input type="checkbox" id="colorless" @bind="@colorlessValue" />
+                    <label for="colorless">Colorless</label>
+                </div>
+
+                <div class="spoiler-inputs-section">
+                    <label>Rarity</label>
+                    <br />
+                    <input name="rarity-radio" type="radio" id="rarity-no" checked="@(raritySelection == null)" @onchange="@(() => raritySelection = null)" />
+                    <label for="rarity-no">No Selection</label>
+                    <br />
+                    @for (int i = 0; i < Rarity.Rarities.Length; i++)
+                    {
+                        Rarity rarity = Rarity.Rarities[i];
+                        int iLock = i;
+                        <input name="rarity-radio" type="radio" id="rarity-@iLock" checked="@(raritySelection == rarity)" @onchange="@(() => raritySelection = rarity)" />
+                        <label for="rarity-@iLock">@rarity.name</label>
+                        <br />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-box spoiler-inputs-box">
+        <h3>Sorting Options</h3>
+        <div class="spoiler-inputs-section">
+            @foreach (SortingOption option in Enum.GetValues(typeof(SortingOption)).Cast<SortingOption>())
+            {
+
+                <input name="sort" type="radio" id="sort-@option.ToString()" checked="@(sortSelection == option)" @onchange="@(() => sortSelection = option)" />
+                <label for="sort-@option.ToString()">@(option.ToString().Substring(0, 1) + option.ToString().Substring(1).ToLower())</label>
+
+            }
+            @if (sortSelection == SortingOption.SEEDED)
+            {
+                <br />
+                <label for="seed-input">Randomness Seed</label>
+                <input id="seed-input" @bind="@randomSeed" />
+            }
+        </div>
+
+    </div>
+
+
+</div>
+
+<SpoilerHolder cards="@sortedFilteredCards" holderClass="cards_spoiler" fullInfo="@fullInfo" spaceBetween="true" />
+
+@code
+{
+    private bool fullInfo = true;
+
+    private string seed;
+    private Random rand;
+    private string randomSeed
+    {
+        get
+        {
+            return seed;
+        }
+
+        set
+        {
+            seed = value;
+            using (SHA1 algo = SHA1.Create())
+            {
+                byte[] bytes = System.Text.Encoding.UTF8.GetBytes(seed);
+                int seedValue = BitConverter.ToInt32(algo.ComputeHash(bytes));
+                rand = new Random(seedValue);
+
+                randomAssociation = new Dictionary<string, int>();
+                for (int i = 0; i < CardDatabase.Cards["HLW"].Count; i++)
+                {
+                    randomAssociation.Add(CardDatabase.Cards["HLW"][i].name, rand.Next());
+                }
+            }
+        }
+    }
+
+    private Dictionary<string, int> randomAssociation;
+
+    private string nameFilterText;
+    private string typelineFilterText;
+    private string rulesTextFilterText;
+    private string flavorTextFilterText;
+
+    private bool cmcEnabled;
+    private int cmcFilter;
+    private string cmcFilterString
+    {
+        get
+        {
+            return !cmcEnabled ? "" : cmcFilter.ToString();
+        }
+
+        set
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                cmcEnabled = false;
+                cmcFilter = 0;
+            }
+            else if (value.All(char.IsDigit) && value.Length <= 2)
+            {
+                int parse = int.Parse(value);
+
+                if (parse <= 15)
+                {
+                    cmcEnabled = true;
+                    cmcFilter = parse;
+                }
+            }
+        }
+    }
+
+    private int powerFilter;
+    private bool powerEnabled;
+    private string powerFilterString
+    {
+        get
+        {
+            return !powerEnabled ? "" : powerFilter.ToString();
+        }
+
+        set
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                powerEnabled = false;
+                powerFilter = 0;
+            }
+            else if (value.All(char.IsDigit) && value.Length <= 2)
+            {
+                int parse = int.Parse(value);
+
+                if (parse <= 15)
+                {
+                    powerEnabled = true;
+                    powerFilter = parse;
+                }
+            }
+        }
+    }
+
+    private int toughnessFilter;
+    private bool toughnessEnabled;
+    private string toughnessFilterString
+    {
+        get
+        {
+            return !toughnessEnabled ? "" : toughnessFilter.ToString();
+        }
+
+        set
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                toughnessEnabled = false;
+                toughnessFilter = 0;
+            }
+            else if (value.All(char.IsDigit) && value.Length <= 2)
+            {
+                int parse = int.Parse(value);
+
+                if (parse <= 15)
+                {
+                    toughnessEnabled = true;
+                    toughnessFilter = parse;
+                }
+            }
+        }
+    }
+
+    private bool[] colorValues;
+
+    private bool multicolor;
+    private bool multicolorValue
+    {
+        get
+        {
+            for (int i = 0; i < colorValues.Length; i++)
+            {
+                if (colorValues[i])
+                {
+                    multicolor = false;
+                }
+            }
+            if (colorless)
+            {
+                multicolor = false;
+            }
+
+            return multicolor;
+        }
+
+        set
+        {
+            multicolor = value;
+
+            if (value)
+            {
+                for (int i = 0; i < colorValues.Length; i++)
+                {
+                    colorValues[i] = false;
+                }
+                colorless = false;
+            }
+        }
+    }
+
+    private bool colorless;
+    private bool colorlessValue
+    {
+        get
+        {
+            for (int i = 0; i < colorValues.Length; i++)
+            {
+                if (colorValues[i])
+                {
+                    colorless = false;
+                }
+            }
+            if (multicolor)
+            {
+                colorless = false;
+            }
+
+            return colorless;
+        }
+
+        set
+        {
+            colorless = value;
+
+            if (value)
+            {
+                for (int i = 0; i < colorValues.Length; i++)
+                {
+                    colorValues[i] = false;
+                }
+                multicolor = false;
+            }
+        }
+    }
+
+    private Rarity raritySelection;
+
+    private String buttonLabel
+    {
+        get
+        {
+            return fullInfo ? "Images Only" : "Images and Text";
+        }
+    }
+
+    private SortingOption sortSelection = SortingOption.COLOR;
+
+    protected override async Task OnInitializedAsync()
+    {
+        colorValues = new bool[Color.Colors.Length];
+
+        randomSeed = "RANDOM";
+
+        await base.OnInitializedAsync();
+    }
+
+    private List<Card> sortedFilteredCards
+    {
+        get
+        {
+            IEnumerable<Card> filtered = CardDatabase.Cards["HLW"].Where(card => filteredOrNot(card));
+            switch (sortSelection)
+            {
+                case SortingOption.COLOR:
+                    filtered = filtered.OrderBy(card => card.cardNumber);
+                    break;
+                case SortingOption.RARITY:
+                    filtered = filtered.OrderByDescending(card => card.rarity.index).ThenBy(card => card.cardNumber);
+                    break;
+                case SortingOption.CMC:
+                    filtered = filtered.OrderBy(card => card.convertedManaCost).ThenBy(card => card.cardNumber);
+                    break;
+                case SortingOption.NAME:
+                    filtered = filtered.OrderBy(card => card.name).ThenBy(card => card.cardNumber);
+                    break;
+                    break;
+                case SortingOption.SEEDED:
+                    filtered = filtered.OrderBy(card => randomAssociation[card.name]);
+                    break;
+            }
+            return filtered.ToList();
+        }
+    }
+
+    private int SortCards(Card a, Card b)
+    {
+        return 1;
+    }
+
+    private bool filteredOrNot(Card card)
+    {
+        bool passesNameFilter = String.IsNullOrEmpty(nameFilterText) || card.name.ToLower().Contains(nameFilterText.ToLower());
+        bool passesTypelineFilter = String.IsNullOrEmpty(typelineFilterText) || card.typeLine.ToLower().Contains(typelineFilterText.ToLower());
+        bool passesRulesTextFilter = String.IsNullOrEmpty(rulesTextFilterText) || card.text.ToLower().Contains(rulesTextFilterText.ToLower());
+        bool passesFlavorTextFilter = String.IsNullOrEmpty(flavorTextFilterText) || card.flavorText.ToLower().Contains(flavorTextFilterText.ToLower());
+        bool passedCMCFilter = !cmcEnabled || card.convertedManaCost == cmcFilter;
+        bool passesPowerFilter = !powerEnabled || (card.typeLine.ToLower().Contains("creature") && card.power == powerFilter);
+        bool passesToughnessFilter = !toughnessEnabled || (card.typeLine.ToLower().Contains("creature") && card.toughness == toughnessFilter);
+
+        bool passesColorFilter = true;
+        for (int i = 0; i < Color.Colors.Length; i++)
+        {
+            if (!colorValues[i])
+            {
+                continue;
+            }
+
+            if (!card.colors.Contains(Color.Colors[i]))
+            {
+                passesColorFilter = false;
+            }
+        }
+
+        //colorless
+        if (colorless && card.colors.Length > 0)
+        {
+            passesColorFilter = false;
+        }
+        else if (multicolor && card.colors.Length < 2)
+        {
+            passesColorFilter = false;
+        }
+
+        //rarity
+        bool passesRarityFilter = raritySelection == null || card.rarity == raritySelection;
+
+        return passesNameFilter && passesTypelineFilter && passesRulesTextFilter && passesFlavorTextFilter
+            && passedCMCFilter && passesPowerFilter && passesToughnessFilter && passesColorFilter && passesRarityFilter;
+    }
+
+    private enum SortingOption
+    {
+        COLOR, RARITY, CMC, NAME, SEEDED
+    }
+}

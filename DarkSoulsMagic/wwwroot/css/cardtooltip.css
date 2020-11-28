@@ -17,3 +17,9 @@
         top: 0px;
         left: 0px;
     }
+
+@media (max-width: 767.98px) {
+    .my-tooltip:hover img {
+        200px;
+    }
+}

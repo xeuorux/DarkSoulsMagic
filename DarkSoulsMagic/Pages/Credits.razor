@@ -13,27 +13,37 @@
         <h2>@config.info.creditsPageTitle</h2>
     }
 
-    <div class="credits-box content-box">
-        @if (creditorsSorted == null)
-        {
-            <p class="loading-bar">@config.info.loadingText</p>
-        }
-        else
-        {
-            <p>
-                @info.creditsIntro
-            </p>
-            <div class="credits-flex">
+<div class="credits-box content-box">
+    @if (creditorsSorted == null)
+    {
+        <p class="loading-bar">@config.info.loadingText</p>
+    }
+    else
+    {
+        <p>
+            @info.creditsIntro
+        </p>
+        <div class="credits-flex" style="@($"height: {(flexHeight)}px")">
 
-                @foreach (string creditor in creditorsSorted)
-                {
-                    <div class="credits-item">
-                        @creditor
-                    </div>
-                }
-            </div>
-        }
-    </div>
+            @foreach (string creditor in creditorsSorted)
+            {
+                <div class="credits-item">
+                    @creditor
+                </div>
+            }
+        </div>
+
+        <div class="credits-flex mobile" style="@($"height: {(mobileFlexHeight)}px")">
+
+            @foreach (string creditor in creditorsSorted)
+            {
+                <div class="credits-item">
+                    @creditor
+                </div>
+            }
+        </div>
+    }
+</div>
 
     @code {
         private class CreditsInfo
@@ -48,6 +58,27 @@
         Random rand = new Random();
 
         private List<string> creditorsSorted;
+
+        private int flexHeight {
+            get
+            {
+                if (creditorsSorted == null)
+                    return 0;
+
+                return (creditorsSorted.Count / 5) * 44;
+            }
+        }
+
+        private int mobileFlexHeight
+        {
+            get
+            {
+                if (creditorsSorted == null)
+                    return 0;
+
+                return (creditorsSorted.Count / 2) * 44;
+            }
+        }
 
         protected override async Task OnInitializedAsync()
         {

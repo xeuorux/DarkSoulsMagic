@@ -17,6 +17,15 @@
     <Content Update="wwwroot\archetypes - Copy.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\ash_previews\Evander, Exhausted.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\ash_previews\Mad Scholar%27s Creation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\ash_previews\Soul of Cinder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\images\Discord.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

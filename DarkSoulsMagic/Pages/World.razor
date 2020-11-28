@@ -1,0 +1,29 @@
+﻿@page "/World"
+
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.IO;
+
+@inject Services.MagicSiteServices.WebsiteConfig config
+
+<div class="page-tab-selector">
+    @for (int i = 0; i < jsonFileNames.Length; i++)
+    {
+        int iLock = i;
+        <button class="@(selectedIndex == iLock ? "active" : "")" @onclick="@(e => selectedIndex = iLock)">
+            @jsonFileNames[iLock]
+        </button>
+    }
+</div>
+
+@for (int i = 0; i < jsonFileNames.Length; i++)
+{
+    int iLock = i;
+    <WorldSection Title="@jsonFileNames[iLock]" JsonFileName="@jsonFileNames[iLock]" Displayed="@(selectedIndex == iLock)"/>
+}
+
+@code {
+    private string[] jsonFileNames = new string[] { "characters", "planeswalkers", "factions" };
+
+    private int selectedIndex = 0;
+}

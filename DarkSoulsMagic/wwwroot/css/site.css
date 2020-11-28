@@ -28,6 +28,16 @@ app {
     flex-direction: column;
 }
 
+.content-box {
+    width: 1000px;
+    margin: auto;
+    background-color: #33332B;
+    border-radius: 20px;
+    margin-top: 40px;
+    border: grey 2px solid;
+    padding: 20px;
+}
+
 .top-title-and-logo {
     margin-bottom: 25px;
 }
@@ -81,7 +91,7 @@ app {
 }
 
 .nav {
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .nav-item {
@@ -333,16 +343,6 @@ hr {
     color: gray;
 }
 
-.content-box {
-    width: 1000px;
-    margin: auto;
-    background-color: #33332B;
-    border-radius: 20px;
-    margin-top: 40px;
-    border: grey 2px solid;
-    padding: 20px;
-}
-
 .content > h2 {
     text-align: center;
     margin-top: 40px;
@@ -437,9 +437,13 @@ hr {
         padding-top: 10px;
     }
 
-    .archetype-description .archetype-description-body h4 {
-        margin-top: 15px;
-    }
+        .archetype-description .archetype-description-body h3 img {
+            width: 28px;
+        }
+
+        .archetype-description .archetype-description-body h4 {
+            margin-top: 15px;
+        }
 
 .mechanics-box {
     width: 1200px;
@@ -465,10 +469,14 @@ hr {
     margin-bottom: 10px;
 }
 
-.mechanic-description .mechanic-features {
-    display: flex;
-    justify-content: space-evenly;
-}
+    .mechanic-description .mechanic-description-body img {
+        width: 28px;
+    }
+
+    .mechanic-description .mechanic-features {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
 .mana-cost {
     position: absolute;
@@ -483,6 +491,33 @@ hr {
 .spoiler-subtitle {
     text-align: center;
     font-size: 18px;
+}
+
+.loading-bar {
+    text-align: center;
+    margin: auto;
+    font-size: 26px;
+    font-family: 'OptimusPrinceps', 'Times New Roman', Times, serif;
+}
+
+.move-to-top {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .4s;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: wheat;
+    font-size: 28px;
+    position: fixed;
+    right: 100px;
+    top: 16px;
+    z-index: 1000;
+    font-family: 'OptimusPrinceps', 'Times New Roman', Times, serif;
+}
+
+body.header-not-at-top .move-to-top {
+    opacity: .8;
+    display: block;
 }
 
 @media (max-width: 767.98px) {

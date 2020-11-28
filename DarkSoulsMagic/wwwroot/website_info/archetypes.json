@@ -2,7 +2,7 @@
   {
     "archetypeName": "White/Blue Control",
     "archetypeColorCode": "WU",
-    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeDescription": "Playing a very slow game, WU control uses walls,  protective enchantment, and removal to slow down the opponent, while eeking out card advanmtage in the meanwhile. It wins the game usually with a large flyer.",
     "archetypeFeature": "Priscilla\u0027s Twinblade",
     "archetypeKeyCommons": [ "Arrest", "Bell Gargoyles", "Essence Scatter" ],
     "archetypeKeyUncommons": [ "A Cold and Gentle Place", "Dull Defender", "Darkmoon Favor" ]
@@ -10,7 +10,7 @@
   {
     "archetypeName": "Blue/Black Graveyard",
     "archetypeColorCode": "UB",
-    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeDescription": "A slow strategy, but one with a more synergistic gameplan. Combine self-mill with hollow cards for excellent card selection, as well a gain benefits from graveyard-synergizing effects. Don't worry about milling yourself out, however, as there are multiple effects which let you avoid or delay that happening.",
     "archetypeFeature": "Shrewd Collectors",
     "archetypeKeyCommons": [ "Brutal Incineration", "Sewer Nibbler", "Essence Scatter" ],
     "archetypeKeyUncommons": [ "Hopeless Determination", "Demented Sorcerer", "Prized Drake" ]
@@ -18,15 +18,15 @@
   {
     "archetypeName": "Black/Red Desperation",
     "archetypeColorCode": "BR",
-    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeDescription": "A very aggressive deck relying on desperation creatures and cards that keep that keep those creatures alive, so they can keep despairing over and over until the opponent is dead.",
     "archetypeFeature": "Relentless Marauder",
-    "archetypeKeyCommons": [ "Lightning Spear", "Brand with Undeath", "Darkwraith Warband" ],
+    "archetypeKeyCommons": [ "Lightning Spear", "Brutal Incineration", "Humanity Hunter" ],
     "archetypeKeyUncommons": [ "Fallen Champion", "Batwing Demon", "Bloodied Shotel" ]
   },
   {
     "archetypeName": "Red/Green Journey Aggro",
     "archetypeColorCode": "RG",
-    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeDescription": "A journey deck that's interested in curving out with traditionally strong creatures, while relying on Paths to grant extra punch to your attackers. Desperation allows you to get through to grab extra important journeyed cards, or combo out for high-power turns.",
     "archetypeFeature": "Dragon-Path Traveler",
     "archetypeKeyCommons": [ "Lightning Spear", "Pyromantic Shaman", "Grave-Guard Wolf" ],
     "archetypeKeyUncommons": [ "Path of Strength", "Dragon-Path Daredevil", "Crossing of Paths" ]
@@ -34,7 +34,7 @@
   {
     "archetypeName": "Green/White Voltron",
     "archetypeColorCode": "GW",
-    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeDescription": "Suit your creatures up with powerful auras and equipment, especially creatures with efficient evasion or protection abilities. Rely on Hollow to give you extra bodies to use your equipment on in late-game situations.",
     "archetypeFeature": "Pass On",
     "archetypeKeyCommons": [ "Astora Elite", "Great Hammer", "Dragon-Path Adept" ],
     "archetypeKeyUncommons": [ "Adorned Gargoyle", "Giant's Technique", "Murakumo" ]
@@ -42,23 +42,23 @@
   {
     "archetypeName": "White/Black Zombies",
     "archetypeColorCode": "WB",
-    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeDescription": "Zombies and things that synergize with zombies. Its rather simple! Use hollow to make more zombies, and love the cards that make 1/1 Zombie Soldier tokens.",
     "archetypeFeature": "Priest of Velka",
-    "archetypeKeyCommons": [ "Balder Knight", "Undead Steed", "Brutal Incineration" ],
+    "archetypeKeyCommons": [ "Velka's Missionary", "Arrest", "Brutal Incineration" ],
     "archetypeKeyUncommons": [ "Expendable's Vigil", "Undead-Burg Captain", "Hollow Victory" ]
   },
   {
     "archetypeName": "Blue/Red Journey Tempo",
     "archetypeColorCode": "UR",
-    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeDescription": "Disrupt your opponent just long enough to grab a bunch of journeyed cards, and snowball that into an inescapable victory.",
     "archetypeFeature": "Stalking Phantom",
-    "archetypeKeyCommons": [ "Vinheim Agent", "Quelana's Pupil", "Doomsayer Sage" ],
+    "archetypeKeyCommons": [ "Vinheim Agent", "Quelana's Pupil", "Lightning Spear" ],
     "archetypeKeyUncommons": [ "Path of Violence", "Path of Brilliance", "Vinheim Handler" ]
   },
   {
     "archetypeName": "Black/Green Sacrifice",
     "archetypeColorCode": "BG",
-    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeDescription": "Black sacrifice outlets allow you to eat up tokens, recursive creatures, and despairing creatures for grindy value and combat dominance.",
     "archetypeFeature": "Thorned Slayer",
     "archetypeKeyCommons": [ "Fading Sage", "Mushroom Family", "Hungering Knight" ],
     "archetypeKeyUncommons": [ "Fallen Farmer", "Parasitic Wallhugger", "Blight Slime" ]
@@ -66,17 +66,17 @@
   {
     "archetypeName": "Red/White Buddies",
     "archetypeColorCode": "RW",
-    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeDescription": "A bit slower than classical RW aggro, due to rewarding attacking with 2 creatures only. Flyers and combat tricks are good for being targets of buddy buffs and for protecting the granting creatures, respectively.",
     "archetypeFeature": "Brilliant Phantom",
-    "archetypeKeyCommons": [ "Evander's Phantom", "Warrior of Sunlight", "Astora Elite" ],
+    "archetypeKeyCommons": [ "Evander's Phantom", "Warrior of Sunlight", "Lightning Spear" ],
     "archetypeKeyUncommons": [ "Companion's Experience", "Grim Mercenary", "Sunset on a Dying World" ]
   },
   {
     "archetypeName": "Green/Blue Flash",
     "archetypeColorCode": "GU",
-    "archetypeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "archetypeDescription": "A flexible deck, that can play for tempo or play defensively as needed. A critical mass of instant-speed effects is needed to make sure you can react to whatever your opponent decides to do.",
     "archetypeFeature": "Darkroot Diviner",
-    "archetypeKeyCommons": [ "Reach the Bonfire", "Ambuscade", "Essence Scatter" ],
+    "archetypeKeyCommons": [ "Pyromantic Shaman", "Ambuscade", "Essence Scatter" ],
     "archetypeKeyUncommons": [ "Instant Petrification", "Darkroot Tracker", "Sidetracked" ]
   }
 ]

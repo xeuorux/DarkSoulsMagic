@@ -1,32 +1,65 @@
 ﻿@page "/Credits"
 
-<h2>Credits</h2>
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.IO;
 
-<div class="credits-box content-box">
-    <p>
-        This set could not have been completed without the help of my design partner Sol as well as many, many members of the Custom Magic Discord Server community. My thanks goes out to all of the below persons:
-    </p>
-    <div class="credits-flex">
-        @foreach(string creditor in creditorsSorted)
+@inject Services.MagicSiteServices.WebsiteConfig config
+
+@if (config.info.creditsPage)
+{
+    @if (config.info.creditsPageTitle != null)
+    {
+        <h2>@config.info.creditsPageTitle</h2>
+    }
+
+    <div class="credits-box content-box">
+        @if (creditorsSorted == null)
         {
-        <div class="credits-item">
-            @creditor
-        </div>
+            <p class="loading-bar">@config.info.loadingText</p>
+        }
+        else
+        {
+            <p>
+                @info.creditsIntro
+            </p>
+            <div class="credits-flex">
+
+                @foreach (string creditor in creditorsSorted)
+                {
+                    <div class="credits-item">
+                        @creditor
+                    </div>
+                }
+            </div>
         }
     </div>
 
-</div>
+    @code {
+        private class CreditsInfo
+        {
+            public string[] creditors { get; set; }
+            public string creditsIntro { get; set; }
+            public bool creditsRandom { get; set; }
+        }
 
-@code {
-    Random rand = new Random();
+        private CreditsInfo info;
 
-    private List<string> creditorsSorted;
-    private string[] creditors = new string[] {
-        "Splitmoon", "Simon Williamson", "Calibur", "CasualR", "TEST", "Havoc", "ShadowCentaur", "Zangy", "DrChillbrain", "Cartridge", "Pinkmoth", "Oddsbod", "Reuben", "Static", "Piar", "Sol Invictus", "Zarepath", "Lycodrake", "Harb", "Fenhl", "DrakeXIV", "Lyca", "Blydden", "6000kj", "CrushCastles23", "CJTheMagicMan", "Admiral Walaby", "Koala", "Varionus", "MJacqueline", "Patches", "Mako", "Slime", "e_0", "Mzabsky", "Melonbomb", "Ancestral", "Rave Lord", "Passthechips", "Slayer", "Seismic Lawns", "Loki", "Wakarimasensei", "Leet Wizard", "IOwnALaptop", "Kat!", "Zach", "Sylphiod", "Auartic", "Deathbymanga"
-    };
-     
-    protected override async Task OnInitializedAsync()
-    {
-        creditorsSorted = creditors.OrderBy(p => rand.Next()).ToList();
+        Random rand = new Random();
+
+        private List<string> creditorsSorted;
+
+        protected override async Task OnInitializedAsync()
+        {
+            using (FileStream fs = File.OpenRead("wwwroot/website_info/credits.json"))
+            {
+                info = await JsonSerializer.DeserializeAsync<CreditsInfo>(fs);
+            }
+
+            if (info.creditsRandom)
+                creditorsSorted = info.creditors.OrderBy(p => rand.Next()).ToList();
+            else
+                creditorsSorted = info.creditors.ToList();
+        }
     }
 }

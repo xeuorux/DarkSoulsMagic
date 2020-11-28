@@ -4,60 +4,89 @@
 @using System.Text.Json.Serialization;
 @using System.IO;
 
-<h2>Mechanics</h2>
+@inject Services.MagicSiteServices.WebsiteConfig config
 
-<div class="content-box mechanics-box">
-    <div class="page-tab-selector">
-        @if (mechanics != null)
+@if (config.info.mechanicsPage)
+{
+    @if (config.info.mechanicsPageTitle != null)
+    {
+        <h2>@config.info.mechanicsPageTitle</h2>
+    }
+
+    <div class="content-box mechanics-box">
+        @if (mechanics == null)
         {
+            <p class="loading-bar">@config.info.loadingText</p>
+        }
+        else
+        {
+            <div class="page-tab-selector">
+                @if (mechanics != null)
+                {
+                    @for (int i = 0; i < mechanics.Length; i++)
+                    {
+                        int iLock = i;
+                        <button class="@(selectedIndex == i ? "active" : "")" @onclick="@(e => selectedIndex = iLock)">
+                            @mechanics[iLock].mechanicName
+                        </button>
+                    }
+                }
+            </div>
+
             @for (int i = 0; i < mechanics.Length; i++)
             {
-                int iLock = i;
-                <button class="@(selectedIndex == i ? "active" : "")" @onclick="@(e => selectedIndex = iLock)">
-                    @mechanics[iLock].mechanicName
-                </button>
+                MechanicInfo info = mechanics[i];
+                <div class="mechanic-description @(i == selectedIndex ? "displayed" : "undisplayed")">
+                    <div class="mechanic-description-body">
+                        <h3>
+                            @info.mechanicName
+                            @if (info.showColorsAsHybrid)
+                            {
+                                string img = info.mechanicColorCodes.Aggregate((accumulation, newValue) => accumulation + newValue);
+                                <img src="mana_symbols/@($"mana_{img}.png")" />
+                            }
+                            else
+                            {
+                                foreach (string color in info.mechanicColorCodes)
+                                {
+                                    <img src="mana_symbols/@($"mana_{color}.png")" />
+                                }
+                            }
+                        </h3>
+                        @info.mechanicDescription
+                    </div>
+                    <div class="mechanic-features">
+                        @foreach (string str in info.mechanicFeatures)
+                        {
+                            <img src="@($"/hlw_card_images/{str}.full.png")" />
+                        }
+                    </div>
+                </div>
             }
         }
     </div>
-    @if (mechanics != null)
-    {
-        @for (int i = 0; i < mechanics.Length; i++)
+
+    @code {
+
+        private class MechanicInfo
         {
-            MechanicInfo info = mechanics[i];
-            <div class="mechanic-description @(i == selectedIndex ? "displayed" : "undisplayed")">
-                <div class="mechanic-description-body">
-                    <h3>@info.mechanicName</h3>
-                    @info.mechanicDescription
-                </div>
-                <div class="mechanic-features">
-                    @foreach (string str in info.mechanicFeatures)
-                    {
-                        <img src="@($"/hlw_card_images/{str}.full.png")"/>
-                    }
-                </div>
-            </div>
+            public string mechanicName { get; set; }
+            public string mechanicDescription { get; set; }
+            public string[] mechanicFeatures { get; set; }
+            public string[] mechanicColorCodes { get; set; }
+            public bool showColorsAsHybrid { get; set; }
         }
-    }
-</div>
 
-@code {
+        private MechanicInfo[] mechanics;
 
-    private class MechanicInfo
-    {
-        public string mechanicName { get; set; }
-        public string mechanicDescription { get; set; }
-        public string[] mechanicFeatures { get; set; }
-    }
+        private int selectedIndex = 0;
 
-    private MechanicInfo[] mechanics;
-
-    private int selectedIndex = 0;
-
-    protected override async Task OnInitializedAsync()
-    {
-        using (FileStream fs = File.OpenRead("wwwroot/website_info/mechanics.json"))
+        protected override async Task OnInitializedAsync()
         {
-            mechanics = await JsonSerializer.DeserializeAsync<MechanicInfo[]>(fs);
+            using (FileStream fs = File.OpenRead("wwwroot/website_info/mechanics.json"))
+            {
+                mechanics = await JsonSerializer.DeserializeAsync<MechanicInfo[]>(fs);
+            }
         }
     }
 }

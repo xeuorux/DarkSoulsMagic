@@ -1,45 +1,64 @@
 ﻿@page "/"
 
-@inject Services.CardDatabaseService.CardDatabase CardDatabase
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.IO;
 
-<div class="content-box pitch">
+@inject Services.MagicSiteServices.CardDatabase CardDatabase
+@inject Services.MagicSiteServices.WebsiteConfig config
+
+@*<div class="content-box pitch">
     <span style="font-size: 24px;">A curse spreads across <span style="color: orangered">Lordran</span>...</span>
     <br />
     <p>A ring-like deformity appears on people, marking them as accursed Undead. An Undead cannot achieve a true death, instead resurrecting as a Hollow, a mindless zombie driven only by a hunger for human souls. The land of Lordran, once the seat of power for a family of gods, is now overrun by Hollows and other monsters. Undead adventurers travel to Lordran, thought to be the source of the curse, each seeking to reinvent their lives. Some come to loot Lordran's ancient treasures. Others come to achieve salvation in the service of the gods. Yet most of the Undead have but one aim: To cure themselves of the curse, and avoid the fate that has taken so many others.</p>
     <p>But of all those courageous enough to come to Lordran, will even a single one of them overcome the weight of the curse?</p>
-</div>
+</div>*@
 
-<div class="content-box features-div">
-    <h1 class="features-title">Features</h1>
-    <div class="mechanics-and-themes">
-        <div class="mechanics-and-themes-feature">
-            <h3>Hollow</h3>
-            <img class="card-image" src="/hlw_card_images/Darkbreaker Angel.full.png" alt="Darkbreaker Angel" />
+<h1 style="font-size: 36px; text-align: center; margin-top: 15px;">A curse spreads across <span style="color: orangered">Lordran</span>...</h1>
+
+@if (config.info.features)
+{
+    @if (features == null)
+    {
+        <p class="loading-bar">@config.info.loadingText</p>
+    }
+    else
+    {
+        <div class="content-box features-div">
+            @if (config.info.homePageFeaturesTitle != null)
+            {
+                <h1 class="features-title">@config.info.homePageFeaturesTitle</h1>
+            }
+            <div class="mechanics-and-themes">
+                @foreach (FeatureInfo info in features)
+                {
+                    <div class="mechanics-and-themes-feature">
+                        <h3>@info.featureTitle</h3>
+                        <img class="card-image" src="@($"/hlw_card_images/{info.featureCardName}.full.png")" alt="@info.featureCardName" />
+                    </div>
+                }
+            </div>
         </div>
-        <div class="mechanics-and-themes-feature">
-            <h3>Journey</h3>
-            <img class="card-image" src="/hlw_card_images/Crossing the Fog.full.png" alt="Crossing the Fog" />
-        </div>
-        <div class="mechanics-and-themes-feature">
-            <h3>Desperation</h3>
-            <img class="card-image" src="/hlw_card_images/Keeper of the Dead-Woods.full.png" alt="Keeper of the Dead-Woods" />
-        </div>
-        <div class="mechanics-and-themes-feature">
-            <h3>Equipment</h3>
-            <img class="card-image" src="/hlw_card_images/Artorias's Cursed Greatsword.full.png" alt="Artorias’s Cursed Greatsword" />
-        </div>
-        <div class="mechanics-and-themes-feature">
-            <h3>Legendary Characters</h3>
-            <img class="card-image" src="/hlw_card_images/Ornstein, Dragonslayer.full.png" alt="Ornstein, Dragonslayer" />
-        </div>
-        <div class="mechanics-and-themes-feature">
-            <h3>Deep Lore</h3>
-            <img class="card-image" src="/hlw_card_images/Everlasting Dragon.full.png" alt="Everlasting Dragon" />
-        </div>
-    </div>
-</div>
+    }
+}
 
 @code {
+    private class FeatureInfo
+    {
+        public string featureTitle { get; set; }
+        public string featureCardName { get; set; }
+    }
+
+    private FeatureInfo[] features;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using (FileStream fs = File.OpenRead("wwwroot/website_info/features.json"))
+        {
+            features = await JsonSerializer.DeserializeAsync<FeatureInfo[]>(fs);
+        }
+    }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         CardDatabase.Initialize();

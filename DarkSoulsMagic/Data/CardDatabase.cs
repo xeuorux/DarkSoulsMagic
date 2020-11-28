@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Services.CardDatabaseService
+namespace Services.MagicSiteServices
 {
     public class CardDatabase
     {

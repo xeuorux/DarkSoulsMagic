@@ -1,62 +1,80 @@
-﻿<div class="top-title-and-logo">
-    <img class="logo set-symbol" src="set_symbol.png" />
-    <h1>Hollows of Lordran</h1>
+﻿@inject Services.MagicSiteServices.WebsiteConfig config
+
+<section id="top-of-page"></section>
+
+<div class="top-title-and-logo">
+    <img class="logo set-symbol" src="images/set_symbol.png" />
+    <h1>@config.info.websiteTitle</h1>
 </div>
 
 <div class="nav flex-row">
     <div class="nav-item px-3">
         <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-            <span class="oi oi-home" aria-hidden="true"></span> Home
+            <span class="oi oi-home" aria-hidden="true"></span> @config.info.homePageLinkLabel
         </NavLink>
     </div>
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="Colors" Match="NavLinkMatch.All">
-            <span class="oi oi-pie-chart" aria-hidden="true"></span> Colors
-        </NavLink>
-    </div>
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="Planeswalkers" Match="NavLinkMatch.All">
-            <span class="oi oi-person" aria-hidden="true"></span> Planeswalkers
-        </NavLink>
-    </div>
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="Mechanics" Match="NavLinkMatch.All">
-            <span class="oi oi-pie-chart" aria-hidden="true"></span> Mechanics
-        </NavLink>
-    </div>
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="DraftInfo" Match="NavLinkMatch.All">
-            <span class="oi oi-bar-chart" aria-hidden="true"></span> Draft Info
-        </NavLink>
-    </div>
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="CardSpoiler" Match="NavLinkMatch.All">
-            <span class="oi oi-image" aria-hidden="true"></span> Main Set
-        </NavLink>
-    </div>
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="MultiplayerCardSpoiler" Match="NavLinkMatch.All">
-            <span class="oi oi-image" aria-hidden="true"></span> Commander
-        </NavLink>
-    </div>
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="TokenBasicSpoiler" Match="NavLinkMatch.All">
-            <span class="oi oi-loop-square" aria-hidden="true"></span> Basics and Tokens
-        </NavLink>
-    </div>
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="Play" Match="NavLinkMatch.All">
-            <span class="oi oi-loop-square" aria-hidden="true"></span> Play
-        </NavLink>
-    </div>
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="Future" Match="NavLinkMatch.All">
-            <span class="oi oi-project" aria-hidden="true"></span> The Future
-        </NavLink>
-    </div>
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="Credits" Match="NavLinkMatch.All">
-            <span class="oi oi-info" aria-hidden="true"></span> Credits
-        </NavLink>
-    </div>
+    @if (config.info.mechanicsPage)
+    {
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Mechanics" Match="NavLinkMatch.All">
+                <span class="oi oi-wrench" aria-hidden="true"></span> @config.info.mechanicsPageLinkLabel
+            </NavLink>
+        </div>
+    }
+    @if (config.info.worldPage)
+    {
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="World" Match="NavLinkMatch.All">
+                <span class="oi oi-globe" aria-hidden="true"></span> @config.info.worldPageLinkLabel
+            </NavLink>
+        </div>
+    }
+    @if (config.info.draftArchetypesPage)
+    {
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="DraftInfo" Match="NavLinkMatch.All">
+                <span class="oi oi-bar-chart" aria-hidden="true"></span> @config.info.draftArchetypesPageLinkLabel
+            </NavLink>
+        </div>
+    }
+    @if (config.info.spoilerPage)
+    {
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Spoiler" Match="NavLinkMatch.All">
+                <span class="oi oi-image" aria-hidden="true"></span> @config.info.spoilerPageLinkLabel
+            </NavLink>
+        </div>
+    }
+    @if (config.info.tokenBasicSpoilerPage)
+    {
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="TokenBasicSpoiler" Match="NavLinkMatch.All">
+                <span class="oi oi-image" aria-hidden="true"></span> @config.info.tokenBasicSpoilerPageLinkLabel
+            </NavLink>
+        </div>
+    }
+    @if (config.info.playPage)
+    {
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Play" Match="NavLinkMatch.All">
+                <span class="oi oi-loop-square" aria-hidden="true"></span> @config.info.playPageLinkLabel
+            </NavLink>
+        </div>
+    }
+    @if (config.info.futurePage)
+    {
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Future" Match="NavLinkMatch.All">
+                <span class="oi oi-project" aria-hidden="true"></span> @config.info.futurePageLinkLabel
+            </NavLink>
+        </div>
+    }
+    @if (config.info.creditsPage)
+    {
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Credits" Match="NavLinkMatch.All">
+                <span class="oi oi-info" aria-hidden="true"></span> @config.info.creditsPageLinkLabel
+            </NavLink>
+        </div>
+    }
 </div>

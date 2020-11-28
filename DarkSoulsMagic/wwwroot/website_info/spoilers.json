@@ -1,0 +1,12 @@
+[
+  {
+    "spoilerName": "Main Set",
+    "spoilerDescription": "The cards which form the core of Hollows of Lordran.",
+    "spoilerXMLName": "HLW"
+  },
+  {
+    "spoilerName": "Commander Expansion",
+    "spoilerDescription": "A multiplayer-only expansion, featuring a variety of legendary characters who didn't show up in the main set.",
+    "spoilerXMLName": "MHLW"
+  }
+]

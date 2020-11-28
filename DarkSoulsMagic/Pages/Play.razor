@@ -1,12 +1,20 @@
 ﻿@page "/Play"
 
-<h2>Play</h2>
+@inject Services.MagicSiteServices.WebsiteConfig config
 
-<div class="big-download-buttons-holder">
-    <div class="big-download-button">
-        Download Loose Files
+@if (config.info.playPage)
+{
+    @if (config.info.playPageTitle != null)
+    {
+        <h2>@config.info.playPageTitle</h2>
+    }
+
+    <div class="big-download-buttons-holder">
+        <div class="big-download-button">
+            Download Loose Files
+        </div>
+        <div class="big-download-button">
+            Download
+        </div>
     </div>
-    <div class="big-download-button">
-        Download
-    </div>
-</div>
+}

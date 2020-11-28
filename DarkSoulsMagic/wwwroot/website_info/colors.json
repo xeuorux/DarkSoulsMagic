@@ -1,0 +1,27 @@
+[
+  {
+    "name": "White",
+    "code": "W",
+    "backgroundHexcode": "#e5e2de"
+  },
+  {
+    "name": "Blue",
+    "code": "U",
+    "backgroundHexcode": "#adc8eb"
+  },
+  {
+    "name": "Black",
+    "code": "B",
+    "backgroundHexcode": "#a0a0a0"
+  },
+  {
+    "name": "Red",
+    "code": "R",
+    "backgroundHexcode": "#DFA499"
+  },
+  {
+    "name": "Green",
+    "code": "G",
+    "backgroundHexcode": "#A6B87D"
+  }
+]

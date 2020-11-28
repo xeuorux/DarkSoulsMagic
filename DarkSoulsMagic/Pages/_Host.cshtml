@@ -58,6 +58,32 @@
                 tooltips[i].style.left = x;
             }
         };
+
+        @*if (
+            "IntersectionObserver" in window &&
+            "IntersectionObserverEntry" in window &&
+            "intersectionRatio" in window.IntersectionObserverEntry.prototype
+        ) {
+            let observer = new IntersectionObserver(entries => {
+                if (entries[0].boundingClientRect.y < 0) {
+                    document.body.classList.add("header-not-at-top");
+                } else {
+                    document.body.classList.remove("header-not-at-top");
+                }
+            });
+            observer.observe(document.querySelector("#top-of-site-pixel-anchor"));
+            console.log("Choosing intersection observer");
+        }*@
+        document.addEventListener('scroll', function (e) {
+            last_known_scroll_position = window.scrollY;
+
+            if (last_known_scroll_position > document.querySelector("#top-of-site-pixel-anchor").offsetTop) {
+                document.body.classList.add("header-not-at-top");
+            }
+            else {
+                document.body.classList.remove("header-not-at-top");
+            }
+        });
     </script>
 </body>
 </html>

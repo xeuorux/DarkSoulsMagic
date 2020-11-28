@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Services.CardDatabaseService;
+using Services.MagicSiteServices;
 
 namespace DarkSoulsMagic
 {
@@ -28,7 +28,8 @@ namespace DarkSoulsMagic
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<Services.CardDatabaseService.CardDatabase>();
+            services.AddSingleton<Services.MagicSiteServices.CardDatabase>();
+            services.AddSingleton<Services.MagicSiteServices.WebsiteConfig>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

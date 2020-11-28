@@ -1,11 +1,40 @@
 ﻿@page "/TokenBasicSpoiler"
 
-@inject Services.CardDatabaseService.CardDatabase CardDatabase
+@inject Services.MagicSiteServices.CardDatabase CardDatabase
+@inject Services.MagicSiteServices.WebsiteConfig config
 
-<h2>Basics</h2>
+@if (config.info.tokenBasicSpoilerPage)
+{
+    @if (config.info.tokenBasicSpoilerPageBasicsFirst)
+    {
+        @if (config.info.tokenBasicSpoilerPageBasicsTitle != null)
+        {
+            <h2>@config.info.tokenBasicSpoilerPageBasicsTitle</h2>
+        }
 
-<SpoilerHolder cards="@CardDatabase.Basics" holderClass="basics_spoiler" />
+        <SpoilerHolder cards="@CardDatabase.Basics" holderClass="basics_spoiler" />
 
-<h2>Tokens</h2>
+        @if (@config.info.tokenBasicSpoilerPageTokensTitle != null)
+        {
+            <h2>@config.info.tokenBasicSpoilerPageTokensTitle</h2>
+        }
 
-<SpoilerHolder cards="@CardDatabase.Tokens" holderClass="tokens_spoiler" />
+        <SpoilerHolder cards="@CardDatabase.Tokens" holderClass="tokens_spoiler" />
+    }
+    else
+    {
+        @if (@config.info.tokenBasicSpoilerPageTokensTitle != null)
+        {
+            <h2>@config.info.tokenBasicSpoilerPageTokensTitle</h2>
+        }
+
+        <SpoilerHolder cards="@CardDatabase.Tokens" holderClass="tokens_spoiler" />
+
+        @if (config.info.tokenBasicSpoilerPageBasicsTitle != null)
+        {
+            <h2>@config.info.tokenBasicSpoilerPageBasicsTitle</h2>
+        }
+
+        <SpoilerHolder cards="@CardDatabase.Basics" holderClass="basics_spoiler" />
+    }
+}

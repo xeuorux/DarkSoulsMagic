@@ -1,0 +1,90 @@
+﻿@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.IO;
+
+@inject Services.MagicSiteServices.WebsiteConfig config
+
+
+@if (Displayed)
+{
+    @if (Title != null)
+    {
+        <h2>@Title</h2>
+    }
+
+    @if (worldSectionInfos == null)
+    {
+        <p class="loading-bar">@config.info.loadingText</p>
+    }
+    else
+    {
+        foreach (WorldSectionInfo info in worldSectionInfos)
+        {
+            <div class="color-pie-entry" style="@(GenerateStyle(info))">
+                @if (info.cardImageOnLeft)
+                {
+                    <img class="card-image" src="@($"/hlw_card_images/{info.cardImageName}.full.png")" alt="@info.cardImageName" />
+                }
+                <div class="color-pie-entry-info">
+                    <h3>@info.name</h3>
+                    <p>@info.description</p>
+                </div>
+                @if (!info.cardImageOnLeft)
+                {
+                    <img class="card-image" src="@($"/hlw_card_images/{info.cardImageName}.full.png")" alt="@info.cardImageName" />
+                }
+            </div>
+        }
+    }
+}
+
+@code {
+    [Parameter]
+    public string JsonFileName { get; set; }
+
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public bool Displayed { get; set; }
+
+    private WorldSectionInfo[] worldSectionInfos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using (FileStream fs = File.OpenRead($"wwwroot/website_info/{JsonFileName}.json"))
+        {
+            worldSectionInfos = await JsonSerializer.DeserializeAsync<WorldSectionInfo[]>(fs);
+        }
+    }
+
+    private string GenerateStyle(WorldSectionInfo info)
+    {
+        if (info.backgroundColorGold)
+        {
+            return $"background-color: goldenrod; color: black;";
+        }
+        else
+        {
+            return $"background-image: linear-gradient(to right, {GenerateGradient(info)}); color: black;";
+        }
+    }
+
+    private string GenerateGradient(WorldSectionInfo info)
+    {
+        string gradient = "";
+        for (int i = 0; i < info.colorCode.Length; i++)
+        {
+            string code = info.colorCode.Substring(i, 1);
+            string hex = Color.GetColorOfCode(code).backgroundHexcode;
+            double percent = Math.Round((double)(100 * i / (info.colorCode.Length - 1)), 2);
+            gradient += $"{hex} {percent}%";
+            if (i < info.colorCode.Length - 1)
+            {
+                gradient += ", ";
+            }
+        }
+
+        return gradient;
+    }
+}

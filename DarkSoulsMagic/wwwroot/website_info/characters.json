@@ -5,6 +5,34 @@
     "cardImageName": "Gwyn, Lord of Sunlight",
     "cardImageOnLeft": true,
     "description": "IT'S GWYN BABEYYYY",
-    "backgroundColorGold": false
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Manus, Father of the Abyss",
+    "colorCode": "GB",
+    "cardImageName": "Manus, Father of the Abyss",
+    "cardImageOnLeft": false,
+    "description": "IT'S MANUS BABEYYYY",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Seath, Scaleless Betrayer",
+    "colorCode": "U",
+    "cardImageName": "Seath, Scaleless Betrayer",
+    "cardImageOnLeft": true,
+    "description": "IT'S SEATH BABEYYYY",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Artorias",
+    "colorCode": "B",
+    "cardImageName": "Artorias, Abyss-Stricken",
+    "cardImageOnLeft": false,
+    "description": "IT'S ARTORIAS BABEYYYY",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
   }
 ]

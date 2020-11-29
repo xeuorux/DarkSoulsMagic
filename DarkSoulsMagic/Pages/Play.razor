@@ -1,5 +1,10 @@
 ﻿@page "/Play"
 
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.IO;
+
+@inject Services.MagicSiteServices.CardDatabase cards
 @inject Services.MagicSiteServices.WebsiteConfig config
 
 @if (config.info.playPage)
@@ -17,4 +22,110 @@
             Download
         </div>
     </div>
+
+    @if (spoilers == null)
+    {
+        <p class="loading-bar">@config.info.loadingText</p>
+    }
+    else
+    {
+        @foreach (SpoilerInfo info in spoilers)
+        {
+            if (info.boosterPackArrangement != null)
+            {
+                <div class="content-box booster-pack-gen">
+                    <button @onclick="@(e => GeneratePack(info))">Generate @info.spoilerName Pack</button>
+                </div>
+            }
+        }
+    }
+
+    <SpoilerHolder holderClass="booster-pack" cards="@generatedPack" fullInfo="false" spaceBetween="false" />
+}
+
+@code
+{
+    Random rand = new Random();
+
+    private SpoilerInfo[] spoilers;
+
+    public List<Card> generatedPack;
+
+    private async Task GeneratePack(SpoilerInfo info)
+    {
+        if (info.boosterPackArrangement == null)
+            return;
+
+        generatedPack = new List<Card>();
+
+        List<Card> allCards = cards.Cards[info.spoilerXMLName];
+
+        foreach (BoosterPackArrangement arrangement in info.boosterPackArrangement)
+        {
+            List<Card> cardsOfRarity = allCards.Where(e => e.rarity.name.ToLower().Equals(arrangement.rarity.ToLower())).ToList();
+
+            if (arrangement.count > 0)
+            {
+                for (int i = 0; i < arrangement.count; i++)
+                {
+                    generatedPack.Add(cardsOfRarity[rand.Next(cardsOfRarity.Count)]);
+                }
+            }
+        }
+
+        for (int i = 1; i <= info.ratioedSlots; i++)
+        {
+            List<Card> cardsInThisSlot = new List<Card>();
+            Rarity chosenRarity = null;
+
+            int totalParts = 0;
+            for (int k = 0; k < info.boosterPackArrangement.Count(); k++)
+            {
+                BoosterPackArrangement arrangement = info.boosterPackArrangement[k];
+                if (arrangement.ratioedSlot == i && arrangement.parts > 0)
+                {
+                    totalParts += arrangement.parts;
+                }
+            }
+
+            int accumulatedParts = 0;
+            for (int k = 0; k < info.boosterPackArrangement.Count(); k++)
+            {
+                BoosterPackArrangement arrangement = info.boosterPackArrangement[k];
+                if (arrangement.ratioedSlot == i)
+                {
+                    accumulatedParts += arrangement.parts;
+                    if (rand.Next(totalParts) < accumulatedParts)
+                    {
+                        chosenRarity = Rarity.Rarities.Where(e => e.name.ToLower().Equals(arrangement.rarity.ToLower())).FirstOrDefault();
+                        break;
+                    }
+                }
+            }
+
+            try
+            {
+                Console.WriteLine(chosenRarity.name);
+
+                List<Card> cardsOfRarity = allCards.Where(e => e.rarity.name.ToLower().Equals(chosenRarity.name.ToLower())).ToList();
+
+                generatedPack.Add(cardsOfRarity[rand.Next(cardsOfRarity.Count)]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Unable to generated ratioed slot.");
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        generatedPack = generatedPack.OrderByDescending(card => card.rarity.index).ThenBy(card => card.cardNumber).ToList();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        using (FileStream fs = File.OpenRead("wwwroot/website_info/spoilers.json"))
+        {
+            spoilers = await JsonSerializer.DeserializeAsync<SpoilerInfo[]>(fs);
+        }
+    }
 }

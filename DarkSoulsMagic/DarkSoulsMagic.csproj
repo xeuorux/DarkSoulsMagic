@@ -50,6 +50,9 @@
     <Content Update="wwwroot\website_info\features.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\website_info\worldsections.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\website_info\website.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

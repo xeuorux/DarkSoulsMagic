@@ -1,7 +1,7 @@
 [
   {
     "mechanicName": "Hollow",
-    "mechanicDescription": "When it's lategame, and you draw a useless card, make it useful with Hollow! Hollow represents the undead curse thats spreading across the entire world, creating mad zombies wherever it goes.",
+    "mechanicDescription": "When it's lategame and you draw a useless card make it useful with Hollow! Hollow represents the undead curse thats spreading across the entire world, creating mad zombies wherever it goes.",
     "mechanicFeatures": [ "Doomed Pilgrim", "Raven Rider", "Sin Caller" ],
     "mechanicColorCodes": [ "W", "U", "B" ],
     "showColorsAsHybrid": false
@@ -15,7 +15,7 @@
   },
   {
     "mechanicName": "Desperation",
-    "mechanicDescription": "Desperation allows you to exploit weaknesses' in your opponents defense, or to grind out advantage by trading your despairing creatures for something else. Desperation represents the ricks necessary to even try and get what you want in Lordran.",
+    "mechanicDescription": "Desperation allows you to exploit weaknesses in your opponents defense, or to grind out advantage by trading your despairing creatures for something else. Desperation represents the ricks necessary to even try and get what you want in Lordran.",
     "mechanicFeatures": [ "Ruin Delver", "Heir of Chaos", "Stranded Hydra" ],
     "mechanicColorCodes": [ "B", "R", "G" ],
     "showColorsAsHybrid": false

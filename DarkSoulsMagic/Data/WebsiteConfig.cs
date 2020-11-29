@@ -16,6 +16,7 @@ namespace Services.MagicSiteServices
         {
             public string websiteTitle { get; set; }
             public string loadingText { get; set; }
+            public string tagline { get; set; }
             public bool features { get; set; }
             public string homePageLinkLabel { get; set; }
             public string homePageFeaturesTitle { get; set; }

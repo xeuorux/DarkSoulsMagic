@@ -1,7 +1,7 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: white;
     background-color: #181818;
     font-size: 16px;
@@ -10,6 +10,11 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'OptimusPrinceps', 'Times New Roman', Times, serif;
     letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 20px;
 }
 
 a, .btn-link {
@@ -47,28 +52,38 @@ app {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #994444;
+/*    background-image: url("/images/smoke.jpg");
+*/    background-color: #630d0d;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     justify-content: center;
     padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
 }
 
-    .top-row h1 {
-        font-size: 60px;
-        display: inline-block;
-        margin: 0px 20px;
-    }
+#title {
+    font-size: 60px;
+    display: inline-block;
+    margin: 0px 20px;
+    text-shadow: 0px 0px 2px white;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    background-color: goldenrod;
+    color: transparent;
+}
 
-    .top-row > a, .main .top-row .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-    }
+.top-row > a, .main .top-row .btn-link {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+}
 
-    .top-row a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.top-row a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .main {
     flex: 1;
@@ -184,6 +199,7 @@ app {
     width: 1200px;
     max-width: 100%;
     flex-wrap: wrap;
+    grid-row-gap: 20px;
 }
 
     .spoiler-inputs .content-box {
@@ -218,7 +234,7 @@ app {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    width: 1250px !important;
+    width: 1250px;
     border: grey 2px solid;
     border-radius: 10px;
     justify-content: space-evenly;
@@ -298,18 +314,22 @@ hr {
     grid-row-gap: 30px;
 }
 
-.mechanics-and-themes .mechanics-and-themes-feature {
-    margin: auto;
+    .mechanics-and-themes .mechanics-and-themes-feature {
+        margin: auto;
+    }
+
+        .mechanics-and-themes .mechanics-and-themes-feature img {
+            box-shadow: 0px 0px 30px 0px rgba(255,255,255,1);
+        }
+
+        .mechanics-and-themes .mechanics-and-themes-feature h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+h3 .header-mana {
+    width: 28px;
 }
-
-    .mechanics-and-themes .mechanics-and-themes-feature img {
-        box-shadow: 0px 0px 30px 0px rgba(255,255,255,1);
-    }
-
-    .mechanics-and-themes .mechanics-and-themes-feature h3 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
 
 .color-pie-entry {
     height: 480px;
@@ -322,10 +342,12 @@ hr {
     align-items: center;
     justify-content: space-evenly;
     max-width: 100%;
+    flex-wrap: wrap;
 }
 
-    .color-pie-entry img {
+    .color-pie-entry .card-image {
         width: 300px;
+        box-shadow: 0px 0px 20px 0px #222;
     }
 
     .color-pie-entry .color-pie-entry-info {
@@ -399,6 +421,7 @@ hr {
     justify-content: center;
     flex-wrap: wrap;
     grid-row-gap: 10px;
+    grid-column-gap: 4px;
 }
 
     .page-tab-selector button {
@@ -433,23 +456,20 @@ hr {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    grid-column-gap: 20px;
 }
 
-.archetype-description .archetype-description-body {
-    margin-right: 10px;
+.archetype-description .archetype-description-body h3 {
+    padding-top: 10px;
 }
 
-    .archetype-description .archetype-description-body h3 {
-        padding-top: 10px;
-    }
+.archetype-description .archetype-description-body h4 {
+    margin-top: 15px;
+}
 
-        .archetype-description .archetype-description-body h3 img {
-            width: 28px;
-        }
-
-    .archetype-description .archetype-description-body h4 {
-        margin-top: 15px;
-    }
+.archetype-description .card-image {
+    box-shadow: 0px 0px 20px 0px #999;
+}
 
 .mechanics-box {
     width: 1200px;
@@ -526,6 +546,17 @@ body.header-not-at-top .move-to-top {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    grid-row-gap: 20px;
+}
+
+.booster-pack {
+    width: 1440px;
+    grid-column-gap: 8px;
+    justify-content: center;
+}
+
+.booster-pack .card-image {
+    width: 270px;
 }
 
 @media (max-width: 767.98px) {
@@ -534,7 +565,7 @@ body.header-not-at-top .move-to-top {
     }
 
     .card-image {
-        width: 250px;
+        width: 280px;
     }
 
     #spoiler-inputs-display {

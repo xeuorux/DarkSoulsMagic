@@ -1,0 +1,17 @@
+[
+  {
+    "sectionName": "Factions",
+    "sectionDescription": "",
+    "sectionJSONName": "factions"
+  },
+  {
+    "sectionName": "Major Characters",
+    "sectionDescription": "",
+    "sectionJSONName": "characters"
+  },
+  {
+    "sectionName": "Planeswalkers",
+    "sectionDescription": "",
+    "sectionJSONName": "planeswalkers"
+  }
+]

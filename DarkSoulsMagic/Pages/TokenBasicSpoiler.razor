@@ -5,6 +5,12 @@
 
 @if (config.info.tokenBasicSpoilerPage)
 {
+    <button class="move-to-top" type="button" onclick="document.getElementById('top-of-page').scrollIntoView({behavior:'smooth'})">
+        To Top
+    </button>
+
+    <div id="top-of-site-pixel-anchor"></div>
+
     @if (config.info.tokenBasicSpoilerPageBasicsFirst)
     {
         @if (config.info.tokenBasicSpoilerPageBasicsTitle != null)

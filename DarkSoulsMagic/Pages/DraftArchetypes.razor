@@ -36,9 +36,11 @@
                 ArchetypeInfo info = archetypes[i];
                 <div class="archetype-description @(i == selectedIndex ? "displayed" : "undisplayed")">
                     <div class="archetype-description-body">
-                        <h3><img src="mana_symbols/@($"mana_{info.archetypeColorCode}.png")" /> @info.archetypeName</h3>
-                        @info.archetypeDescription
-
+                        <h3>
+                            @info.archetypeName
+                            <img class="header-mana" src="mana_symbols/@($"mana_{info.archetypeColorCode}.png")" />
+                        </h3>
+                        <p>@info.archetypeDescription</p>
                         @{
                             if (info.archetypeKeyCommons != null)
                             {

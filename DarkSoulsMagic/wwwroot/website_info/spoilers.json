@@ -2,11 +2,33 @@
   {
     "spoilerName": "Main Set",
     "spoilerDescription": "The cards which form the core of Hollows of Lordran.",
-    "spoilerXMLName": "HLW"
+    "spoilerXMLName": "HLW",
+    "ratioedSlots" :  1,
+    "boosterPackArrangement": [
+      {
+        "rarity": "common",
+        "count": 10
+      },
+      {
+        "rarity": "uncommon",
+        "count": 3
+      },
+      {
+        "rarity": "rare",
+        "ratioedSlot": 1,
+        "parts": 7
+      },
+      {
+        "rarity": "mythic",
+        "ratioedSlot": 1,
+        "parts": 1
+      }
+    ]
   },
   {
     "spoilerName": "Commander Expansion",
-    "spoilerDescription": "A multiplayer-only expansion, featuring a variety of legendary characters who didn't show up in the main set.",
-    "spoilerXMLName": "MHLW"
+    "spoilerDescription": "A multiplayer-only expansion, featuring a variety of legendary characters who don't appear in the main set (and 2 that are in both!)",
+    "spoilerXMLName": "MHLW",
+    "boosterPackArrangement": null
   }
 ]

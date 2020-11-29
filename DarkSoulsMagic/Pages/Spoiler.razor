@@ -128,10 +128,10 @@
                                 <br />
                             }
                             <input type="checkbox" id="multicolor" @bind="@multicolorValue" />
-                            <label for="multicolor">Multicolor</label>
+                            <label for="multicolor"><img style="width: 16px;" src="@("mana_symbols/M.svg")" /> Multicolor</label>
                             <br />
                             <input type="checkbox" id="colorless" @bind="@colorlessValue" />
-                            <label for="colorless">Colorless</label>
+                            <label for="colorless"><img style="width: 16px;" src="@("mana_symbols/mana_c.png")" /> Colorless</label>
                         </div>
 
                         <div class="spoiler-inputs-section">
@@ -145,7 +145,7 @@
                                 Rarity rarity = Rarity.Rarities[i];
                                 int iLock = i;
                                 <input name="rarity-radio" type="radio" id="rarity-@iLock" checked="@(raritySelection == rarity)" @onchange="@(() => raritySelection = rarity)" />
-                                <label for="rarity-@iLock">@rarity.name</label>
+                                <label for="rarity-@iLock"> <img style="width: 16px;" src="@($"rarity_symbols/rarity_{rarity.code}.png")" />@rarity.name</label>
                                 <br />
                             }
                         </div>
@@ -165,13 +165,6 @@
 
     @code
 {
-        private class SpoilerInfo
-        {
-            public string spoilerName { get; set; }
-            public string spoilerDescription { get; set; }
-            public string spoilerXMLName { get; set; }
-        }
-
         private SpoilerInfo[] spoilers;
 
         private int selectedIndex = 0;
@@ -211,6 +204,14 @@
         private string typelineFilterText;
         private string rulesTextFilterText;
         private string flavorTextFilterText;
+
+        public enum IntFilterType
+        {
+            DISABLED,
+            EQUALS,
+            GREATER,
+            LESS
+        }
 
         private bool cmcEnabled;
         private int cmcFilter;

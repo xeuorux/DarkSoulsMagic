@@ -5,22 +5,25 @@
     "cardImageName": "Trusty Patches",
     "cardImageOnLeft": true,
     "description": "A jolly fellow, with many lifelong friends (Most of whom live short lives). Patches wanders the multiverse, plying his tricks of trade in places as varied as Boletaria, Yharnam, and Lothric.",
-    "backgroundColorGold": false
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
   },
   {
     "name": "Evander",
     "colorCode": "WR",
     "cardImageName": "Evander, Sunlight Martyr",
     "cardImageOnLeft": false,
-    "description": "The First Flame must be saved, at all costs. That is the duty of the Chosen Undead! Evander walks the bright path, alongside the faithful Warriors of Sunlight, and will sacrifice anything to save this world.",
-    "backgroundColorGold": false
+    "description": "The First Flame must be saved at all costs. That is the duty of the Chosen Undead! Evander walks the bright path, alongside the faithful Warriors of Sunlight, and will sacrifice anything to save this world.",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
   },
   {
     "name": "Slaine",
     "colorCode": "GU",
     "cardImageName": "Slaine, Fated Lord",
     "cardImageOnLeft": true,
-    "description": "The First Flame casts long shadows, in which the humans bide their time. Slaine accepts that the future of this world is humanity's future, and their's alone, and she plans to be prepared.",
-    "backgroundColorGold": false
+    "description": "The First Flame casts long shadows, shadows in which the humans bide their time. Slaine accepts that the future of this world is humanity's future, and their's alone, and she plans to be prepared.",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
   }
 ]

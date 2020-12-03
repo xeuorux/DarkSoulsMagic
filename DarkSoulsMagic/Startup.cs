@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Services.MagicSiteServices;
 
-namespace DarkSoulsMagic
+namespace MagicSite
 {
     public class Startup
     {

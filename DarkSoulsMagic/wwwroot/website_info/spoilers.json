@@ -3,32 +3,51 @@
     "spoilerName": "Main Set",
     "spoilerDescription": "The cards which form the core of Hollows of Lordran.",
     "spoilerXMLName": "HLW",
-    "ratioedSlots" :  1,
-    "boosterPackArrangement": [
+    "boosterPackSlot": [
       {
-        "rarity": "common",
-        "count": 10
+        "ratios": [
+          {
+            "rarity": "rare",
+            "parts": 7
+          },
+          {
+            "rarity": "mythic",
+            "parts": 1
+          }
+        ]
       },
       {
         "rarity": "uncommon",
         "count": 3
       },
       {
-        "rarity": "rare",
-        "ratioedSlot": 1,
-        "parts": 7
+        "rarity": "common",
+        "count": 10
       },
       {
-        "rarity": "mythic",
-        "ratioedSlot": 1,
-        "parts": 1
+        "selectionLogic": "card.typeLine.ToLower().Contains(\"basic land\")"
+      }
+    ],
+    "boosterPackRestrictions": {
+      "noDuplicates": true,
+      "atLeastXCardOfEachColor": 2,
+      "noMoreThanXCardOfEachColor": 4
+    }
+  },
+  {
+    "spoilerName": "Test Set",
+    "spoilerDescription": "A spoiler setup to test unusual booster pack setups.",
+    "spoilerXMLName": "HLW",
+    "boosterPackSlot": [
+      {
+        "count": 10,
+        "selectionLogic": "Regex.Match(card.text, \"^.*([Ff]lying|[Mm]enace)[^\\\\.]*?(?<!\\\\.)(\\\\(.*\\\\))?(\\\\n.*)?$\").Success"
       }
     ]
   },
   {
     "spoilerName": "Commander Expansion",
     "spoilerDescription": "A multiplayer-only expansion, featuring a variety of legendary characters who don't appear in the main set (and 2 that are in both!)",
-    "spoilerXMLName": "MHLW",
-    "boosterPackArrangement": null
+    "spoilerXMLName": "MHLW"
   }
 ]

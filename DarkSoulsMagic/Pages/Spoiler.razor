@@ -4,6 +4,7 @@
 @using System.Text.Json;
 @using System.Text.Json.Serialization;
 @using System.IO;
+@using MagicSite; 
 
 @inject Services.MagicSiteServices.CardDatabase CardDatabase
 @inject Services.MagicSiteServices.WebsiteConfig config
@@ -433,6 +434,8 @@
 
         private bool filteredOrNot(Card card)
         {
+            bool passesNotBasicFilter = !card.typeLine.ToLower().Contains("basic land");
+            bool passesNotTokenFilter = !card.typeLine.ToLower().Contains("token");
             bool passesNameFilter = String.IsNullOrEmpty(nameFilterText) || card.name.ToLower().Contains(nameFilterText.ToLower());
             bool passesTypelineFilter = String.IsNullOrEmpty(typelineFilterText) || card.typeLine.ToLower().Contains(typelineFilterText.ToLower());
             bool passesRulesTextFilter = String.IsNullOrEmpty(rulesTextFilterText) || card.text.ToLower().Contains(rulesTextFilterText.ToLower());
@@ -468,7 +471,7 @@
             //rarity
             bool passesRarityFilter = raritySelection == null || card.rarity == raritySelection;
 
-            return passesNameFilter && passesTypelineFilter && passesRulesTextFilter && passesFlavorTextFilter
+            return passesNotBasicFilter && passesNotTokenFilter && passesNameFilter && passesTypelineFilter && passesRulesTextFilter && passesFlavorTextFilter
                 && passedCMCFilter && passesPowerFilter && passesToughnessFilter && passesColorFilter && passesRarityFilter;
         }
 

@@ -3307,7 +3307,7 @@ T: Add U or B.
 <card>
  <name>Astora Outcast Hollow</name>
  <set>HLW</set>
- <color>WB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Knight </type>
  <pt>4/4</pt>
  <tablerow>2</tablerow>
@@ -3319,7 +3319,7 @@ T: Add U or B.
 <card>
  <name>Priest of Velka Hollow</name>
  <set>HLW</set>
- <color>WB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Cleric </type>
  <pt>3/3</pt>
  <tablerow>2</tablerow>
@@ -3331,7 +3331,7 @@ T: Add U or B.
 <card>
  <name>Seeker of the Cure Hollow</name>
  <set>HLW</set>
- <color>WB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Knight </type>
  <pt>3/2</pt>
  <tablerow>2</tablerow>
@@ -3355,7 +3355,7 @@ T: Add U or B.
 <card>
  <name>Velka's Missionary Hollow</name>
  <set>HLW</set>
- <color>WB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Cleric </type>
  <pt>3/3</pt>
  <tablerow>2</tablerow>
@@ -3367,7 +3367,7 @@ T: Add U or B.
 <card>
  <name>Dour Vagrant Hollow</name>
  <set>HLW</set>
- <color>UB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Rogue </type>
  <pt>2/1</pt>
  <tablerow>2</tablerow>
@@ -3391,7 +3391,7 @@ T: Add U or B.
 <card>
  <name>Cruel Lunatic Hollow</name>
  <set>HLW</set>
- <color>BR</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Berserker </type>
  <pt>5/4</pt>
  <tablerow>2</tablerow>
@@ -3427,7 +3427,7 @@ T: Add U or B.
 <card>
  <name>Darkbreaker Angel Hollow</name>
  <set>HLW</set>
- <color>WB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Angel </type>
  <pt>5/4</pt>
  <tablerow>2</tablerow>
@@ -3439,7 +3439,7 @@ T: Add U or B.
 <card>
  <name>Doomed Pilgrim Hollow</name>
  <set>HLW</set>
- <color>WB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Cleric </type>
  <pt>2/2</pt>
  <tablerow>2</tablerow>
@@ -3515,7 +3515,7 @@ T: Add U or B.
 <card>
  <name>Raven Rider Hollow</name>
  <set>HLW</set>
- <color>UB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Knight </type>
  <pt>3/3</pt>
  <tablerow>2</tablerow>
@@ -3527,7 +3527,7 @@ T: Add U or B.
 <card>
  <name>Exiled Priestess Hollow</name>
  <set>HLW</set>
- <color>WB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Cleric </type>
  <pt>2/1</pt>
  <tablerow>2</tablerow>
@@ -3539,7 +3539,7 @@ T: Add U or B.
 <card>
  <name>Darkmoon Avenger Hollow</name>
  <set>HLW</set>
- <color>WB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Knight </type>
  <pt>3/3</pt>
  <tablerow>2</tablerow>
@@ -3551,7 +3551,7 @@ T: Add U or B.
 <card>
  <name>Curse-Marked Crook Hollow</name>
  <set>HLW</set>
- <color>UB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Rogue </type>
  <pt>2/3</pt>
  <tablerow>2</tablerow>
@@ -3563,7 +3563,7 @@ T: Add U or B.
 <card>
  <name>Demented Sorcerer Hollow</name>
  <set>HLW</set>
- <color>UB</color>
+ <color>B</color>
  <type>Token Creature - Zombie Human Wizard </type>
  <pt>3/3</pt>
  <tablerow>2</tablerow>

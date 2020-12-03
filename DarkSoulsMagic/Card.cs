@@ -6,7 +6,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.IO;
 
-namespace DarkSoulsMagic
+namespace MagicSite
 {
     public class Card
     {

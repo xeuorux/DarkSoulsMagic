@@ -52,8 +52,8 @@ app {
     display: flex;
     flex-direction: column;
     align-items: center;
-/*    background-image: url("/images/smoke.jpg");
-*/    background-color: #630d0d;
+    /*    background-image: url("/images/smoke.jpg");
+*/ background-color: #630d0d;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     justify-content: center;
@@ -555,9 +555,61 @@ body.header-not-at-top .move-to-top {
     justify-content: center;
 }
 
-.booster-pack .card-image {
-    width: 270px;
+    .booster-pack .card-image {
+        width: 270px;
+    }
+
+.booster-pack-gen .buttons {
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
+
+.booster-pack-gen button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: palegoldenrod;
+    border-radius: 10px;
+}
+
+.big-download-links-holder {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
+}
+
+.big-download-link {
+    font-size: 32px;
+    padding: 16px 30px;
+    background-color: #266d06;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid #76c176;
+}
+
+    .big-download-link:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .big-download-link:not([href='']):hover {
+        background-color: #297805;
+    }
+
+    .big-download-link:not([href='']):active {
+        background-color: #319106;
+    }
+
+    .big-download-link[href=''] {
+        background-color: #b0bdaa;
+        border-color: #d6dad6;
+        cursor: initial;
+        pointer-events: none;
+    }
 
 @media (max-width: 767.98px) {
     .individual-card-info {

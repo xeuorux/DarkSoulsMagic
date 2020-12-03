@@ -1,4 +1,4 @@
-﻿using DarkSoulsMagic;
+﻿using MagicSite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -199,10 +199,7 @@ namespace Services.MagicSiteServices
                             tokens.Add(newCard);
                         }
                     }
-                    else
-                    {
-                        newCards.Add(newCard);
-                    }
+                    newCards.Add(newCard);
                 }
             }
         }

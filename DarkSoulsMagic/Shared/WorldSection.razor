@@ -29,10 +29,7 @@
         foreach (WorldSectionInfo info in worldSectionInfos)
         {
             <div class="color-pie-entry" style="@(GenerateStyle(info))">
-                @if (info.cardImageOnLeft)
-                {
-                    <img class="card-image" src="@($"/hlw_card_images/{info.cardImageName}.full.png")" alt="@info.cardImageName" />
-                }
+                <img class="card-image" src="@($"/hlw_card_images/{info.cardImageName}.full.png")" alt="@info.cardImageName" />
                 <div class="color-pie-entry-info">
                     <h3>
                         @info.name
@@ -52,10 +49,6 @@
                     </h3>
                     <p>@info.description</p>
                 </div>
-                @if (!info.cardImageOnLeft)
-                {
-                    <img class="card-image" src="@($"/hlw_card_images/{info.cardImageName}.full.png")" alt="@info.cardImageName" />
-                }
             </div>
         }
     }

@@ -44,7 +44,6 @@ namespace MagicSite
         public string name { get; set; }
         public string colorCode { get; set; }
         public string cardImageName { get; set; }
-        public bool cardImageOnLeft { get; set; }
         public string description { get; set; }
         public bool backgroundColorGold { get; set; }
         public bool showColorsAsHybrid { get; set; }

@@ -3,7 +3,6 @@
     "name": "Darkmoon Knights",
     "colorCode": "WU",
     "cardImageName": "Darkmoon Avenger",
-    "cardImageOnLeft": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
@@ -12,7 +11,6 @@
     "name": "Vinheim Dragon School",
     "colorCode": "UB",
     "cardImageName": "Vinheim Agent",
-    "cardImageOnLeft": false,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
@@ -21,7 +19,6 @@
     "name": "Chaos Demons",
     "colorCode": "BR",
     "cardImageName": "Capra Demon",
-    "cardImageOnLeft": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
@@ -30,7 +27,6 @@
     "name": "Dragon-Path",
     "colorCode": "GR",
     "cardImageName": "Student of the Dragon-Path",
-    "cardImageOnLeft": false,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
@@ -39,7 +35,6 @@
     "name": "Pyromancy Sages",
     "colorCode": "RG",
     "cardImageName": "Pyromantic Shaman",
-    "cardImageOnLeft": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
@@ -48,7 +43,6 @@
     "name": "Servants of the Fair Lady",
     "colorCode": "BG",
     "cardImageName": "Servant of the Fair Lady",
-    "cardImageOnLeft": false,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
@@ -57,7 +51,6 @@
     "name": "Warriors of Sunlight",
     "colorCode": "RW",
     "cardImageName": "Warrior of Sunlight",
-    "cardImageOnLeft": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
@@ -66,7 +59,6 @@
     "name": "Darkroot Hunters",
     "colorCode": "GU",
     "cardImageName": "Darkroot Tracker",
-    "cardImageOnLeft": false,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": true

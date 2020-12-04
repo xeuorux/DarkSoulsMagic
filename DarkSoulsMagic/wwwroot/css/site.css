@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 a, .btn-link {
@@ -64,7 +64,7 @@ app {
 }
 
 #title {
-    font-size: 60px;
+    font-size: 4rem;
     display: inline-block;
     margin: 0px 20px;
     text-shadow: 0px 0px 2px white;
@@ -73,6 +73,7 @@ app {
     background-clip: text;
     background-color: goldenrod;
     color: transparent;
+    text-align: center;
 }
 
 .top-row > a, .main .top-row .btn-link {
@@ -107,7 +108,7 @@ app {
 }
 
 .nav {
-    /* justify-content: center; */
+    flex-direction: row;
 }
 
 .nav-item {
@@ -298,7 +299,6 @@ hr {
     margin-top: 30px;
     border-radius: 20px;
     padding-top: 40px;
-    padding-bottom: 60px;
     background-color: #33332B;
 }
 
@@ -332,7 +332,6 @@ h3 .header-mana {
 }
 
 .color-pie-entry {
-    height: 480px;
     width: 800px;
     border: none;
     margin: auto;
@@ -343,7 +342,13 @@ h3 .header-mana {
     justify-content: space-evenly;
     max-width: 100%;
     flex-wrap: wrap;
+    padding: 30px 15px;
+    grid-row-gap: 20px;
 }
+
+    .color-pie-entry:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
 
     .color-pie-entry .card-image {
         width: 300px;
@@ -457,15 +462,21 @@ h3 .header-mana {
     justify-content: space-between;
     margin-top: 20px;
     grid-column-gap: 20px;
+    flex-wrap: wrap-reverse;
+    grid-row-gap: 10px;
 }
 
-.archetype-description .archetype-description-body h3 {
-    padding-top: 10px;
+.archetype-description-body {
+    width: 560px;
 }
 
-.archetype-description .archetype-description-body h4 {
-    margin-top: 15px;
-}
+    .archetype-description-body h3 {
+        padding-top: 10px;
+    }
+
+    .archetype-description-body h4 {
+        margin-top: 15px;
+    }
 
 .archetype-description .card-image {
     box-shadow: 0px 0px 20px 0px #999;
@@ -647,6 +658,29 @@ body.header-not-at-top .move-to-top {
     .move-to-top {
         position: sticky;
         margin: auto;
+    }
+
+    .archetype-description.displayed {
+        justify-content: center;
+    }
+
+    .color-pie-entry {
+        flex-wrap: wrap !important;
+    }
+
+    .color-pie-entry-info h3 {
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 19rem;
+    }
+
+    #title {
+        font-size: 2.8rem;
     }
 }
 

@@ -67,7 +67,7 @@ app {
     font-size: 4rem;
     display: inline-block;
     margin: 0px 20px;
-    text-shadow: 0px 0px 2px white;
+    text-shadow: 0px 0px 3px white;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -112,7 +112,7 @@ app {
 }
 
 .nav-item {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding-bottom: 0.5rem;
 }
 
@@ -123,7 +123,6 @@ app {
         display: flex;
         align-items: center;
         line-height: 3rem;
-        border: 1px white solid;
         border-radius: 8px;
     }
 
@@ -320,18 +319,14 @@ hr {
 
 .mechanics-and-themes {
     margin: 20px 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-row-gap: 30px;
+    display: grid;
+    grid-row-gap: 35px;
+    grid-template-columns: 50% 50%;
 }
-
-    .mechanics-and-themes .mechanics-and-themes-feature {
-        margin: auto;
-    }
 
         .mechanics-and-themes .mechanics-and-themes-feature img {
             box-shadow: 0px 0px 30px 0px rgba(255,255,255,1);
+            width: 330px;
         }
 
         .mechanics-and-themes .mechanics-and-themes-feature h3 {
@@ -465,9 +460,9 @@ h3 .header-mana {
             width: 40px;
         }
 
-        .page-tab-selector button.active {
-            background-color: orange;
-        }
+button.active {
+    background-color: orange;
+}
 
 .archetype-description.undisplayed {
     display: none;
@@ -748,7 +743,7 @@ body.header-not-at-top .move-to-top {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
-        height: 19rem;
+        height: 18rem;
     }
 
     #title {
@@ -768,6 +763,15 @@ body.header-not-at-top .move-to-top {
 
     .spoiler-holder {
         padding: 10px;
+    }
+
+    .content-box {
+        display: contents;
+    }
+
+    .mechanics-and-themes {
+        grid-template-columns: 100%;
+        padding: 20px 10px;
     }
 }
 

@@ -47,7 +47,8 @@
 
             <div id="spoiler-inputs-display" class="content-box spoiler-inputs-box" style="padding-bottom: 20px;">
                 <h3>Display Options</h3>
-                <button @onclick="@(e => fullInfo = !fullInfo)">@buttonLabel</button>
+                <button class="button @(fullInfo ? "active" : "")" @onclick="@(e => fullInfo = true)">Text and Images</button>
+                <button class="button @(fullInfo ? "" : "active")" @onclick="@(e => fullInfo = false)">Images Only</button>
             </div>
 
             <div class="content-box spoiler-inputs-box">
@@ -374,14 +375,6 @@
         }
 
         private Rarity raritySelection;
-
-        private String buttonLabel
-        {
-            get
-            {
-                return fullInfo ? "Images Only" : "Images and Text";
-            }
-        }
 
         private SortingOption sortSelection = SortingOption.COLOR;
 

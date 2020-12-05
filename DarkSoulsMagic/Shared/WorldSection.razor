@@ -33,8 +33,6 @@
                 <div class="color-pie-entry-info">
                     <h3>
                         @info.name
-                    </h3>
-                    <h3>
                         @if (info.showColorsAsHybrid)
                         {
                             <img class="header-mana" src="mana_symbols/@($"mana_{info.colorCode}.png")" />
@@ -81,7 +79,7 @@
     {
         if (info.backgroundColorGold)
         {
-            return $"background-color: goldenrod; color: black;";
+            return $"background-color: #d0c174; color: black;";
         }
         else if (info.colorCode.Length == 1)
         {

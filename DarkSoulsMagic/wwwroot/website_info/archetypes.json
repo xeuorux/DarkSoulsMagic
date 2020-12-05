@@ -2,10 +2,10 @@
   {
     "archetypeName": "White/Blue Control",
     "archetypeColorCode": "WU",
-    "archetypeDescription": "Playing a very slow game, WU control uses walls,  protective enchantment, and removal to slow down the opponent, while eeking out card advanmtage in the meanwhile. It wins the game usually with a large flyer.",
+    "archetypeDescription": "Playing a very slow game, WU control uses walls,  protective enchantment, and removal to slow down the opponent, while eeking out card advantage in the meanwhile. It usually wins the game with a large flyer.",
     "archetypeFeature": "Priscilla\u0027s Twinblade",
     "archetypeKeyCommons": [ "Arrest", "Bell Gargoyles", "Essence Scatter" ],
-    "archetypeKeyUncommons": [ "A Cold and Gentle Place", "Dull Defender", "Darkmoon Favor" ]
+    "archetypeKeyUncommons": [ "Prized Drake", "Dull Defender", "Darkmoon Favor" ]
   },
   {
     "archetypeName": "Blue/Black Graveyard",

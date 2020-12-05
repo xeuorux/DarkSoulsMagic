@@ -39,7 +39,7 @@
                 <div class="mechanic-description @(i == selectedIndex ? "displayed" : "undisplayed")">
                     <div class="mechanic-description-body">
                         <h3>
-                            @info.mechanicName 
+                            @info.mechanicName
                             @if (info.showColorsAsHybrid)
                             {
                                 string img = info.mechanicColorCodes.Aggregate((accumulation, newValue) => accumulation + newValue);

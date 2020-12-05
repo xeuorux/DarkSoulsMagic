@@ -40,7 +40,7 @@
                         <div class="mana-cost">
                             @{
                                 List<string> symbols = new List<string>();
-                                Match match = Regex.Match(card.manacost, "^(?<generic>[0-9]*)(?<X>X*)(?<else>.*)");
+                                Match match = Regex.Match(card.manacost, @"^(?<generic>[0-9]*)(?<X>X*)(?<hybrid>(?:{[0-9A-Za-z]\/[0-9A-Za-z]})*)(?<else>[A-Za-z]*)");
                                 try
                                 {
                                     symbols.Add(match.Groups["generic"].Value);
@@ -52,6 +52,17 @@
                                         symbols.Add("X");
                                 }
                                 catch { };
+
+                                try
+                                {
+                                    for (int i = 0; i < match.Groups["hybrid"].Length; i += 5)
+                                    {
+                                        string sub = match.Groups["hybrid"].Value.Substring(i, 5);
+                                        symbols.Add(sub[1] + "" + sub[3]);
+                                    }
+                                }
+                                catch { };
+
                                 try
                                 {
                                     for (int i = 0; i < match.Groups["else"].Length; i++)

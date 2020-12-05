@@ -60,19 +60,16 @@
         else
         {
             <div class="content-box booster-pack-gen">
-                <h4>Generate Booster Packs</h4>
+                <h4>Make Booster Packs</h4>
                 <div class="buttons">
                     @foreach (SpoilerInfo info in spoilers)
                     {
                         if (info.boosterPackSlot != null)
                         {
-
-                            <button @onclick="@(e => GeneratePackWithRestrictions(info))">@($"Generate {@info.spoilerName} Pack")</button>
-
+                            <button @onclick="@(e => GeneratePackWithRestrictions(info))">@((spoilers.Count() == 1 ? "Make Pack" : info.spoilerName))</button>
                         }
                     }
                 </div>
-
 
                 <div class="text-readout">
                     <button class="copy-to-clipboard" @onclick="CopyPackToClipboard"><span class="oi oi-clipboard"></span>Copy</button>

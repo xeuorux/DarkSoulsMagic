@@ -683,7 +683,7 @@ body.header-not-at-top .move-to-top {
     }
 
     .big-download-link[href=''] {
-        background-color: #b0bdaa;
+        background-color: #bbc1b8;
         border-color: #d6dad6;
         cursor: initial;
         pointer-events: none;

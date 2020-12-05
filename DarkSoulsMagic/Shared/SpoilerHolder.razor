@@ -1,7 +1,7 @@
 ﻿@using System.Text.RegularExpressions
 @using MagicSite;
 
-<div class="content-box spoiler-holder @holderClass @(fullInfo ? "full-info" : "") @(spaceBetween ? "space-between" : "")">
+<div class="content-box spoiler-holder @holderClass @(fullInfo ? "full-info" : "")">
     @{
         if (cards == null)
         {
@@ -16,7 +16,14 @@
                 string source = "/hlw_card_images/" + card.name + ".full.png";
 
                 <div class="individual-card-spoiler-info-holder">
-                    <img class="card-image spoiler-render" src=@source alt="@(card.name)" />
+                    @if (rendersHaveLargeHovers)
+                    {
+                        <CardTooltip CardName="@card.name" UseCardImage="true" ImageClass="spoiler-render"/>
+                    }
+                    else
+                    {
+                        <img class="card-image spoiler-render" src=@source alt="@(card.name)" />
+                    }
                     <div class="individual-card-info">
                         <h3><strong>@card.name</strong></h3>
                         <p><strong>@card.typeLine</strong></p>
@@ -77,6 +84,9 @@
 
     [Parameter]
     public bool spaceBetween { get; set; } = false;
+
+    [Parameter]
+    public bool rendersHaveLargeHovers { get; set; } = false;
 
     private string formatRulesText(string text)
     {

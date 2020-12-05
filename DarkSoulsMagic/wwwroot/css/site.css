@@ -250,6 +250,18 @@ app {
         justify-content: space-between;
     }
 
+    .spoiler-holder.center {
+        justify-content: center;
+    }
+
+    .spoiler-holder.left {
+        justify-content: left;
+    }
+
+    .spoiler-holder.right {
+        justify-content: right;
+    }
+
 .short-input {
     width: 30px;
 }
@@ -430,12 +442,20 @@ h3 .header-mana {
 }
 
     .page-tab-selector button {
-        padding: 6px;
+        padding: 6px 12px;
         background-color: antiquewhite;
         border-radius: 6px;
         font-family: 'OptimusPrinceps', 'Times New Roman', Times, serif;
         font-size: 28px;
     }
+
+        .page-tab-selector button:hover {
+            background-color: #fae4c8;
+        }
+
+        .page-tab-selector button:active {
+            background-color: orange;
+        }
 
         .page-tab-selector button:focus {
             outline: none;
@@ -561,13 +581,13 @@ body.header-not-at-top .move-to-top {
 }
 
 .booster-pack {
-    width: 1440px;
+    width: 1750px;
     grid-column-gap: 8px;
     justify-content: center;
 }
 
     .booster-pack .card-image {
-        width: 270px;
+        width: 200px;
     }
 
 .booster-pack-gen .buttons {
@@ -578,11 +598,58 @@ body.header-not-at-top .move-to-top {
     margin-top: 20px;
 }
 
-.booster-pack-gen button {
-    font-size: 20px;
-    padding: 10px 20px;
-    background-color: palegoldenrod;
-    border-radius: 10px;
+    .booster-pack-gen .buttons button {
+        font-size: 20px;
+        padding: 10px 20px;
+        background-color: palegoldenrod;
+        border-radius: 10px;
+    }
+
+        .booster-pack-gen .buttons button:hover {
+            background-color: #ede6a1;
+        }
+
+        .booster-pack-gen .buttons button:active {
+            background-color: #f5ea7a;
+        }
+
+        .booster-pack-gen .buttons button:focus {
+            outline: none;
+        }
+
+.copy-to-clipboard {
+    padding: 4px;
+    background-color: #d4d4c1;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+    .copy-to-clipboard:hover {
+        background-color: #d4d4b2;
+    }
+
+    .copy-to-clipboard:active {
+        background-color: #dedea2;
+    }
+
+    .copy-to-clipboard:focus {
+        outline: none;
+    }
+
+.booster-pack-gen .text-readout {
+    border: 2px solid lightgrey;
+    background-color: #58524b;
+    border-radius: 12px;
+    padding: 10px 0px;
+    width: 240px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: .9rem;
+}
+
+.text-readout ul {
+    margin-bottom: .5rem;
 }
 
 .big-download-links-holder {
@@ -620,6 +687,7 @@ body.header-not-at-top .move-to-top {
         border-color: #d6dad6;
         cursor: initial;
         pointer-events: none;
+        color: #7c8c74;
     }
 
 @media (max-width: 767.98px) {
@@ -633,6 +701,10 @@ body.header-not-at-top .move-to-top {
 
     #spoiler-inputs-display {
         display: none;
+    }
+
+    .spoiler-holder {
+        justify-content: center !important;
     }
 
     .credits-flex.mobile {
@@ -681,6 +753,21 @@ body.header-not-at-top .move-to-top {
 
     #title {
         font-size: 2.8rem;
+    }
+
+    .my-tooltip:hover .hover-image {
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        width: 300px;
+    }
+
+    .booster-pack .card-image {
+        width: 145px;
+    }
+
+    .spoiler-holder {
+        padding: 10px;
     }
 }
 

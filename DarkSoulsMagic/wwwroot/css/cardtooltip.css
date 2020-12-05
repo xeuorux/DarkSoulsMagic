@@ -6,11 +6,11 @@
     cursor: help;
 }
 
-    .my-tooltip img {
+    .my-tooltip .hover-image {
         display: none;
     }
 
-    .my-tooltip:hover img {
+    .my-tooltip:hover .hover-image {
         display: block;
         position: fixed;
         z-index: 1000;

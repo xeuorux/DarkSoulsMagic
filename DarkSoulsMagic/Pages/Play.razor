@@ -15,10 +15,11 @@
 @using Microsoft.CodeAnalysis.Emit;
 @using MagicSite;
 @using System.Composition;
-@using System.Text.RegularExpressions; 
+@using System.Text.RegularExpressions;
 
 @inject Services.MagicSiteServices.CardDatabase cards
 @inject Services.MagicSiteServices.WebsiteConfig config
+@inject IJSRuntime JSRuntime
 
 @if (config.info.playPage)
 {
@@ -27,50 +28,73 @@
         <h2>@config.info.playPageTitle</h2>
     }
 
-<div class="content-box">
-    <h4>Cockatrice Files</h4>
-    <h5>Version 1.32</h5>
-    <div class="big-download-links-holder">
-        <a href="downloads/HLW_1.32.zip" class="big-download-link" download>Download Loose Files</a>
-        <a href="" class="big-download-link" download>Download Full Install</a>
+    <div class="page-tab-selector">
+        <button class="@(selectedIndex == 0 ? "active" : "")" @onclick="@(e => selectedIndex = 0)">
+            Cockatrice
+        </button>
+        <button class="@(selectedIndex == 1 ? "active" : "")" @onclick="@(e => selectedIndex = 1)">
+            Make Booster Packs
+        </button>
     </div>
-</div>
 
-    @if (spoilers == null)
+    @if (selectedIndex == 0)
     {
-        <p class="loading-bar">@config.info.loadingText</p>
-    }
-    else
-    {
-        <div class="content-box booster-pack-gen">
-            <h4>Generate Booster Packs</h4>
-            <div class="buttons">
-                @foreach (SpoilerInfo info in spoilers)
-                {
-                    if (info.boosterPackSlot != null)
-                    {
-
-                        <button @onclick="@(e => GeneratePackWithRestrictions(info))">@($"Generate {@info.spoilerName} Pack")</button>
-
-                    }
-                }
+        <div class="content-box">
+            <h4>What is Cockatrice?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h4>Download Cockatrice Files</h4>
+            <h5>Version 1.32</h5>
+            <div class="big-download-links-holder">
+                <a href="downloads/HLW_1.32.zip" class="big-download-link" download>Download Loose Files</a>
+                <a href="" class="big-download-link" download>Download Full Install</a>
             </div>
         </div>
-        <div class="content-box" style="width: 800px;">
-            @if (generatedPack == null)
-            {
-                <p>No pack yet.</p>
-            }
-            else
-            {
-                @foreach (Card card in generatedPack)
-                {
-                    <p>@card.name</p>
-                }
-            }
-        </div>
+    }
 
-        <SpoilerHolder holderClass="booster-pack" cards="@generatedPack" fullInfo="false" spaceBetween="false" />
+    @if (selectedIndex == 1)
+    {
+        @if (spoilers == null)
+        {
+            <p style="margin-top: 40px;" class="loading-bar">@config.info.loadingText</p>
+        }
+        else
+        {
+            <div class="content-box booster-pack-gen">
+                <h4>Generate Booster Packs</h4>
+                <div class="buttons">
+                    @foreach (SpoilerInfo info in spoilers)
+                    {
+                        if (info.boosterPackSlot != null)
+                        {
+
+                            <button @onclick="@(e => GeneratePackWithRestrictions(info))">@($"Generate {@info.spoilerName} Pack")</button>
+
+                        }
+                    }
+                </div>
+
+
+                <div class="text-readout">
+                    <button class="copy-to-clipboard" @onclick="CopyPackToClipboard"><span class="oi oi-clipboard"></span>Copy</button>
+                    <ul>
+                        @if (generatedPack == null || generatedPack.Count == 0)
+                        {
+                            <li>No pack yet.</li>
+                        }
+                        else
+                        {
+                            @foreach (Card card in generatedPack)
+                            {
+                                <li>@card.name</li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+
+
+            <SpoilerHolder holderClass="booster-pack left" cards="@generatedPack" fullInfo="false" rendersHaveLargeHovers="true" />
+        }
     }
 }
 
@@ -87,6 +111,10 @@
     private Dictionary<string, Type> fakeSelectorsDictionary;
 
     private string colorCompString;
+
+    private int selectedIndex;
+
+    private ElementReference _copyElement;
 
     protected override async Task OnInitializedAsync()
     {
@@ -236,99 +264,99 @@
                     count = arrangement.count;
                 }*@
 
-        if (slot.rarity != null)
-        {
-            List<Card> cardsOfRarity = allCards.Where(e => e.rarity.name.ToLower().Equals(slot.rarity.ToLower())).ToList();
-            for (int i = 0; i < slot.count; i++)
+            if (slot.rarity != null)
             {
-                generatedPack.Add(cardsOfRarity[rand.Next(cardsOfRarity.Count)]);
-            }
-        }
-        else if (slot.selectionLogic != null)
-        {
-            List<Card> cardsOfSelection = EvaluateSelection(slot.selectionLogic, allCards, slot.selectionLogic);
-
-            try
-            {
+                List<Card> cardsOfRarity = allCards.Where(e => e.rarity.name.ToLower().Equals(slot.rarity.ToLower())).ToList();
                 for (int i = 0; i < slot.count; i++)
                 {
-                    generatedPack.Add(cardsOfSelection[rand.Next(cardsOfSelection.Count)]);
+                    generatedPack.Add(cardsOfRarity[rand.Next(cardsOfRarity.Count)]);
                 }
             }
-            catch (Exception e)
+            else if (slot.selectionLogic != null)
             {
-                Console.WriteLine("Unable to generated special logic slot.");
-                Console.WriteLine(e.Message);
-            }
-        }
-        else if (slot.ratios != null)
-        {
-            int totalParts = 0;
-            foreach (BoosterPackRatio ratio in slot.ratios)
-            {
-                totalParts += ratio.parts;
-            }
+                List<Card> cardsOfSelection = EvaluateSelection(slot.selectionLogic, allCards, slot.selectionLogic);
 
-            for (int i = 0; i < slot.count; i++)
+                try
+                {
+                    for (int i = 0; i < slot.count; i++)
+                    {
+                        generatedPack.Add(cardsOfSelection[rand.Next(cardsOfSelection.Count)]);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Unable to generated special logic slot.");
+                    Console.WriteLine(e.Message);
+                }
+            }
+            else if (slot.ratios != null)
             {
-                int accumulatedParts = 0;
+                int totalParts = 0;
                 foreach (BoosterPackRatio ratio in slot.ratios)
                 {
-                    accumulatedParts += ratio.parts;
-                    if (rand.Next(totalParts) < accumulatedParts)
+                    totalParts += ratio.parts;
+                }
+
+                for (int i = 0; i < slot.count; i++)
+                {
+                    int accumulatedParts = 0;
+                    foreach (BoosterPackRatio ratio in slot.ratios)
                     {
-                        if (ratio.rarity != null)
+                        accumulatedParts += ratio.parts;
+                        if (rand.Next(totalParts) < accumulatedParts)
                         {
-                            List<Card> cardsOfRarity = allCards.Where(e => e.rarity.name.ToLower().Equals(ratio.rarity.ToLower())).ToList();
-
-                            for (int k = 0; k < ratio.count; k++)
+                            if (ratio.rarity != null)
                             {
-                                generatedPack.Add(cardsOfRarity[rand.Next(cardsOfRarity.Count)]);
-                            }
-                        }
-                        else if (ratio.selectionLogic != null)
-                        {
-                            List<Card> cardsOfSelection = EvaluateSelection(ratio.selectionLogic, allCards, ratio.selectionLogic);
+                                List<Card> cardsOfRarity = allCards.Where(e => e.rarity.name.ToLower().Equals(ratio.rarity.ToLower())).ToList();
 
-                            try
-                            {
                                 for (int k = 0; k < ratio.count; k++)
                                 {
-                                    generatedPack.Add(cardsOfSelection[rand.Next(cardsOfSelection.Count)]);
+                                    generatedPack.Add(cardsOfRarity[rand.Next(cardsOfRarity.Count)]);
                                 }
                             }
-                            catch (Exception e)
+                            else if (ratio.selectionLogic != null)
                             {
-                                Console.WriteLine("Unable to generated special logic ratio.");
-                                Console.WriteLine(e.Message);
+                                List<Card> cardsOfSelection = EvaluateSelection(ratio.selectionLogic, allCards, ratio.selectionLogic);
+
+                                try
+                                {
+                                    for (int k = 0; k < ratio.count; k++)
+                                    {
+                                        generatedPack.Add(cardsOfSelection[rand.Next(cardsOfSelection.Count)]);
+                                    }
+                                }
+                                catch (Exception e)
+                                {
+                                    Console.WriteLine("Unable to generated special logic ratio.");
+                                    Console.WriteLine(e.Message);
+                                }
                             }
+                            break;
                         }
-                        break;
                     }
                 }
             }
         }
     }
-}
 
-private List<Card> EvaluateSelection(string logicstring, List<Card> cards, string code)
-{
-    Type type = fakeSelectorsDictionary[logicstring];
-    object obj = Activator.CreateInstance(type);
-    object invocationResult = type.InvokeMember("Filter",
-            BindingFlags.Default | BindingFlags.InvokeMethod,
-            null,
-            obj,
-            new object[] { cards });
+    private List<Card> EvaluateSelection(string logicstring, List<Card> cards, string code)
+    {
+        Type type = fakeSelectorsDictionary[logicstring];
+        object obj = Activator.CreateInstance(type);
+        object invocationResult = type.InvokeMember("Filter",
+                BindingFlags.Default | BindingFlags.InvokeMethod,
+                null,
+                obj,
+                new object[] { cards });
 
-    return (List<Card>)invocationResult;
-}
+        return (List<Card>)invocationResult;
+    }
 
-private Type CreateSelector(string code)
-{
-    // define source code, then parse it (to the type used for compilation)
-    string codeText =
-@"
+    private Type CreateSelector(string code)
+    {
+        // define source code, then parse it (to the type used for compilation)
+        string codeText =
+    @"
 using System;
 using System.Diagnostics;
 using System.Collections.Generic;
@@ -347,55 +375,55 @@ return cards.Where(card => (" + code + @")).ToList();
 }
 }
 ";
-    SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(codeText);
+        SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(codeText);
 
-    // define other necessary objects for compilation
-    string assemblyName = Path.GetRandomFileName();
+        // define other necessary objects for compilation
+        string assemblyName = Path.GetRandomFileName();
 
-    // analyse and generate IL code from syntax tree
-    CSharpCompilation compilation = CSharpCompilation.Create(
-        assemblyName,
-        syntaxTrees: new[] { syntaxTree },
-        references: references,
-        options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));
+        // analyse and generate IL code from syntax tree
+        CSharpCompilation compilation = CSharpCompilation.Create(
+            assemblyName,
+            syntaxTrees: new[] { syntaxTree },
+            references: references,
+            options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));
 
-    using (var ms = new MemoryStream())
-    {
-        // write IL code into memory
-        EmitResult result = compilation.Emit(ms);
-
-        if (!result.Success)
+        using (var ms = new MemoryStream())
         {
-            // handle exceptions
-            IEnumerable<Diagnostic> failures = result.Diagnostics.Where(diagnostic =>
-            diagnostic.IsWarningAsError ||
-            diagnostic.Severity == DiagnosticSeverity.Error);
+            // write IL code into memory
+            EmitResult result = compilation.Emit(ms);
 
-            foreach (Diagnostic diagnostic in failures)
+            if (!result.Success)
             {
-                Console.Error.WriteLine("{0}: {1}", diagnostic.Id, diagnostic.GetMessage());
+                // handle exceptions
+                IEnumerable<Diagnostic> failures = result.Diagnostics.Where(diagnostic =>
+                diagnostic.IsWarningAsError ||
+                diagnostic.Severity == DiagnosticSeverity.Error);
+
+                foreach (Diagnostic diagnostic in failures)
+                {
+                    Console.Error.WriteLine("{0}: {1}", diagnostic.Id, diagnostic.GetMessage());
+                }
+            }
+            else
+            {
+                // load this 'virtual' DLL so that we can use
+                ms.Seek(0, SeekOrigin.Begin);
+                Assembly assembly = Assembly.Load(ms.ToArray());
+
+                // create instance of the desired class and call the desired function
+                Type type = assembly.GetType("RoslynCompileSample.CardFilterer");
+
+                return type;
             }
         }
-        else
-        {
-            // load this 'virtual' DLL so that we can use
-            ms.Seek(0, SeekOrigin.Begin);
-            Assembly assembly = Assembly.Load(ms.ToArray());
 
-            // create instance of the desired class and call the desired function
-            Type type = assembly.GetType("RoslynCompileSample.CardFilterer");
-
-            return type;
-        }
+        return null;
     }
 
-    return null;
-}
-
-private List<MetadataReference> GetGlobalReferences()
-{
-    var assemblies = new[]
-        {
+    private List<MetadataReference> GetGlobalReferences()
+    {
+        var assemblies = new[]
+            {
             /*Making sure all MEF assemblies are loaded*/
             typeof(System.Composition.Convention.AttributedModelProvider).Assembly, //System.Composition.AttributeModel
             typeof(System.Composition.Convention.ConventionBuilder).Assembly,   //System.Composition.Convention
@@ -407,29 +435,42 @@ private List<MetadataReference> GetGlobalReferences()
             typeof(System.CodeDom.Compiler.CodeCompiler).Assembly,              //System.CodeDom.Compiler
         };
 
-    var refs = from a in assemblies
-               select MetadataReference.CreateFromFile(a.Location);
-    List<MetadataReference> returnList = refs.ToList<MetadataReference>();
+        var refs = from a in assemblies
+                   select MetadataReference.CreateFromFile(a.Location);
+        List<MetadataReference> returnList = refs.ToList<MetadataReference>();
 
-    //The location of the .NET assemblies
-    var assemblyPath = Path.GetDirectoryName(typeof(object).Assembly.Location);
+        //The location of the .NET assemblies
+        var assemblyPath = Path.GetDirectoryName(typeof(object).Assembly.Location);
 
-    /*
-        * Adding some necessary .NET assemblies
-        * These assemblies couldn't be loaded correctly via the same construction as above,
-        * in specific the System.Runtime.
-        */
-    returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "mscorlib.dll")));
-    returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "System.dll")));
-    returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "System.Core.dll")));
-    returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "System.Runtime.dll")));
-    returnList.Add(MetadataReference.CreateFromFile(typeof(object).Assembly.Location));
-    returnList.Add(MetadataReference.CreateFromFile(typeof(Enumerable).Assembly.Location));
-    returnList.Add(MetadataReference.CreateFromFile(typeof(Card).Assembly.Location));
-    returnList.Add(MetadataReference.CreateFromFile(typeof(Regex).Assembly.Location));
+        /*
+            * Adding some necessary .NET assemblies
+            * These assemblies couldn't be loaded correctly via the same construction as above,
+            * in specific the System.Runtime.
+            */
+        returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "mscorlib.dll")));
+        returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "System.dll")));
+        returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "System.Core.dll")));
+        returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "System.Runtime.dll")));
+        returnList.Add(MetadataReference.CreateFromFile(typeof(object).Assembly.Location));
+        returnList.Add(MetadataReference.CreateFromFile(typeof(Enumerable).Assembly.Location));
+        returnList.Add(MetadataReference.CreateFromFile(typeof(Card).Assembly.Location));
+        returnList.Add(MetadataReference.CreateFromFile(typeof(Regex).Assembly.Location));
         @*        returnList.Add(MetadataReference.CreateFromFile(@"C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.0\System.Collections.dll"));
         *@
-        returnList.Add(MetadataReference.CreateFromFile(typeof(Stack<>).Assembly.Location));
-        return returnList;
+    returnList.Add(MetadataReference.CreateFromFile(typeof(Stack<>).Assembly.Location));
+    return returnList;
+}
+
+private async Task CopyPackToClipboard()
+{
+    if (generatedPack == null || generatedPack.Count == 0)
+        return;
+
+    StringBuilder builder = new StringBuilder();
+    foreach(Card card in generatedPack)
+    {
+        builder.Append(card.name + "\n");
     }
+    await JSRuntime.InvokeVoidAsync("clipboardCopy.copyText", builder.ToString());
+}
 }

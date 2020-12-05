@@ -26,6 +26,9 @@
       },
       {
         "selectionLogic": "card.typeLine.ToLower().Contains(\"basic land\")"
+      },
+      {
+        "selectionLogic": "card.typeLine.ToLower().Contains(\"token\")"
       }
     ],
     "boosterPackRestrictions": {
@@ -33,17 +36,6 @@
       "atLeastXCardOfEachColor": 2,
       "noMoreThanXCardOfEachColor": 4
     }
-  },
-  {
-    "spoilerName": "Test Set",
-    "spoilerDescription": "A spoiler setup to test unusual booster pack setups.",
-    "spoilerXMLName": "HLW",
-    "boosterPackSlot": [
-      {
-        "count": 10,
-        "selectionLogic": "Regex.Match(card.text, \"^.*([Ff]lying|[Mm]enace)[^\\\\.]*?(?<!\\\\.)(\\\\(.*\\\\))?(\\\\n.*)?$\").Success"
-      }
-    ]
   },
   {
     "spoilerName": "Commander Expansion",

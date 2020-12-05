@@ -1,9 +1,22 @@
 ﻿<span class="my-tooltip">
-    @CardName
-    <img src=@($"/hlw_card_images/{CardName}.full.png")>
+    @if (UseCardImage)
+    {
+        <img class="card-image @ImageClass" src=@($"/hlw_card_images/{CardName}.full.png")>
+    }
+    else
+    {
+        @CardName
+    }
+    <img class="hover-image" src=@($"/hlw_card_images/{CardName}.full.png")>
 </span>
 
 @code {
     [Parameter]
     public string CardName { get; set; }
+
+    [Parameter]
+    public bool UseCardImage { get; set; }
+
+    [Parameter]
+    public string ImageClass { get; set; }
 }

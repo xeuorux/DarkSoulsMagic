@@ -4,7 +4,7 @@
 @using System.Text.Json;
 @using System.Text.Json.Serialization;
 @using System.IO;
-@using MagicSite; 
+@using MagicSite;
 
 @inject Services.MagicSiteServices.CardDatabase CardDatabase
 @inject Services.MagicSiteServices.WebsiteConfig config
@@ -43,115 +43,114 @@
             </p>
         }
 
-        <div class="spoiler-inputs">
-
-            <div id="spoiler-inputs-display" class="content-box spoiler-inputs-box" style="padding-bottom: 20px;">
-                <h3>Display Options</h3>
-                <button class="button @(fullInfo ? "active" : "")" @onclick="@(e => fullInfo = true)">Text and Images</button>
-                <button class="button @(fullInfo ? "" : "active")" @onclick="@(e => fullInfo = false)">Images Only</button>
-            </div>
-
-            <div class="content-box spoiler-inputs-box">
-                <h3>Sorting Options</h3>
-                <div class="spoiler-inputs-section">
-                    @foreach (SortingOption option in Enum.GetValues(typeof(SortingOption)).Cast<SortingOption>())
-                    {
-                        <input name="sort" type="radio" id="sort-@option.ToString()" checked="@(sortSelection == option)" @onchange="@(() => sortSelection = option)" />
-                        <label for="sort-@option.ToString()">@(option.ToString().Substring(0, 1) + option.ToString().Substring(1).ToLower())</label>
-                    }
-                    @if (sortSelection == SortingOption.SEEDED)
-                    {
-                        <br />
-                        <label for="seed-input">Randomness Seed</label>
-                        <input id="seed-input" @bind="@randomSeed" />
-                    }
+        <div class="spoiler-inputs content-box">
+            <div class="non-advanced-inputs">
+                <div id="spoiler-inputs-display" class="spoiler-inputs-box">
+                    <h3>Display Options</h3>
+                    <button class="button @(fullInfo ? "active" : "")" @onclick="@(e => fullInfo = true)">Text and Images</button>
+                    <button class="button @(fullInfo ? "" : "active")" @onclick="@(e => fullInfo = false)">Images Only</button>
                 </div>
+
+                <div class="spoiler-inputs-box">
+                    <h3>Sorting Options</h3>
+                    <div class="spoiler-inputs-section">
+                        @foreach (SortingOption option in Enum.GetValues(typeof(SortingOption)).Cast<SortingOption>())
+                        {
+                            <input name="sort" type="radio" id="sort-@option.ToString()" checked="@(sortSelection == option)" @onchange="@(() => sortSelection = option)" />
+                            <label for="sort-@option.ToString()">@(option.ToString().Substring(0, 1) + option.ToString().Substring(1).ToLower())</label>
+                        }
+                        @if (sortSelection == SortingOption.SEEDED)
+                        {
+                            <br />
+                            <label for="seed-input">Randomness Seed</label>
+                            <input id="seed-input" @bind="@randomSeed" />
+                        }
+                    </div>
+                </div>
+
+                <p id="advanced-options-button" @onclick="@(e => displayAdvanced = !displayAdvanced)">Advanced Options</p>
             </div>
 
-            <div class="content-box spoiler-inputs-box" style="width: 400px;">
-                <h3>Filters</h3>
-                <div style="display: flex;">
-                    <div>
-                        <div class="spoiler-inputs-section">
-                            <label for="name">Name</label>
-                            <br />
-                            <input id="name" @bind="@nameFilterText" @bind:event="oninput">
-                        </div>
-
-                        <div class="spoiler-inputs-section">
-                            <label for="text">Typeline</label>
-                            <br />
-                            <input id="text" @bind="typelineFilterText" @bind:event="oninput">
-                        </div>
-
-                        <div class="spoiler-inputs-section">
-                            <label for="text">Rules Text</label>
-                            <br />
-                            <input id="text" @bind="@rulesTextFilterText" @bind:event="oninput">
-                        </div>
-
-                        <div class="spoiler-inputs-section">
-                            <label for="flavor-text">Flavor Text</label>
-                            <br />
-                            <input id="flavor-text" @bind="@flavorTextFilterText" @bind:event="oninput">
-                        </div>
-
-                        <div class="spoiler-inputs-section spoiler-inputs-stats">
-                            <div>
-                                <label for="cmc">CMC</label>
-                                <br />
-                                <input class="short-input" id="cmc" @bind="@cmcFilterString" @bind:event="oninput">
-                            </div>
-
-                            <div>
-                                <label for="power">Power</label>
-                                <br />
-                                <input class="short-input" id="power" @bind="@powerFilterString" @bind:event="oninput">
-                            </div>
-
-                            <div>
-                                <label for="toughness">Toughness</label>
-                                <br />
-                                <input class="short-input" id="toughness" @bind="@toughnessFilterString" @bind:event="oninput">
-                            </div>
-                        </div>
+            <div class="spoiler-inputs-box advanced-filters-flex" style="@(displayAdvanced ? "display: flex;" : "display: none;")">
+                <div>
+                    <div class="spoiler-inputs-section">
+                        <label for="name">Name</label>
+                        <br />
+                        <input id="name" @bind="@nameFilterText" @bind:event="oninput">
                     </div>
 
-                    <div style="margin-left: 40px;">
-                        <div class="spoiler-inputs-section">
-                            <label>Colors</label>
+                    <div class="spoiler-inputs-section">
+                        <label for="text">Typeline</label>
+                        <br />
+                        <input id="text" @bind="typelineFilterText" @bind:event="oninput">
+                    </div>
+
+                    <div class="spoiler-inputs-section">
+                        <label for="text">Rules Text</label>
+                        <br />
+                        <input id="text" @bind="@rulesTextFilterText" @bind:event="oninput">
+                    </div>
+
+                    <div class="spoiler-inputs-section">
+                        <label for="flavor-text">Flavor Text</label>
+                        <br />
+                        <input id="flavor-text" @bind="@flavorTextFilterText" @bind:event="oninput">
+                    </div>
+
+
+                    <div class="spoiler-inputs-section spoiler-inputs-stats">
+                        <div>
+                            <label for="cmc">CMC</label>
                             <br />
-                            @for (int i = 0; i < Color.Colors.Length; i++)
-                            {
-                                Color color = Color.Colors[i];
-                                int iLock = i;
-                                <input type="checkbox" id="color-@iLock" @bind="@colorValues[iLock]" />
-                                <label for="color-@iLock"><img style="width: 16px;" src="@($"mana_symbols/mana_{color.code}.png")" /> @color.name</label>
-                                <br />
-                            }
-                            <input type="checkbox" id="multicolor" @bind="@multicolorValue" />
-                            <label for="multicolor"><img style="width: 16px;" src="@("mana_symbols/M.svg")" /> Multicolor</label>
-                            <br />
-                            <input type="checkbox" id="colorless" @bind="@colorlessValue" />
-                            <label for="colorless"><img style="width: 16px;" src="@("mana_symbols/mana_c.png")" /> Colorless</label>
+                            <input class="short-input" id="cmc" @bind="@cmcFilterString" @bind:event="oninput">
                         </div>
 
-                        <div class="spoiler-inputs-section">
-                            <label>Rarity</label>
+                        <div>
+                            <label for="power">Power</label>
                             <br />
-                            <input name="rarity-radio" type="radio" id="rarity-no" checked="@(raritySelection == null)" @onchange="@(() => raritySelection = null)" />
-                            <label for="rarity-no">No Selection</label>
+                            <input class="short-input" id="power" @bind="@powerFilterString" @bind:event="oninput">
+                        </div>
+
+                        <div>
+                            <label for="toughness">Toughness</label>
                             <br />
-                            @for (int i = 0; i < Rarity.Rarities.Length; i++)
-                            {
-                                Rarity rarity = Rarity.Rarities[i];
-                                int iLock = i;
-                                <input name="rarity-radio" type="radio" id="rarity-@iLock" checked="@(raritySelection == rarity)" @onchange="@(() => raritySelection = rarity)" />
-                                <label for="rarity-@iLock"> <img style="width: 16px;" src="@($"rarity_symbols/rarity_{rarity.code}.png")" />@rarity.name</label>
-                                <br />
-                            }
+                            <input class="short-input" id="toughness" @bind="@toughnessFilterString" @bind:event="oninput">
                         </div>
                     </div>
+                </div>
+
+                <div class="spoiler-inputs-section">
+                    <label>Colors</label>
+                    <br />
+                    @for (int i = 0; i < Color.Colors.Length; i++)
+                    {
+                        Color color = Color.Colors[i];
+                        int iLock = i;
+                        <input type="checkbox" id="color-@iLock" @bind="@colorValues[iLock]" />
+                        <label for="color-@iLock"><img style="width: 16px;" src="@($"mana_symbols/mana_{color.code}.png")" /> @color.name</label>
+                        <br />
+                    }
+                    <input type="checkbox" id="multicolor" @bind="@multicolorValue" />
+                    <label for="multicolor"><img style="width: 16px;" src="@("mana_symbols/M.svg")" /> Multicolor</label>
+                    <br />
+                    <input type="checkbox" id="colorless" @bind="@colorlessValue" />
+                    <label for="colorless"><img style="width: 16px;" src="@("mana_symbols/mana_c.png")" /> Colorless</label>
+                </div>
+
+                <div class="spoiler-inputs-section">
+                    <label>Rarity</label>
+                    <br />
+                    <input name="rarity-radio" type="radio" id="rarity-no" checked="@(raritySelection == null)" @onchange="@(() => raritySelection = null)" />
+                    <label for="rarity-no">No Selection</label>
+                    <br />
+                    @for (int i = 0; i < Rarity.Rarities.Length; i++)
+                    {
+                        Rarity rarity = Rarity.Rarities[i];
+                        int iLock = i;
+                        <input name="rarity-radio" type="radio" id="rarity-@iLock" checked="@(raritySelection == rarity)" @onchange="@(() => raritySelection = rarity)" />
+                        <label for="rarity-@iLock"> <img style="width: 16px;" src="@($"rarity_symbols/rarity_{rarity.code}.png")" />@rarity.name</label>
+                        <br />
+                    }
                 </div>
             </div>
         </div>
@@ -162,7 +161,7 @@
 
         <div id="top-of-site-pixel-anchor"></div>
 
-        <SpoilerHolder cards="@sortedFilteredCards" holderClass="cards_spoiler space-between" fullInfo="@fullInfo"/>
+        <SpoilerHolder cards="@sortedFilteredCards" holderClass="cards_spoiler space-between" fullInfo="@fullInfo" />
     }
 
     @code
@@ -377,6 +376,8 @@
         private Rarity raritySelection;
 
         private SortingOption sortSelection = SortingOption.COLOR;
+
+        private bool displayAdvanced;
 
         protected override async Task OnInitializedAsync()
         {

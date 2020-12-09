@@ -45,15 +45,16 @@ app {
 }
 
 .top-title-and-logo {
-    margin-bottom: 25px;
+    margin: 0px auto;
+    margin-bottom: 10px;
 }
 
 .top-row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*    background-image: url("/images/smoke.jpg");
-*/ background-color: #630d0d;
+    /*    background-image: url("/images/smoke.jpg");*/
+    background-color: #630d0d;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     justify-content: center;
@@ -61,6 +62,8 @@ app {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: screen;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 #title {
@@ -110,6 +113,19 @@ app {
 .nav {
     flex-direction: row;
 }
+
+#nav-menu-toggle {
+    display: none;
+    background-color: inherit;
+    border: none;
+}
+    #nav-menu-toggle::before {
+        color: white;
+    }
+
+    #nav-menu-toggle:focus {
+        outline: none;
+    }
 
 .nav-item {
     font-size: 1.2rem;
@@ -188,6 +204,12 @@ app {
         margin: auto 0px;
     }
 
+#tagline {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 15px;
+}
+
 .card-image {
     border-radius: 12px;
 }
@@ -225,6 +247,7 @@ app {
     border-radius: 8px;
     line-height: 3rem;
 }
+
     #advanced-options-button:hover {
         background-color: rgba(255,255,255,0.1);
         color: #66babd;
@@ -353,6 +376,7 @@ hr {
         width: 330px;
         display: block;
         margin: auto;
+        max-width: 100%;
     }
 
     .mechanics-and-themes .mechanics-and-themes-feature h3 {
@@ -428,6 +452,7 @@ h3 .header-mana {
     margin: auto;
     width: fit-content;
     width: -moz-fit-content;
+    margin-bottom: 20px;
 }
 
     .labs-link img {
@@ -753,8 +778,8 @@ body.header-not-at-top .move-to-top {
     }
 
     .top-row .oi {
-        display: none;
-    }
+/*        display: none;
+*/    }
 
     .move-to-top {
         display: none;
@@ -779,11 +804,25 @@ body.header-not-at-top .move-to-top {
         text-align: center;
     }
 
+    .top-row {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .nav {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
         height: 18rem;
+        margin-top: 20px;
+    }
+
+        .nav.collapsed {
+            display: none;
+        }
+
+    #nav-menu-toggle {
+        display: block;
     }
 
     #title {
@@ -818,6 +857,14 @@ body.header-not-at-top .move-to-top {
 
     .page-tab-selector {
         margin-bottom: 20px;
+    }
+
+    .content > h2 {
+        margin-top: 0px;
+    }
+
+    #tagline {
+        display: none;
     }
 }
 

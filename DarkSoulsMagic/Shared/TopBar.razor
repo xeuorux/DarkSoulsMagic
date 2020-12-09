@@ -7,16 +7,16 @@
     <h1 id="title">@config.info.websiteTitle</h1>
 </div>
 
-<div class="nav">
+<div class="nav @(collapsed ? "collapsed" : "")">
     <div class="nav-item px-3">
-        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+        <NavLink class="nav-link" href="" Match="NavLinkMatch.All" @onclick="@(e => collapsed = true)">
             <span class="oi oi-home" aria-hidden="true"></span> @config.info.homePageLinkLabel
         </NavLink>
     </div>
     @if (config.info.mechanicsPage)
     {
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="Mechanics" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="Mechanics" Match="NavLinkMatch.All" @onclick="@(e => collapsed = true)">
                 <span class="oi oi-wrench" aria-hidden="true"></span> @config.info.mechanicsPageLinkLabel
             </NavLink>
         </div>
@@ -24,7 +24,7 @@
     @if (config.info.worldPage)
     {
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="World" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="World" Match="NavLinkMatch.All" @onclick="@(e => collapsed = true)">
                 <span class="oi oi-globe" aria-hidden="true"></span> @config.info.worldPageLinkLabel
             </NavLink>
         </div>
@@ -32,7 +32,7 @@
     @if (config.info.draftArchetypesPage)
     {
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="DraftInfo" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="DraftInfo" Match="NavLinkMatch.All" @onclick="@(e => collapsed = true)">
                 <span class="oi oi-bar-chart" aria-hidden="true"></span> @config.info.draftArchetypesPageLinkLabel
             </NavLink>
         </div>
@@ -40,7 +40,7 @@
     @if (config.info.spoilerPage)
     {
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="Spoiler" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="Spoiler" Match="NavLinkMatch.All" @onclick="@(e => collapsed = true)">
                 <span class="oi oi-image" aria-hidden="true"></span> @config.info.spoilerPageLinkLabel
             </NavLink>
         </div>
@@ -48,7 +48,7 @@
     @if (config.info.tokenBasicSpoilerPage)
     {
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="TokenBasicSpoiler" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="TokenBasicSpoiler" Match="NavLinkMatch.All" @onclick="@(e => collapsed = true)">
                 <span class="oi oi-image" aria-hidden="true"></span> @config.info.tokenBasicSpoilerPageLinkLabel
             </NavLink>
         </div>
@@ -56,7 +56,7 @@
     @if (config.info.playPage)
     {
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="Play" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="Play" Match="NavLinkMatch.All" @onclick="@(e => collapsed = true)">
                 <span class="oi oi-loop-square" aria-hidden="true"></span> @config.info.playPageLinkLabel
             </NavLink>
         </div>
@@ -64,7 +64,7 @@
     @if (config.info.futurePage)
     {
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="Future" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="Future" Match="NavLinkMatch.All" @onclick="@(e => collapsed = true)">
                 <span class="oi oi-project" aria-hidden="true"></span> @config.info.futurePageLinkLabel
             </NavLink>
         </div>
@@ -72,9 +72,15 @@
     @if (config.info.creditsPage)
     {
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="Credits" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="Credits" Match="NavLinkMatch.All" @onclick="@(e => collapsed = true)">
                 <span class="oi oi-info" aria-hidden="true"></span> @config.info.creditsPageLinkLabel
             </NavLink>
         </div>
     }
 </div>
+
+<button id="nav-menu-toggle" class="buttons oi @(collapsed ? "oi-menu": "oi-x")" @onclick="@(e => collapsed = !collapsed)"></button>
+
+@code {
+    private bool collapsed = true;
+} 

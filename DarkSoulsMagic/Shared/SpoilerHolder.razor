@@ -16,7 +16,7 @@
                 string source = "/hlw_card_images/" + card.name + ".full.png";
 
                 <div class="individual-card-spoiler-info-holder">
-                    <div class="card-info-grid">
+                    <div class="@(usesFlex ? "" : "card-info-grid")">
                         @if (rendersHaveLargeHovers)
                         {
                             <CardTooltip CardName="@card.name" UseCardImage="true" ImageClass="spoiler-render" />
@@ -96,6 +96,9 @@
 
     [Parameter]
     public bool fullInfo { get; set; } = false;
+
+    [Parameter]
+    public bool usesFlex { get; set; } = false;
 
     [Parameter]
     public bool spaceBetween { get; set; } = false;

@@ -315,6 +315,7 @@ app {
 .spoiler-render {
     display: inline-block;
     margin-bottom: 15px;
+    grid-area: image;
 }
 
 .spoiler-holder .individual-card-spoiler-info-holder {
@@ -336,11 +337,17 @@ app {
     }
 
 .spoiler-holder.full-info .individual-card-info {
-    display: inline-block;
-    padding: 10px;
-    position: absolute;
-    margin-left: 20px;
-    width: 800px;
+    display: block;
+    padding-left: 15px;
+}
+
+.card-info-grid {
+    display: grid;
+    grid-template-areas: "image gap" "image info";
+    grid-template-rows: 10px 1.75rem 1fr;
+    grid-template-columns: 380px 1fr 20px;
+    height: 540px;
+    position: relative;
 }
 
 .power-toughness {
@@ -760,6 +767,11 @@ body.header-not-at-top .move-to-top {
             margin-left: auto;
             margin-right: auto;
         }
+
+    .card-info-grid {
+        display: block;
+        height: 400px;
+    }
 
     .credits-flex.mobile {
         display: flex;

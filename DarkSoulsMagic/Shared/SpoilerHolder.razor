@@ -16,65 +16,69 @@
                 string source = "/hlw_card_images/" + card.name + ".full.png";
 
                 <div class="individual-card-spoiler-info-holder">
-                    @if (rendersHaveLargeHovers)
-                    {
-                        <CardTooltip CardName="@card.name" UseCardImage="true" ImageClass="spoiler-render"/>
-                    }
-                    else
-                    {
-                        <img class="card-image spoiler-render" src=@source alt="@(card.name)" />
-                    }
-                    <div class="individual-card-info">
-                        <h3><strong>@card.name</strong></h3>
-                        <p><strong>@card.typeLine</strong></p>
-                        <p>@((MarkupString)formatRulesText(card.text))</p>
-                        @if (card.flavorText.Length > 0)
+                    <div class="card-info-grid">
+                        @if (rendersHaveLargeHovers)
                         {
-                            <hr />
-                            <p><i>@((MarkupString)formatFlavorText(card.flavorText))</i></p>
+                            <CardTooltip CardName="@card.name" UseCardImage="true" ImageClass="spoiler-render" />
                         }
-                        @if (card.typeLine.ToLower().Contains("creature"))
+                        else
                         {
-                            <h2 class="power-toughness">@card.power/@card.toughness</h2>
+                            <img class="card-image spoiler-render" src=@source alt="@(card.name)" />
                         }
-                        <div class="mana-cost">
-                            @{
-                                List<string> symbols = new List<string>();
-                                Match match = Regex.Match(card.manacost, @"^(?<generic>[0-9]*)(?<X>X*)(?<hybrid>(?:{[0-9A-Za-z]\/[0-9A-Za-z]})*)(?<else>[A-Za-z]*)");
-                                try
-                                {
-                                    symbols.Add(match.Groups["generic"].Value);
-                                }
-                                catch { };
-                                try
-                                {
-                                    for (int i = 0; i < match.Groups["X"].Length; i++)
-                                        symbols.Add("X");
-                                }
-                                catch { };
-
-                                try
-                                {
-                                    for (int i = 0; i < match.Groups["hybrid"].Length; i += 5)
+                        <div style="grid-area: info" class="individual-card-info">
+                            <h3><strong>@card.name</strong></h3>
+                            <div class="mana-cost">
+                                @{
+                                    List<string> symbols = new List<string>();
+                                    Match match = Regex.Match(card.manacost, @"^(?<generic>[0-9]*)(?<X>X*)(?<hybrid>(?:{[0-9A-Za-z]\/[0-9A-Za-z]})*)(?<else>[A-Za-z]*)");
+                                    try
                                     {
-                                        string sub = match.Groups["hybrid"].Value.Substring(i, 5);
-                                        symbols.Add(sub[1] + "" + sub[3]);
+                                        symbols.Add(match.Groups["generic"].Value);
+                                    }
+                                    catch { };
+                                    try
+                                    {
+                                        for (int i = 0; i < match.Groups["X"].Length; i++)
+                                            symbols.Add("X");
+                                    }
+                                    catch { };
+
+                                    try
+                                    {
+                                        for (int i = 0; i < match.Groups["hybrid"].Length; i += 5)
+                                        {
+                                            string sub = match.Groups["hybrid"].Value.Substring(i, 5);
+                                            symbols.Add(sub[1] + "" + sub[3]);
+                                        }
+                                    }
+                                    catch { };
+
+                                    try
+                                    {
+                                        for (int i = 0; i < match.Groups["else"].Length; i++)
+                                            symbols.Add(match.Groups["else"].Value.Substring(i, 1));
+                                    }
+                                    catch { };
+
+                                    foreach (string str in symbols)
+                                    {
+                                        <img src="@($"/mana_symbols/mana_{str}.png")" alt="@str" />
                                     }
                                 }
-                                catch { };
-
-                                try
+                            </div>
+                            <div>
+                                <p><strong>@card.typeLine</strong></p>
+                                <p>@((MarkupString)formatRulesText(card.text))</p>
+                                @if (card.flavorText.Length > 0)
                                 {
-                                    for (int i = 0; i < match.Groups["else"].Length; i++)
-                                        symbols.Add(match.Groups["else"].Value.Substring(i, 1));
+                                    <hr />
+                                    <p><i>@((MarkupString)formatFlavorText(card.flavorText))</i></p>
                                 }
-                                catch { };
-
-                                foreach (string str in symbols)
+                                @if (card.typeLine.ToLower().Contains("creature"))
                                 {
-                                    <img src="@($"/mana_symbols/mana_{str}.png")" alt="@str" />
+                                    <h2 class="power-toughness">@card.power/@card.toughness</h2>
                                 }
-                            }
+                            </div>
                         </div>
                     </div>
                 </div>

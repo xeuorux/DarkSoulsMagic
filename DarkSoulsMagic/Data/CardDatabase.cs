@@ -83,8 +83,6 @@ namespace Services.MagicSiteServices
             Console.WriteLine("LOADING XML");
 
             cards = new Dictionary<string, List<Card>>();
-            tokens = new List<Card>();
-            basics = new List<Card>();
 
             foreach(string xmlName in namesOfXMLs)
             {
@@ -188,17 +186,6 @@ namespace Services.MagicSiteServices
                         cardNumber = Card.cardCount++
                     };
 
-                    if (rarity == Rarity.noRarity)
-                    {
-                        if (typeLine.Contains("Basic Land"))
-                        {
-                            basics.Add(newCard);
-                        }
-                        else
-                        {
-                            tokens.Add(newCard);
-                        }
-                    }
                     newCards.Add(newCard);
                 }
             }

@@ -825,7 +825,7 @@ body.header-not-at-top .move-to-top {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
-        height: 18rem;
+        height: 14rem;
         margin-top: 20px;
     }
 

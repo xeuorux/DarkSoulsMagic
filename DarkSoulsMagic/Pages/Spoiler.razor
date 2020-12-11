@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <p id="advanced-options-button" @onclick="@(e => displayAdvanced = !displayAdvanced)">Advanced Options</p>
+                <p id="advanced-options-button" @onclick="@(e => displayAdvanced = !displayAdvanced)">Advanced Filters</p>
             </div>
 
             <div class="spoiler-inputs-box advanced-filters-flex" style="@(displayAdvanced ? "display: flex;" : "display: none;")">
@@ -151,6 +151,8 @@
                         <label for="rarity-@iLock"> <img style="width: 16px;" src="@($"rarity_symbols/rarity_{rarity.code}.png")" />@rarity.name</label>
                         <br />
                     }
+                    <input name="rarity-radio" type="radio" id="rarity-less" checked="@(raritySelection == Rarity.noRarity)" @onchange="@(() => raritySelection = Rarity.noRarity)" />
+                    <label for="rarity-less">Rarityless</label>
                 </div>
             </div>
         </div>
@@ -428,8 +430,9 @@
 
         private bool filteredOrNot(Card card)
         {
-            bool passesNotBasicFilter = !card.typeLine.ToLower().Contains("basic land");
-            bool passesNotTokenFilter = !card.typeLine.ToLower().Contains("token");
+            if (!displayAdvanced)
+                return true;
+
             bool passesNameFilter = String.IsNullOrEmpty(nameFilterText) || card.name.ToLower().Contains(nameFilterText.ToLower());
             bool passesTypelineFilter = String.IsNullOrEmpty(typelineFilterText) || card.typeLine.ToLower().Contains(typelineFilterText.ToLower());
             bool passesRulesTextFilter = String.IsNullOrEmpty(rulesTextFilterText) || card.text.ToLower().Contains(rulesTextFilterText.ToLower());
@@ -465,7 +468,7 @@
             //rarity
             bool passesRarityFilter = raritySelection == null || card.rarity == raritySelection;
 
-            return passesNotBasicFilter && passesNotTokenFilter && passesNameFilter && passesTypelineFilter && passesRulesTextFilter && passesFlavorTextFilter
+            return passesNameFilter && passesTypelineFilter && passesRulesTextFilter && passesFlavorTextFilter
                 && passedCMCFilter && passesPowerFilter && passesToughnessFilter && passesColorFilter && passesRarityFilter;
         }
 

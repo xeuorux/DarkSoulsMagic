@@ -3167,7 +3167,7 @@ T: Add U or B.
  <flavor-text></flavor-text>
 </card>
 <card>
- <name>HLW Plains</name>
+ <name>Plains</name>
  <set rarity="">HLW</set>
  <color></color>
  <manacost></manacost>
@@ -3178,7 +3178,7 @@ T: Add U or B.
  <flavor-text></flavor-text>
 </card>
 <card>
- <name>HLW Island</name>
+ <name>Island</name>
  <set rarity="">HLW</set>
  <color></color>
  <manacost></manacost>
@@ -3189,7 +3189,7 @@ T: Add U or B.
  <flavor-text></flavor-text>
 </card>
 <card>
- <name>HLW Swamp</name>
+ <name>Swamp</name>
  <set rarity="">HLW</set>
  <color></color>
  <manacost></manacost>
@@ -3200,7 +3200,7 @@ T: Add U or B.
  <flavor-text></flavor-text>
 </card>
 <card>
- <name>HLW Mountain</name>
+ <name>Mountain</name>
  <set rarity="">HLW</set>
  <color></color>
  <manacost></manacost>
@@ -3211,7 +3211,7 @@ T: Add U or B.
  <flavor-text></flavor-text>
 </card>
 <card>
- <name>HLW Forest</name>
+ <name>Forest</name>
  <set rarity="">HLW</set>
  <color></color>
  <manacost></manacost>

@@ -240,6 +240,10 @@ app {
         width: 202px;
     }
 
+#rarity label img {
+    margin-right: 4px;
+}
+
 #advanced-options-button {
     align-self: flex-end;
     color: #5f9ea0;

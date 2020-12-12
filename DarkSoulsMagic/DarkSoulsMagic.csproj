@@ -36,6 +36,9 @@
     <Content Update="wwwroot\images\set_symbol.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\website_info\rarities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\website_info\planeswalkers.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

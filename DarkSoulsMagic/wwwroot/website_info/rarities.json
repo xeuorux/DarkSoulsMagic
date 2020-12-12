@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Common",
+    "code": "C",
+    "backgroundHexcode": "#000000",
+    "index": 1
+  },
+  {
+    "name": "Uncommon",
+    "code": "U",
+    "backgroundHexcode": "#000000",
+    "index": 2
+  },
+  {
+    "name": "Rare",
+    "code": "R",
+    "index": 3,
+    "backgroundHexcode": "#000000"
+  },
+  {
+    "name": "Mythic",
+    "code": "M",
+    "backgroundHexcode": "#000000",
+    "index": 4
+  }
+]

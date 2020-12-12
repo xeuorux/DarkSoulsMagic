@@ -51,51 +51,29 @@ namespace MagicSite
 
     public class Rarity
     {
-        public string name
-        {
-            private set;
-            get;
-        }
-        public string code
-        {
-            private set;
-            get;
-        }
-        public string hexCode
-        {
-            private set;
-            get;
-        }
-        public int index
-        {
-            private set;
-            get;
-        }
-        private static int rarityCount = 0;
+        public string name { get; set; }
+        public string code { get; set; }
+        public string backgroundHexCode { get; set; }
+        public int index { get; set; }
 
-        private Rarity(string name, string code, string hexCode)
+        static Rarity()
         {
-            this.name = name;
-            this.code = code;
-            this.hexCode = hexCode;
-            this.index = rarityCount++;
+            string json = File.ReadAllText("wwwroot/website_info/rarities.json");
+            Rarities = JsonSerializer.Deserialize<Rarity[]>(json);
+            noRarity = new Rarity
+             {
+                 name = "None",
+                 code = "",
+                 backgroundHexCode = "#000000",
+                 index = 0
+             };
         }
-
-        private static Rarity[] rarities = new Rarity[]
-        {
-            new Rarity("Common", "C", "#000000"),
-            new Rarity("Uncommon", "U", "#000000"),
-            new Rarity("Rare", "R", "#000000"),
-            new Rarity("Mythic", "M", "#000000"),
-        };
         public static Rarity[] Rarities
         {
-            get
-            {
-                return rarities;
-            }
+            private set;
+            get;
         }
 
-        public static Rarity noRarity = new Rarity("None", "", "#000000");
+        public static Rarity noRarity;
     }
 }

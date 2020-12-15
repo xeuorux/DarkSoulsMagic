@@ -38,8 +38,8 @@
                 MechanicInfo info = mechanics[i];
                 <div class="mechanic-description @(i == selectedIndex ? "displayed" : "undisplayed")">
                     <div class="mechanic-description-body">
-                        <h3>
-                            @info.mechanicName
+                        <h3 class="header-with-mana">
+                            <span>@info.mechanicName</span>
                             @if (info.showColorsAsHybrid)
                             {
                                 string img = info.mechanicColorCodes.Aggregate((accumulation, newValue) => accumulation + newValue);
@@ -49,7 +49,7 @@
                             {
                                 foreach (string color in info.mechanicColorCodes)
                                 {
-                                    <img class="header-mana" src="mana_symbols/@($"mana_{color}.png")" />
+                                    <img src="mana_symbols/@($"mana_{color}.png")" />
                                 }
                             }
                         </h3>

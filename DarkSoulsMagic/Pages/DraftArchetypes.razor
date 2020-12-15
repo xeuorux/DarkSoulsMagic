@@ -21,7 +21,7 @@
         }
         else
         {
-            <div class="page-tab-selector">
+            <div class="page-tab-selector" id="archetype-selector">
                 @for (int i = 0; i < archetypes.Length; i++)
                 {
                     int iLock = i;
@@ -36,9 +36,9 @@
                 ArchetypeInfo info = archetypes[i];
                 <div class="archetype-description @(i == selectedIndex ? "displayed" : "undisplayed")">
                     <div class="archetype-description-body">
-                        <h3>
-                            @info.archetypeName
-                            <img class="header-mana" src="mana_symbols/@($"mana_{info.archetypeColorCode}.png")" />
+                        <h3 class="header-with-mana">
+                            <span>@info.archetypeName</span>
+                            <img src="mana_symbols/@($"mana_{info.archetypeColorCode}.png")" />
                         </h3>
                         <p>@info.archetypeDescription</p>
                         @{

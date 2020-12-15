@@ -1,9 +1,17 @@
 [
   {
+    "name": "The Lords",
+    "colorCode": "WUBRG",
+    "cardImageName": "Behold the Soul",
+    "description": "The Lords are the four beings who beheld the First Flame at the beginning of the Age of Fire. Once they took their share of the Flame's soul, they banded together to destroy the dragons who had dominated the world to that point. With the exception of the Furtive Pygmy, who shattered his soul to create humanity, the Lords used their souls to engineer vast kingdoms which they reigned over for thousands of years. The Lordran of today is formed from the decayed remnants of those kingdoms.",
+    "backgroundColorGold": true,
+    "showColorsAsHybrid": true
+  },
+  {
     "name": "The Knights of Gwyn",
     "colorCode": "WUBRG",
     "cardImageName": "Legacy of Knights",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "The Knights of Gwyn are the elite fighting force of Gwyn's royal family, each of whom is famed for their prowess in battle, and each of whom has many followers of their own.",
     "backgroundColorGold": true,
     "showColorsAsHybrid": true
   },
@@ -11,15 +19,15 @@
     "name": "Darkmoon Knights",
     "colorCode": "WU",
     "cardImageName": "Darkmoon Avenger",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "The gods' enemies are many, and with the search for the Chosen Undead becoming more and more desparate, anyone who threatens the path of the pilgrims must be destroyed. The Darkmoon Knights serve Gwyndolin, God of the Moon, who dispatches them to protect adventurers--any one of whom may turn out to be just the Undead he needs.",
     "backgroundColorGold": false,
-    "showColorsAsHybrid": false
+    "showColorsAsHybrid": true
   },
   {
-    "name": "Vinheim Dragon School",
+    "name": "Vinheim School",
     "colorCode": "UB",
     "cardImageName": "Vinheim Agent",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "No high-class education is complete without study at a school of sorcery, and Vinheim School is the most prestigious of them all. Your average student will master the creation of magical bolts, or the enchanting of weapons and armor. Keen students might take an interest in the spells which muffle sound, or obscure the caster. For what purpose? Those reasons are kept under lock and key.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
   },
@@ -27,15 +35,15 @@
     "name": "Chaos Demons",
     "colorCode": "BR",
     "cardImageName": "Capra Demon",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "The Witch of Izalith, master of fire sorcery and founder of the grand city of Izalith, could not just resign herself to the fate of the First Flame. She attempted the impossible, to light a new Flame of Life to replace the old, dying one. Her attempt was a terrible success. This new flame went out of control, becoming the Chaos Flame, a forge which endlessly churns out the disfigured demons.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
   },
   {
     "name": "Dragon-Path",
-    "colorCode": "GR",
+    "colorCode": "RG",
     "cardImageName": "Student of the Dragon-Path",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Long ago, the God's killed all the dragons... or so the stories say. The truth, as always, is more complex. With the god's power waning, the small number of survivors of the ancient war can show themselves at the world's edge. The members of the Dragon-Path are those who forsake their humanity, and seek enlightenment through study and imitation of these living fossils.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
   },
@@ -43,7 +51,7 @@
     "name": "Pyromancy Sages",
     "colorCode": "RG",
     "cardImageName": "Pyromantic Shaman",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "This world is alive with fire, and so all who worship nature also must worship fire. The Pyromancy Sages are students of pyromancy, an ancient art passed down among the tribes of the Great Swamp. Some sages have made the trek to Lordran chasing legends of Izalith, said to be the original birthplace of pyromancy.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
   },
@@ -51,7 +59,7 @@
     "name": "Servants of the Fair Lady",
     "colorCode": "BG",
     "cardImageName": "Servant of the Fair Lady",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Only those with nowhere else to go end up in Blighttown, a ramshackle settlement situated at the bottom of Lordran's massive sewer system. Naturally, it's rife with disease. A demon of Izalith (known only as \"The Fair Lady\" by her followers) took pity on the sorry state of Blighttown's denizens, and took their poisons into herself. Her reward? More warm bodies to near her eggs.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
   },
@@ -59,7 +67,7 @@
     "name": "Warriors of Sunlight",
     "colorCode": "RW",
     "cardImageName": "Warrior of Sunlight",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "The Warriors of Sunlight worship both the sun-god Gwyn and his apostate firstborn son (whose name has been lost to history). Bedight with shining armor, and weilding the lightning miracles, they join forces to fight their gods' enemies with a zeal unmatched across Lordran.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
   },
@@ -67,8 +75,8 @@
     "name": "Darkroot Hunters",
     "colorCode": "GU",
     "cardImageName": "Darkroot Tracker",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "The Darkroot Huners are a tight-knit band of rangers who make their home in the Darkroot Forest. They protect the grave of Artorias by way of ambush and subterfuge. Their members are loyal, cunning, and skilled at haggling for loot.",
     "backgroundColorGold": false,
-    "showColorsAsHybrid": true
+    "showColorsAsHybrid": false
   }
 ]

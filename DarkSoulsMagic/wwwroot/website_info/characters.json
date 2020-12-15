@@ -1,25 +1,25 @@
 [
   {
-    "name": "Gwyn, Lord of Sunlight",
+    "name": "Lord Gwyn",
     "colorCode": "RW",
     "cardImageName": "Gwyn, Lord of Sunlight",
-    "description": "IT'S GWYN BABEYYYY",
+    "description": "Father of the Lordran pantheon, Gwyn is a very powerful entity indeed. He holds the Light Soul, one of the four \"Lord Souls\", powerful essences recovered at the birthplace of the First Flame. He weilds lightning, and commands vast armies of loyal knights. For thousands of years he ruled Lordran, but when the First Flame threatened to go out for good, he left to revive it with his own soul.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
   },
   {
-    "name": "Manus, Father of the Abyss",
-    "colorCode": "GB",
+    "name": "Manus",
+    "colorCode": "BG",
     "cardImageName": "Manus, Father of the Abyss",
-    "description": "IT'S MANUS BABEYYYY",
+    "description": "An ancient human, he was reanimated by the envious magicians of Oolacile, who sought to steal his soul. Enraged, the dark energy within Manus went wild and began to consume everything around it, creating the pitch black realm of corruption known as The Abyss.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
   },
   {
-    "name": "Seath, Scaleless Betrayer",
+    "name": "Seath",
     "colorCode": "U",
     "cardImageName": "Seath, Scaleless Betrayer",
-    "description": "IT'S SEATH BABEYYYY",
+    "description": "Seath is an ancient dragon, but the only one born without those dragons' trademark stone scales of immortality. After betraying his kin to assist Gwyn, he was given a dukedom. He's spent the millenia since then tirelessly experimenting on how to achieve the immortality he felt was his birthright.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
   },
@@ -27,7 +27,7 @@
     "name": "Artorias",
     "colorCode": "B",
     "cardImageName": "Artorias, Abyss-Stricken",
-    "description": "IT'S ARTORIAS BABEYYYY",
+    "description": "The most righteous knight of Gwyn, who took on The Abyss by himself. Determined to save the people of Oolacile, he discovered the power of \"Abyss Walking\" which allowed him to enter The Abyss unscathed. Or so he thought...despite his bravery he was corrupted, and driven mad. His great wolf Sif guards his forested gravestone to this day, protecting it from would-be graverobbers.",
     "backgroundColorGold": false,
     "showColorsAsHybrid": false
   }

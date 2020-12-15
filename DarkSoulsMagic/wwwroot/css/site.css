@@ -392,45 +392,17 @@ hr {
 
     .mechanics-and-themes .mechanics-and-themes-feature h3 {
         text-align: center;
+        text-align: center;
         margin-bottom: 20px;
     }
 
-h3 .header-mana {
+.header-with-mana span {
+    margin-right: 10px;
+}
+
+.header-with-mana img {
     width: 28px;
 }
-
-.color-pie-entry {
-    width: 800px;
-    border: none;
-    margin: auto;
-    border-radius: 20px;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 100%;
-    flex-wrap: wrap;
-    padding: 30px 15px;
-    grid-row-gap: 20px;
-}
-
-    .color-pie-entry:nth-child(odd) {
-        flex-direction: row-reverse;
-    }
-
-    .color-pie-entry .card-image {
-        width: 300px;
-        box-shadow: 0px 0px 20px 0px #222;
-    }
-
-    .color-pie-entry .color-pie-entry-info {
-        display: inline-block;
-        width: 400px;
-    }
-
-        .color-pie-entry .color-pie-entry-info h4 {
-            text-align: center;
-        }
 
 .footer {
     width: 1000px;
@@ -717,29 +689,38 @@ body.header-not-at-top .move-to-top {
     grid-row-gap: 12px;
 }
 
-.big-download-link {
+.download-link.small {
+    font-size: 20px;
+    padding: 8px 14px;
+    border-radius: 10px;
+}
+
+.download-link.big {
     font-size: 32px;
     padding: 16px 30px;
-    background-color: #266d06;
     border-radius: 10px;
+}
+
+.download-link {
+    background-color: #266d06;
     color: white;
     border: 2px solid #76c176;
 }
 
-    .big-download-link:hover {
+    .download-link:hover {
         color: white;
         text-decoration: none;
     }
 
-    .big-download-link:not([href='']):hover {
+    .download-link:not([href='']):hover {
         background-color: #297805;
     }
 
-    .big-download-link:not([href='']):active {
+    .download-link:not([href='']):active {
         background-color: #319106;
     }
 
-    .big-download-link[href=''] {
+    .download-link[href=''] {
         background-color: #bbc1b8;
         border-color: #d6dad6;
         cursor: initial;
@@ -748,6 +729,7 @@ body.header-not-at-top .move-to-top {
     }
 
 @media (max-width: 767.98px) {
+
     .individual-card-info {
         display: none !important;
     }
@@ -812,13 +794,7 @@ body.header-not-at-top .move-to-top {
         justify-content: center;
     }
 
-    .color-pie-entry {
-        flex-wrap: wrap !important;
-    }
-
-    .color-pie-entry-info h3 {
-        text-align: center;
-    }
+    
 
     .top-row {
         padding-left: 0px;
@@ -892,4 +868,53 @@ body.header-not-at-top .move-to-top {
     .credits-flex:not(.mobile) {
         display: flex;
     }
+}
+
+.world-entry {
+    width: 800px;
+    border: none;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 30px 15px;
+    grid-row-gap: 20px;
+}
+
+    .world-entry:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .world-entry .card-image {
+        width: 300px;
+        box-shadow: 0px 0px 20px 0px #222;
+    }
+
+.world-entry-info {
+    display: inline-block;
+    width: 400px;
+}
+
+    .world-entry-info h4 {
+        text-align: center;
+    }
+
+
+@media (max-width: 767.98px) {
+
+    .world-entry {
+        flex-wrap: wrap !important;
+    }
+
+    .world-entry-info {
+        width: auto !important;
+    }
+
+        .world-entry-info h3 {
+            text-align: center;
+        }
 }

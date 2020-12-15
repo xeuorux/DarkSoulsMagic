@@ -1,12 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>9c3a9d3b-4450-428a-9afa-3f9ebb662be3</UserSecretsId>
+    <Authors>Kyle Chapman</Authors>
+    <Product />
+    <StartupObject>MagicSite.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="Pages\CardTooltip.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Shared\WorldSection.razor.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

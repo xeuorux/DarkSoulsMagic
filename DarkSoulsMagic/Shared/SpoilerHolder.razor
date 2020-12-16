@@ -108,9 +108,9 @@
 
     private string formatRulesText(string text)
     {
-        string reminderTextItalicized = Regex.Replace(text, "\\([^\\(\\)]+\\)", (e => "<span style=\"font-style: italic;\">" + e + "</span>"));
+        string reminderTextItalicized = Regex.Replace(text, @"\([^\(\)]+\)", (e => "<span style=\"font-style: italic;\">" + e + "</span>"));
         string newLinesInserted = Regex.Replace(reminderTextItalicized, "\\n", (e => "<br/>"));
-        string pseudosItalicized = Regex.Replace(newLinesInserted, "(^.*) ?—", (e => $"<span style=\"font-style: italic;\">{e.Groups[0].Value}</span>"));
+        string pseudosItalicized = Regex.Replace(newLinesInserted, @"^(?!.*\b[Cc]hoose.*).*( —)", (e => $"<span style=\"font-style: italic;\">{e.Groups[0].Value}</span>"));
 
         return pseudosItalicized;
     }

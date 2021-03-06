@@ -38,15 +38,18 @@
         <button class="@(selectedIndex == 2 ? "active" : "")" @onclick="@(e => selectedIndex = 2)">
             Make Booster Packs
         </button>
+        <button class="@(selectedIndex == 3 ? "active" : "")" @onclick="@(e => selectedIndex = 3)">
+            Draft Online
+        </button>
     </div>
 
     @if (selectedIndex == 0)
     {
         <div class="content-box">
-            <h4>What is Cockatrice?</h4>
+            <h3>What is Cockatrice?</h3>
             <p>Cockatrice is an open-source, multiplatform program for playing tabletop card games over a network. It supports playing custom cards! If you and your opponent both have Hollows of Lordran installed, you can easily play games using its cards either on their own or alongside canon cards!</p>
             <p><a href="">Download Cockatrice</a></p>
-            <h4>Download Files for Cockatrice</h4>
+            <h3>Download Files for Cockatrice: Main Set and Commander Expansion</h3>
             <h5>Version 1.32</h5>
             <div class="big-download-links-holder">
                 <a href="downloads/HLW_1.32 Loose.zip" class="download-link big" download>Download Loose Files</a>
@@ -58,18 +61,13 @@
     @if (selectedIndex == 1)
     {
         <div class="content-box">
-            <h4>Printing Guide</h4>
+            <h3>Printing Guide</h3>
             <p>If you want to play with the cards physically, download the PDFs below and print each out on letter size paper. Cut each card out either by hand or with a paper cutter. If printed on copy paper, you can give them stiffness by sleeving up basic lands or other worthless cards in plastic sleeves, and put the printed cards inside also into the sleeve in front. Using them in sleeves also allows you to play these cards alongside official cards if you so wish.</p>
             <p>For an easy way simulate a draft environment, we recommend printing 4 copies of the common sheet, 2 copies of the uncommons sheet, and 1 copy each of the rare, mythic, and hollow tokens sheets. Print as many of the basics and tokens sheets as you think you'll need. Then, use the booster pack generator in the "Make Booster Packs" tab to help you create realistic booster packs! If you can't make them exactly perfect due to too many of 1 card or another, don't worry.</p>
-            <h4>Download Print Sheets</h4>
+            <h3>Download Print Sheets</h3>
             <h5>Version 1.32</h5>
             <div class="big-download-links-holder">
-                <a href="downloads/HLW32Commons.pdf" class="download-link small" download>Download Commons</a>
-                <a href="downloads/HLW32Uncommons.pdf" class="download-link small" download>Download Uncommons</a>
-                <a href="downloads/HLW32Rares.pdf" class="download-link small" download>Download Rares</a>
-                <a href="downloads/HLW32Mythics.pdf" class="download-link small" download>Download Mythics</a>
-                <a href="downloads/HLW32BasicsTokens.pdf" class="download-link small" download>Download Basics and Tokens</a>
-                <a href="downloads/HLW32BasicsTokens.pdf" class="download-link small" download>Download Hollow Tokens</a>
+                <a href="downloads/HLW_1.32 Pdf.zip" class="download-link big" download>Download Print Sheets</a>
             </div>
         </div>
     }
@@ -89,7 +87,7 @@
                     {
                         if (info.boosterPackSlot != null)
                         {
-                            <button @onclick="@(e => GeneratePackWithRestrictions(info))">@((spoilers.Count() == 1 ? "Make Pack" : info.spoilerName))</button>
+                            <button @onclick="@(e => GeneratePackWithRestrictions(info))">@((spoilers.Where(e => e.boosterPackSlot != null).Count() == 1 ? "Make Pack" : $"Make {info.spoilerName} Pack"))</button>
                         }
                     }
                 </div>
@@ -115,6 +113,25 @@
 
             <SpoilerHolder holderClass="booster-pack left" cards="@generatedPack" fullInfo="false" rendersHaveLargeHovers="true" usesFlex="true" />
         }
+    }
+
+    @if (selectedIndex == 3)
+    {
+        <div class="content-box">
+            <h3>Planesculptors</h3>
+            <p>Online drafting of Hollows of Lordran is done with <a href="http://www.planesculptors.net/">Planesculptors</a>.</p>
+            <h4>Online drafting instructions:</h4>
+            <ol>
+                <li>Click the "Login" link on the top right of the site. If you don't have an account, make one. Log into the site.</li>
+                <li>Once logged in, click the "Host Event" link also on the top right. Select which format you'd like to play -- For 7 or more players I recommend "Sealed deck", otherwise "Booster draft".</li>
+                <li>Either scroll down the list until you find Hollows of Lordran, or use CTRL+F to search for it.</li>
+                <li>For "Booster draft" press the "Add 3x" on the left of Hollows of Lordran's entry once. For "Sealed deck" press it twice.</li>
+                <li>Scroll back to the top of the page, and press "Open the event"</li>
+                <li>Copy the provided link and send it out to all interested players. Also make sure to join "Join as a player" if you will be playing!</li>
+                <li>Once all players have joined, press "Start event"</li>
+                <li>Once the draft or sealed deckbuilding is complete, each player should click "Export deck" on the top bar of the deckbuilding area to get a copy-pasteable list of their cards to use in Cockatrice (See the Digital Play tab of this page)</li>
+            </ol>
+        </div>
     }
 }
 

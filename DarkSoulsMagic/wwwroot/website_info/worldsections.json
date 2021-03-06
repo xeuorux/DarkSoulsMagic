@@ -1,5 +1,10 @@
 [
   {
+    "sectionName": "World",
+    "sectionDescription": "",
+    "sectionJSONName": "world"
+  },
+  {
     "sectionName": "Factions",
     "sectionDescription": "",
     "sectionJSONName": "factions"
@@ -13,5 +18,10 @@
     "sectionName": "Planeswalkers",
     "sectionDescription": "",
     "sectionJSONName": "planeswalkers"
+  },
+  {
+    "sectionName": "Story",
+    "sectionDescription": "",
+    "sectionJSONName": "story"
   }
 ]

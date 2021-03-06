@@ -45,6 +45,12 @@
     <Content Update="wwwroot\images\set_symbol.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\website_info\story.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\website_info\world.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\website_info\rarities.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Fade to Ash",
+    "colorCode": "W",
+    "cardImageName": "Fade to Ash",
+    "description": "The First Flame, the flame that sustains the life force of all of Lordran, has been slowly fading for millenia. Most of the gods have fled or gone into hiding, a curse of undeath spreads among humanity, and the 'Age of Fire' now seems to be coming to its final days.",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Imprisoned Hollow",
+    "colorCode": "W",
+    "cardImageName": "Imprisoned Hollow",
+    "description": "Yet there is hope in the most unexpected of places. The accursed Undead, who have been persecuted and imprisoned for centuries, may hold the key to saving the world. Hundreds of Undead leave towards the old kingdom to begin the 'undead pilgrimage', a series of challenges said to end in discovering the cure for their curse.",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": true
+  },
+  {
+    "name": "Chosen by the Lords",
+    "colorCode": "W",
+    "cardImageName": "Chosen by the Lords",
+    "description": "For the first time, an Undead succeeds in braving all the trials of the pilgrimage. It is revealed that the trials were created by the gods to choose a worthy successor for Lord Gwyn, the chief god of the Lordran pantheon. This 'Chosen Undead' is now tasked with defeating 4 beings of great power, to increase their strength enough to unlock the massive kiln which holds the First Flame.",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": true
+  },
+  {
+    "name": "Gwyn's Defeat",
+    "colorCode": "R",
+    "cardImageName": "Gwyn's Defeat",
+    "description": "Lord Gwyn has stood vigil over the First Flame for hundreds of years, feeding it with his soul to slow its inevitable decay. The Chosen Undead, having amassed the souls of 4 powerful beings, defeats Gwyn after a final battle. The Chosen Undead now finds themselves face to face with the faded First Flame, with an opportunity to decide the fate of the world.",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": true
+  },
+  {
+    "name": "Linking the Flame",
+    "colorCode": "R",
+    "cardImageName": "Linking the Flame",
+    "description": "In the canon ending to the game, the Chosen Undead chooses to sacrifice themselves to the First Flame, bringing life back to the world and beginning the Age of Fire anew. The undead curse ends, and all is prosperous, at least for now.",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": true
+  },
+  {
+    "name": "Reign of the Dark Lord",
+    "colorCode": "B",
+    "cardImageName": "Reign of the Dark Lord",
+    "description": "In the game's secret ending, an ancient serpent convinces the Chosen Undead that the Age of Fire should be allowed to end, replaced by a new 'Age of Dark', where humans would rule instead of the gods.",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": true
+  }
+]

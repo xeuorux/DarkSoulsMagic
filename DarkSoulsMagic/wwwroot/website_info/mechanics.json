@@ -15,14 +15,14 @@
   },
   {
     "mechanicName": "Desperation",
-    "mechanicDescription": "Desperation allows you to exploit weaknesses in your opponents defense, or to grind out advantage by trading your despairing creatures for something else. Desperation represents the ricks necessary to even try and get what you want in Lordran.",
+    "mechanicDescription": "Desperation allows you to exploit weaknesses in your opponents defense, or to grind out advantage by trading your despairing creatures for something else. Desperation represents the risks necessary to even try and get what you want in Lordran.",
     "mechanicFeatures": [ "Ruin Delver", "Heir of Chaos", "Stranded Hydra" ],
     "mechanicColorCodes": [ "B", "R", "G" ],
     "showColorsAsHybrid": false
   },
   {
     "mechanicName": "Equipment",
-    "mechanicDescription": "Each color can show off its own unique style with equipment! Lordran is an ancient land which has seen its fair share of wars and invasions, each bringing new groups their own unique arms and armor.",
+    "mechanicDescription": "Each color can show off its own unique style with equipment! Lordran is an ancient land which has seen its fair share of wars and invasions, each bringing new groups with their own unique arms and armor.",
     "mechanicFeatures": [ "Heavy Iron Armor", "Crystalline Armor", "Quelaag's Furysword" ],
     "mechanicColorCodes": [ "W", "U", "B", "R", "G" ],
     "showColorsAsHybrid": false

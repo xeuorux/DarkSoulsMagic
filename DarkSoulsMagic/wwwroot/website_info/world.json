@@ -1,0 +1,34 @@
+[
+  {
+    "name": "The First Flame",
+    "colorCode": "",
+    "cardImageName": "The First Flame",
+    "description": "A mysterious and powerful energy which appeared in the world during the Age of Ancients, and led to the beginning of the Age of Fire. But now, thousands of years later, the First Flame is dieing out and the world suffers the consequences.",
+    "backgroundColorGold": true,
+    "showColorsAsHybrid": true
+  },
+  {
+    "name": "The Lords",
+    "colorCode": "",
+    "cardImageName": "Behold the Soul",
+    "description": "The Lords are the four beings who beheld the First Flame at the beginning of the Age of Fire. Once they took their share of the Flame's soul, they banded together to destroy the dragons who dominated the world. With the exception of the Furtive Pygmy, who shattered his soul to create humanity, the Lords used their souls to craft vast kingdoms over which they reigned for thousands of years. The Lordran of today is formed from the decayed remnants of those kingdoms.",
+    "backgroundColorGold": true,
+    "showColorsAsHybrid": true
+  },
+  {
+    "name": "The Undead Curse",
+    "colorCode": "",
+    "cardImageName": "Brand with Undeath",
+    "description": "The consequences of the dieing First Flame are not limited to the gods and their kingdoms, but the very flesh of humanity as well. In these twilight days, the undead curse spreads. These 'undead' are reanimated each time they die, going madder and madder each time until they finally rise as a mindless 'Hollow' motivated only by hunger for souls.",
+    "backgroundColorGold": true,
+    "showColorsAsHybrid": true
+  },
+  {
+    "name": "The Search for the Chosen Undead",
+    "colorCode": "",
+    "cardImageName": "Seeker of the Cure",
+    "description": "Gwyndolin, the only child of Lord Gwyn who remains in the capital, maintains a quest to find a suitable heir for his father at his place tending to the First Flame. To this end he spreads rumors of a prophesy of a cure to the undead curse, to spur the outcast undead to travel to Lordran. Hopefully one of them can reclaim the souls of the lost Lords, and prove themselves worthy.",
+    "backgroundColorGold": true,
+    "showColorsAsHybrid": true
+  }
+]

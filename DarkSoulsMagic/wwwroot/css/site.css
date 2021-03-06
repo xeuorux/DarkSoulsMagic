@@ -18,7 +18,7 @@ p {
 }
 
 a, .btn-link {
-    color: #0366d6;
+    /* color: #0366d6; */
 }
 
 .btn-primary {
@@ -47,6 +47,7 @@ app {
 .top-title-and-logo {
     margin: 0px auto;
     margin-bottom: 10px;
+    cursor: pointer
 }
 
 .top-row {

@@ -13,7 +13,7 @@
     "cardImageName": "Darkmoon Avenger",
     "description": "The gods' enemies are many, and with the search for the Chosen Undead becoming more and more desparate, anyone who threatens the path of the pilgrims must be destroyed. The Darkmoon Knights serve Gwyndolin, God of the Moon, who dispatches them to protect adventurers--any one of whom may turn out to be just the Undead he needs.",
     "backgroundColorGold": false,
-    "showColorsAsHybrid": true
+    "showColorsAsHybrid": false
   },
   {
     "name": "Vinheim School",

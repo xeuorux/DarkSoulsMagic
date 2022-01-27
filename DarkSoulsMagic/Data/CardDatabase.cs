@@ -97,16 +97,18 @@ namespace Services.MagicSiteServices
                 {
                     string cardName = element.Descendants("name").First().Value;
 
-                    string rarityString = "";
                     Rarity rarity = Rarity.noRarity;
                     try
                     {
-                        rarityString = element.Descendants("set").First().Attribute("rarity").Value;
-                        rarity = Rarity.Rarities.Where(e => e.name.ToLower().Equals(rarityString)).First();
+                        XAttribute rarityAttribute = element.Descendants("set").First().Attribute("rarity");
+                        if (rarityAttribute != null)
+                        {
+                            rarity = Rarity.Rarities.Where(e => e.name.ToLower().Equals(rarityAttribute.Value)).First();
+                        }
                     }
                     catch (Exception e)
                     {
-                        //Console.Error.Write(e);
+                        Console.Error.Write(e);
                     }
                     Color[] colors = ParseColors(element.Descendants("color").First().Value);
                     String manaCost = "";

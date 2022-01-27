@@ -1,3 +1,5 @@
+/* This is a test comment */
+
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
@@ -691,6 +693,7 @@ body.header-not-at-top .move-to-top {
 
 .big-download-links-holder {
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     grid-column-gap: 20px;
@@ -735,6 +738,10 @@ body.header-not-at-top .move-to-top {
         pointer-events: none;
         color: #7c8c74;
     }
+
+li img {
+    display: block;
+}
 
 @media (max-width: 767.98px) {
     .header-with-mana {
@@ -946,4 +953,8 @@ body.header-not-at-top .move-to-top {
         .world-entry-info h3 {
             /* text-align: center; */
         }
+
+    li img {
+        display: none;
+    }
 }

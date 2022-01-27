@@ -1,0 +1,3919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cockatrice_carddatabase version="3">
+<sets>
+<set>
+<name>RAK</name>
+<longname>Rakoa</longname>
+<settype>Custom</settype>
+</set>
+</sets>
+<cards>
+
+<card>
+ <name>Bloodfeud Aumakua</name>
+ <set rarity="uncommon">RAK</set>
+ <color></color>
+ <manacost>4</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Shark Spirit </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Whenever Bloodfeud Aumakua attacks, each opponent loses 3 life unless they discard a card.</text>
+ <flavor-text>“The ancestors seek vengeance. That is all the protection we need.”
+—Okaboro, the Thresher</flavor-text>
+</card>
+<card>
+ <name>Deed-Mark Ancestor</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>2</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Spirit Cleric </type>
+ <pt>2/1</pt>
+ <tablerow>2</tablerow>
+ <text>When Deed-Mark Ancestor enters the battlefield, reveal the top six cards of your library. You may reveal a Tattoo card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Familial Aumakua</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>5</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Bird Spirit </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+As Familial Aumakua enters the battlefield, choose a color.
+Familial Aumakua is the chosen color.</text>
+ <flavor-text>Clans across Rakoa choose the owl as their ancestral animal.</flavor-text>
+</card>
+<card>
+ <name>Honor-Bound Honu</name>
+ <set rarity="uncommon">RAK</set>
+ <color></color>
+ <manacost>3</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Spirit Turtle </type>
+ <pt>1/4</pt>
+ <tablerow>2</tablerow>
+ <text>When Honor-Bound Honu enters the battlefield, scry 1.
+Whenever you cast a Tattoo spell, scry 1, then draw a card.</text>
+ <flavor-text>Your markings trace your past, its markings trace your future.</flavor-text>
+</card>
+<card>
+ <name>Underworld Spirit</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>3</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Spirit </type>
+ <pt>3/2</pt>
+ <tablerow>2</tablerow>
+ <text></text>
+ <flavor-text>The 17 realms of the underworld are guarded by a series of monsters, each stronger and crueler than the last. Most consider it lucky, then, that escapees are almost always from the first few layers.</flavor-text>
+</card>
+<card>
+ <name>Abandoned Sanctuary</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>3W</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Turtle </type>
+ <pt>2/6</pt>
+ <tablerow>2</tablerow>
+ <text></text>
+ <flavor-text>“Did you know that our family is the last to live on turtles? Long ago, everyone lived like us, because there was no land in the entire ocean. But then the gods created islands, and most people left their turtles behind.”
+—Kawelo, to her grandchildren</flavor-text>
+</card>
+<card>
+ <name>Assemble the Voyagers</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>3W</manacost>
+ <cmc>4</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Create two 2/2 white Warrior creature tokens.</text>
+ <flavor-text>When the day finally came, Oteo’s hard work paid off. From each corner of Rakoa came boats carrying warriors, navigators, and priests—the heroes of the great voyage.</flavor-text>
+</card>
+<card>
+ <name>Avatar of the Expanse</name>
+ <set rarity="mythic">RAK</set>
+ <color>W</color>
+ <manacost>2WWW</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Avatar </type>
+ <pt>4/5</pt>
+ <tablerow>2</tablerow>
+ <text>Vigilance
+Whenever Avatar of the Expanse or a Plains enters the battlefield under your control, put a +1/+1 counter on each other creature you control.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Beach the Behemoth</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Exile target creature with power 4 or greater.</text>
+ <flavor-text>When a dragon reaches the end of its life, it finds a beach to rest on until it turns to sand.</flavor-text>
+</card>
+<card>
+ <name>Blessing of Prosperity</name>
+ <set rarity="rare">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+Enchanted land has “T: Create a Food token.” (It’s an artifact with “2, T, Sacrifice this artifact: You gain 3 life.”)</text>
+ <flavor-text>“Crafting the land is an investment: We work our magic, and years later return to harvest the reward.”</flavor-text>
+</card>
+<card>
+ <name>Broken Grove Companions</name>
+ <set rarity="rare">RAK</set>
+ <color>W</color>
+ <manacost>2WW</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Human Warrior Spirit </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Double strike
+Ward—Tap two untapped creatures you control. (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player taps two untapped creatures they control.)</text>
+ <flavor-text>Spear and tooth defend the grove, ensuring that Reko’s conquests will never be forgotten.</flavor-text>
+</card>
+<card>
+ <name>Craftland Dwelling</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>2W</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+When Craftland Dwelling enters the battlefield, create a 2/2 white Warrior creature token.
+Enchanted land has “T: You gain 1 life.”</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Devourer Tanifa</name>
+ <set rarity="rare">RAK</set>
+ <color>W</color>
+ <manacost>5WW</manacost>
+ <cmc>7</cmc>
+ <type>Creature - Spirit Leviathan </type>
+ <pt>5/5</pt>
+ <tablerow>2</tablerow>
+ <text>Flash
+When Devourer Tanifa enters the battlefield, if you cast it, exile all tapped creatures until Devourer Tanifa leaves the battlefield.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Elipo Ono Sentinel</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>3W</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Elf Warrior </type>
+ <pt>4/3</pt>
+ <tablerow>2</tablerow>
+ <text>Homeland — When Elipo Ono Sentinel enters the battlefield, if you control three or more Plains, you gain 4 life.</text>
+ <flavor-text>“Take this spear, and move to the north coast.” Koe said to the warrior.
+Hau continued: “Keep your wits about you—the forest smells of danger.”</flavor-text>
+</card>
+<card>
+ <name>Foretold Renewal</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>3W</manacost>
+ <cmc>4</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Destroy all enchantments.</text>
+ <flavor-text>“Fret not, young ones. Soon we will have the opportunity to begin anew.”
+—Aalona, to her earthcrafter students</flavor-text>
+</card>
+<card>
+ <name>Koe and Hau, Sentinels</name>
+ <set rarity="mythic">RAK</set>
+ <color>W</color>
+ <manacost>3WW</manacost>
+ <cmc>5</cmc>
+ <type>Legendary Planeswalker - Koe Hau </type>
+ <loyalty>5</loyalty>
+ <tablerow>1</tablerow>
+ <text>[+1]: Put a +1/+1 counter on each of up to two target creatures. Those creatures can’t attack you or a planeswalker you control until your next turn.
+[-2]: Create two 2/2 white Warrior creature tokens.
+[-7]: You get an emblem with “At the beginning of combat on your turn, put a +1/+1 counter on each creature you control and a loyalty counter on each planeswalker you control.”     </text>
+</card>
+<card>
+ <name>Level the Landscape</name>
+ <set rarity="rare">RAK</set>
+ <color>W</color>
+ <manacost>2W</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Each player chooses any number of creatures they control with total power less than or equal to the number of lands they control, then sacrifices all other creatures they control.
+Plainscycling 2 (2, Discard this card: Search your library for a Plains card, reveal it, put it into your hand, then shuffle.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Light of the Sky Gods</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Tap up to two target creatures.
+Awaken 2—3W (If you cast this spell for 3W, also put two +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Mighty Leap</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Target creature gets +2/+2 and gains flying until end of turn.</text>
+ <flavor-text>Skywhales are born in the water. When they reach adulthood, they breach the ocean surface at great speed, and take their place in the sky.</flavor-text>
+</card>
+<card>
+ <name>New-Shore Claimer</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Human Scout </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>When New-Shore Claimer enters the battlefield, if an opponent controls more lands than you, you may search your library for a Plains card, reveal it, put it into your hand, then shuffle.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Omalu Diplomat</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>W</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Human Noble </type>
+ <pt>1/2</pt>
+ <tablerow>2</tablerow>
+ <text>Vigilance
+Homeland — Broken Grove Guardians gets +1/+1 as long as you control three or more Plains.</text>
+ <flavor-text>She travels wide Omalu, meeting an even wider variety of people.</flavor-text>
+</card>
+<card>
+ <name>Omalu Guide</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>2W</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Warrior </type>
+ <pt>3/2</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+As long as you control Paradise, Omalu Guide gets +2/+2 and has vigilance.</text>
+ <flavor-text>“We will make them proud.”</flavor-text>
+</card>
+<card>
+ <name>Omalu Prince</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>2W</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Noble </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Homeland — Whenever Omalu Prince attacks, if you control three or more Plains, tap target creature an opponent controls.</text>
+ <flavor-text>“If you have any respect, you will bow in my presence.”</flavor-text>
+</card>
+<card>
+ <name>Oteo's Homecoming</name>
+ <set rarity="rare">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Until your next turn, players can’t cast spells and creatures can’t attack you or a planeswalker you control.</text>
+ <flavor-text>After years of atonement, Oteo could finally rest easy.</flavor-text>
+</card>
+<card>
+ <name>Paradise Griffin</name>
+ <set rarity="rare">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Griffin </type>
+ <pt>1/4</pt>
+ <tablerow>2</tablerow>
+ <text>Flying, vigilance
+Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+As long as you control Paradise, Paradise Griffin gets +3/+0.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Peaceful Imprisonment</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>3W</manacost>
+ <cmc>4</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant creature
+Enchanted creature can’t attack or block.
+Awaken 3—6W (When you cast this spell for 6W, put three +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Playful Bottlenose</name>
+ <set rarity="rare">RAK</set>
+ <color>W</color>
+ <manacost>W</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Dolphin </type>
+ <pt>2/1</pt>
+ <tablerow>2</tablerow>
+ <text>0: Choose target creature you control. Playful Bottlenose gains flying until end of turn if that creature has flying. The same is true for first strike, double strike, deathtouch, haste, hexproof, indestructible, lifelink, menace, reach, trample, and vigilance.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Roving Home</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>4W</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Turtle </type>
+ <pt>3/5</pt>
+ <tablerow>2</tablerow>
+ <text>2U: Create a 1/1 blue Bird creature token with flying.
+2B: Create a 1/1 black Merfolk creature token with “Whenever this creature attacks, each opponent loses 1 life.”
+1R: Create a 1/1 red Elemental creature token.
+7G: Create a 5/5 green Beast creature token.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Seasoned Crafter</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Elf Artificer </type>
+ <pt>1/3</pt>
+ <tablerow>2</tablerow>
+ <text>T: Search your library for a card named Hooksword or Sturdy Canoe, reveal it, put it into your hand, then shuffle.</text>
+ <flavor-text>Kohea taught the elves to carefully choose which artifice should be allowed and which forbidden.</flavor-text>
+</card>
+<card>
+ <name>Sentinel's Tattoo</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>W</manacost>
+ <cmc>1</cmc>
+ <type>Enchantment - Aura Tattoo </type>
+ <tablerow>1</tablerow>
+ <text>Enchant creature
+When Sentinel’s Tattoo enters the battlefield, if enchanted creature is white, draw a card.
+Enchanted creature gets +1/+2.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Shoreguard Tanifa</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>W</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Spirit Serpent </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>Flying, lifelink</text>
+ <flavor-text>A life spent respecting the law. An afterlife spent enforcing it.</flavor-text>
+</card>
+<card>
+ <name>Skywhale Migration</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>Whenever you gain life, put that many ascent counters on Skywhale Migration.
+Remove six ascent counters from Skywhale Migration: Create a 4/4 white Whale creature token with flying.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Starweaver Manta</name>
+ <set rarity="rare">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Fish Spirit </type>
+ <pt>2/1</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+Whenever you cast an Aura spell, draw a card.</text>
+ <flavor-text>It glides the sea of stars, tracing out the constellations night by night.</flavor-text>
+</card>
+<card>
+ <name>Sunlit Skywhale</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>5W</manacost>
+ <cmc>6</cmc>
+ <type>Creature - Whale </type>
+ <pt>3/4</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+Plainscycling 2 (2, Discard this card: Search your library for a Plains card, reveal it, put it into your hand, then shuffle.)</text>
+ <flavor-text>Te Matu elevated his sacred whales above earthly concerns.</flavor-text>
+</card>
+<card>
+ <name>Suntouched</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>3W</manacost>
+ <cmc>4</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+When Suntouched enters the battlefield, you may search your library for a Plains card, reveal it, put it into your hand, then shuffle.
+Enchanted land has “W, T: Tap target creature.”</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Supplicate the Sleeping Gods</name>
+ <set rarity="rare">RAK</set>
+ <color>W</color>
+ <manacost>2W</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Put a +1/+1 counter on each nonland creature you control.
+Awaken 5—Tap a creature of each color. (You may tap five creatures you control instead of paying this spell’s mana cost. If you do, put five +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Tanifa's Judgement</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>2W</manacost>
+ <cmc>3</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Choose one—
+• Destroy target tapped creature.
+• Destroy target artifact or enchantment.</text>
+ <flavor-text>“By striking the visiting chief, my brother had broken an absolute taboo.”
+—Kawelo, to her grandchildren</flavor-text>
+</card>
+<card>
+ <name>Te Matu's Foresight</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>Creatures you control have vigilance.
+Each creature you control can block an additional creature each combat.
+Awaken 4—5W (If you cast this spell for 5W, also put four +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Tectonic Seal</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>2W</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+When Tectonic Seal enters the battlefield, exile target nonland permanent an opponent controls until Tectonic Seal leaves the battlefield.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Tua Rahi Oddity</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>W</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Beast </type>
+ <pt>0/4</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+5, T: You gain 5 life. Activate this ability only if you control Paradise.</text>
+ <flavor-text>It smells strongly of honey, flowers, and a safe return home.</flavor-text>
+</card>
+<card>
+ <name>Versatile Earthcrafter</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Elf Shaman </type>
+ <pt>2/1</pt>
+ <tablerow>2</tablerow>
+ <text>When Versatile Earthcrafter enters the battlefield, search your library for a Aura card with enchant land, reveal it, put it into your hand, then shuffle your library.</text>
+ <flavor-text>Earthcrafters build a better world for people and nature alike.</flavor-text>
+</card>
+<card>
+ <name>Wander the Unknown</name>
+ <set rarity="uncommon">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Exile target creature. Its controller may search their library for a basic land card, put it onto the battlefield tapped, then shuffle their library.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Wistful Peka-Bird</name>
+ <set rarity="common">RAK</set>
+ <color>W</color>
+ <manacost>1W</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Bird </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Homeland — Wistful Peka-Bird has flying as long as you control three or more Plains.</text>
+ <flavor-text>Omalu thermals allow flight for even the least capable species.</flavor-text>
+</card>
+<card>
+ <name>Arcane Torrent</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>3U</manacost>
+ <cmc>4</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Choose one—
+• Counter target creature spell.
+• Put target creature on top of its owner’s library.</text>
+ <flavor-text>Approach the beacons at your own risk.</flavor-text>
+</card>
+<card>
+ <name>Atoll Lurker</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>5U</manacost>
+ <cmc>6</cmc>
+ <type>Creature - Coral Elemental </type>
+ <pt>6/6</pt>
+ <tablerow>2</tablerow>
+ <text>Atoll Lurker can’t attack unless you control eight or more lands.
+Islandcycling 2 (2, Discard this card: Search your library for an Island card, reveal it, put it into your hand, then shuffle.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Avatar of the Ocean</name>
+ <set rarity="mythic">RAK</set>
+ <color>U</color>
+ <manacost>2UUU</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Avatar </type>
+ <pt>4/5</pt>
+ <tablerow>2</tablerow>
+ <text>Avatar of the Ocean can’t be blocked.
+Whenever Avatar of the Ocean or an Island enters the battlefield under your control, look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Barrier Reef</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Coral Wall </type>
+ <pt>0/4</pt>
+ <tablerow>2</tablerow>
+ <text>Defender
+T: Target land you control becomes the basic land type of your choice until end of turn.</text>
+ <flavor-text>Reefs grow wherever mana currents converge.</flavor-text>
+</card>
+<card>
+ <name>Budding Seadrake</name>
+ <set rarity="rare">RAK</set>
+ <color>U</color>
+ <manacost>4U</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Drake </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+At the beginning of your end step, if you control Paradise, create a token thats a copy of Budding Seadrake.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Deep Dive</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>As an additional cost to cast this spell, return a land you control to its owner’s hand.
+Draw two cards.</text>
+ <flavor-text>Former homes return home themselves.</flavor-text>
+</card>
+<card>
+ <name>Deluge Titan</name>
+ <set rarity="rare">RAK</set>
+ <color>U</color>
+ <manacost>5UU</manacost>
+ <cmc>7</cmc>
+ <type>Creature - Elemental </type>
+ <pt>7/7</pt>
+ <tablerow>2</tablerow>
+ <text>When Deluge Titan enters the battlefield, search your library for any number of Island cards, reveal them, put them into your hand, then shuffle. For the rest of the game, you have no maximum hand size.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Devastating Deluge</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>4U</manacost>
+ <cmc>5</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Return up to two target nonland permanents to their owner’s hands.</text>
+ <flavor-text>“The return is heralded twice. First the sea, which swells and crashes in volleys, unrelenting...”
+—Kula, Omalu priest</flavor-text>
+</card>
+<card>
+ <name>Disrupting Vortex</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Homeland — Counter target spell unless its controller pays 1. If you control three or more Islands, counter that spell unless its controller pays 3 instead.</text>
+ <flavor-text>“Twist the currents just right, and you halt the eruption! Just don’t let your boat get caught.”
+—Walu, vorticer</flavor-text>
+</card>
+<card>
+ <name>Divination</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Draw two cards.</text>
+ <flavor-text>The augur sought good winds, and even better bargains.</flavor-text>
+</card>
+<card>
+ <name>Favorable Winds</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>Creatures you control with flying get +1/+1.</text>
+ <flavor-text>The first voyagers observed the strange migrations of Kalepa’s birds long before the beacons which caused them.</flavor-text>
+</card>
+<card>
+ <name>Hupiri's Trespass</name>
+ <set rarity="rare">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>Whenever you cast an instant or sorcery spell, put a +1/+1 counter on target land you control. You may have that land become a 0/0 Elemental creature with haste that’s still a land.</text>
+ <flavor-text>“The time of your gods is over.”</flavor-text>
+</card>
+<card>
+ <name>Kalepa Drake</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>3U</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Drake </type>
+ <pt>3/2</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+Homeland — When Kalepa Drake enters the battlefield, if you control three or more Islands, create a 1/1 blue Bird creature token with flying.</text>
+ <flavor-text>The wind and the water as one.</flavor-text>
+</card>
+<card>
+ <name>Kalepa Dreamer</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Shaman </type>
+ <pt>2/3</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+As long as you control Paradise, Kalepa Dreamer gets +1/+1 and has flying.</text>
+ <flavor-text>“There’s no telling what’s out there!”</flavor-text>
+</card>
+<card>
+ <name>Long-Head Scout</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Merfolk Scout </type>
+ <pt>3/2</pt>
+ <tablerow>2</tablerow>
+ <text>Homeland — Whenever Long-Head Scout becomes the target of a spell, exile it unless you control three or more Islands.</text>
+ <flavor-text>The scattered remnants of the Long-Head clan have settled in the human-dominated seas of Kalepa.</flavor-text>
+</card>
+<card>
+ <name>Luminous Flow</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+When Luminous Flow enters the battlefield, you may search your library for an Island card, reveal it, put it into your hand, then shuffle.
+Enchanted land has “U, T: Draw a card, then discard a card.”</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Master Vorticer</name>
+ <set rarity="rare">RAK</set>
+ <color>U</color>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Shaman </type>
+ <pt>3/2</pt>
+ <tablerow>2</tablerow>
+ <text>Flash
+Discard a land card: Put a +1/+1 counter on Master Vorticer. It can’t be blocked this turn.
+Islandcycling 2 (2, Discard this card: Search your library for an Island card, reveal it, put it into your hand, then shuffle.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Ocean Spray</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Creatures your opponents control get -3/-0 until end of turn.
+Awaken 3—4U (If you cast this spell for 4U, also put three +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Octopus Entanglement</name>
+ <set rarity="rare">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>At the beginning of combat on each opponents turn, tap an untapped creature that player controls of that player’s choice. If a creature with power 8 or greater was tapped this way, sacrifice Octopus Entanglement.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Oteo's Vision</name>
+ <set rarity="rare">RAK</set>
+ <color>U</color>
+ <manacost>U</manacost>
+ <cmc>1</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Search your library for a card with voyage, reveal it, put it into your hand, then shuffle.</text>
+ <flavor-text>Te Matu’s voice boomed: “Gather wayfarers from each great island, and set off towards Tua Rahi. Seek the Paradise Gem, relic of the war between the gods.”</flavor-text>
+</card>
+<card>
+ <name>Quest of the First Ancestor</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>U</manacost>
+ <cmc>1</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant creature
+When Quest of the First Ancestor enters the battlefield, scry 1.
+Whenever enchanted creature deals combat to an opponent, draw a card.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Ramari Vagabond</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>3U</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Merfolk Scout </type>
+ <pt>3/4</pt>
+ <tablerow>2</tablerow>
+ <text></text>
+ <flavor-text>Most of the Ramari fled from their ancient home at Ru Kano after the prized seafloor city was pushed to the surface during a great earthquake.</flavor-text>
+</card>
+<card>
+ <name>Reef Eel</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Fish </type>
+ <pt>3/1</pt>
+ <tablerow>2</tablerow>
+ <text>When Reef Eel enters the battlefield, tap target creature an opponent controls. It doesn’t untap during its controller’s next untap step.</text>
+ <flavor-text>“We should be happy that we have boats.”
+—Hau, Sentinel</flavor-text>
+</card>
+<card>
+ <name>Rousing Wavebreaker</name>
+ <set rarity="rare">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Merfolk Warrior </type>
+ <pt>2/1</pt>
+ <tablerow>2</tablerow>
+ <text>Flash
+Other Merfolk you control get +1/+1.</text>
+ <flavor-text>“I survived a torrent. You can handle a measly wave!”</flavor-text>
+</card>
+<card>
+ <name>Sage's Shield</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Target creature gets +0/+3 and gains hexproof until end of turn.
+Draw a card.</text>
+ <flavor-text>“We’re prepared for anything they can throw at us. Giant boulders included.”</flavor-text>
+</card>
+<card>
+ <name>Sarasa, Adventuring Professor</name>
+ <set rarity="mythic">RAK</set>
+ <color>U</color>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Legendary Planeswalker - Sarasa </type>
+ <loyalty>4</loyalty>
+ <tablerow>1</tablerow>
+ <text>Voyage
+[+1]: Draw a card, then discard a card unless you control Paradise.
+[-2]: Untap up to two target permanents. If you control Paradise, untap up to four target permanents instead.
+[-6]: Put up to two cards you own from outside the game into your hand. Then if you control Paradise, cast up to two cards from your hand without paying their mana costs.</text>
+</card>
+<card>
+ <name>Sarasa's Acquisition</name>
+ <set rarity="rare">RAK</set>
+ <color>U</color>
+ <manacost>3UU</manacost>
+ <cmc>5</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Exile target permanent an opponent controls. At the beginning of your next upkeep, return that card to the battlefield under your control.</text>
+ <flavor-text>Now satisfied that she could prove her thesis, Sarasa locked the Paradise Gem away and prepared to travel home.</flavor-text>
+</card>
+<card>
+ <name>Stem Hunger</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>1UU</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant creature
+When Stem Hunger enters the battlefield, tap enchanted creature.
+Enchanted creature doesn’t untap during its controller’s untap step.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Swell of the Sea Gods</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Return target nonland permanent to its owner’s hand.
+Awaken 3—4U (If you cast this spell for 4U, also put three +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Swimulacrum</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Create a token that’s a copy of target creature you control, except it’s a blue Elemental in addition to its other colors and types.</text>
+ <flavor-text>No one ever suspects the ocean.</flavor-text>
+</card>
+<card>
+ <name>Te Matu's Curiosity</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>U</manacost>
+ <cmc>1</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Scry 1, then draw a card.
+Awaken 3—4U (If you cast this spell for 4U, also put three +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Te Matu's Watcher</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>4U</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Octopus Elemental </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+When Te Matu’s Watcher enters the battlefield, create a 1/1 blue Bird creature token with flying.</text>
+ <flavor-text>Wherever ships go, his gaze follows.</flavor-text>
+</card>
+<card>
+ <name>Tua Rahi Serpent</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Serpent </type>
+ <pt>4/3</pt>
+ <tablerow>2</tablerow>
+ <text>Defender
+Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+As long as you control Paradise, Tua Rahi Serpent can attack as though it didn’t have defender.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Vorticer Trainee</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Shaman </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>When Vorticer Trainee enters the battlefield, you may return another target artifact, creature, or enchantment to its owner’s hand.</text>
+ <flavor-text>“Control the currents, and you control the future of Rakoa.”</flavor-text>
+</card>
+<card>
+ <name>Vorticer's Tattoo</name>
+ <set rarity="common">RAK</set>
+ <color>U</color>
+ <manacost>1U</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment - Aura Tattoo </type>
+ <tablerow>1</tablerow>
+ <text>Enchant creature
+When Vorticer’s Tattoo enters the battlefield, if enchanted creature is blue, draw a card.
+Enchanted creature gets +1/+1 and can’t be blocked.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Voyager's Wayfinding</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Draw a card for each color among nonland permanents you control.</text>
+ <flavor-text>With Te Matu’s winds in their sails, the brave warriors traversed waters and land many believed merely legend.</flavor-text>
+</card>
+<card>
+ <name>Wavebreaker Shaman</name>
+ <set rarity="uncommon">RAK</set>
+ <color>U</color>
+ <manacost>U</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Merfolk Shaman </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>Wavebreaker Shaman can’t be blocked.
+Homeland — U, Sacrifice Wavebreaker Shaman: Creatures you control gain hexproof until end of turn. Activate this ability only if you control three or more Islands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Abyssal Crevice</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>2B</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>At the beginning of your upkeep, you lose 2 life and create a 1/1 black Merfolk creature token with “Whenever this creature attacks, each opponent loses 1 life.”</text>
+ <flavor-text>They dot the seafloor near Ru Kano, continuing their dark work despite the city’s destruction.</flavor-text>
+</card>
+<card>
+ <name>Aswan's Cunning</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>B</manacost>
+ <cmc>1</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Target creature gets +2/+0 and gains indestructible until end of turn.</text>
+ <flavor-text>“A monster’s cruelest trick is appearing vulnerable.”
+—Hewa, Haku Haku adventurer</flavor-text>
+</card>
+<card>
+ <name>Aswan's Tattoo</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment - Aura Tattoo </type>
+ <tablerow>1</tablerow>
+ <text>Enchant creature
+When Aswan’s Tattoo enters the battlefield, if enchanted creature is black, draw a card.
+Enchanted creature gets +1/+1 and has lifelink.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Avatar of the Abyss</name>
+ <set rarity="mythic">RAK</set>
+ <color>B</color>
+ <manacost>2BBB</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Avatar </type>
+ <pt>5/5</pt>
+ <tablerow>2</tablerow>
+ <text>Flash
+Whenever Avatar of the Abyss or a Swamp enters the battlefield under your control, Avatar of the Abyss deals 3 damage to target player or planeswalker and you gain 3 life.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Beetle Blight</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>3B</manacost>
+ <cmc>4</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Destroy target creature.
+Homeland — You lose 3 life unless you control three or more Swamps.</text>
+ <flavor-text>The merchant pruned his insult down to only the most effective words. The witch’s retort, however, required no words at all.</flavor-text>
+</card>
+<card>
+ <name>Blood in the Water</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>B</manacost>
+ <cmc>1</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Target creature gets -1/-1 until end of turn. Its controller loses 1 life.</text>
+ <flavor-text>“Now the whole ocean smells you.”</flavor-text>
+</card>
+<card>
+ <name>Bloodstarved Aswan</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>4B</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Vampire Shapeshifter </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Whenever Bloodstarved Aswan attacks, you may pay 1B. If you do, it gains your choice of flying or lifelink until end of turn.</text>
+ <flavor-text>Acas was a trusting husband till the end, never questioning where his wife went each night.</flavor-text>
+</card>
+<card>
+ <name>Burden of a Secret</name>
+ <set rarity="rare">RAK</set>
+ <color>B</color>
+ <manacost>1BBB</manacost>
+ <cmc>4</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Target player discards all but one card from their hand.</text>
+ <flavor-text>The honor of the elder’s long-worn tattoos only heightened his paranoia.</flavor-text>
+</card>
+<card>
+ <name>Consume the Untainted</name>
+ <set rarity="rare">RAK</set>
+ <color>B</color>
+ <manacost>2BB</manacost>
+ <cmc>4</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Destroy target creature or planeswalker.
+Swampcycling—Pay 2 life. (Pay 2 life, Discard this card: Search your library for a Swamp card, reveal it, put it into your hand, then shuffle.)</text>
+ <flavor-text>Even muck can hunger.</flavor-text>
+</card>
+<card>
+ <name>Crafty Aswan</name>
+ <set rarity="rare">RAK</set>
+ <color>B</color>
+ <manacost>2B</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Vampire Shapeshifter </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>1B: Until end of turn, Crafty Aswan becomes a 5/4 Dog with menace and haste.
+1B: Until end of turn, Crafty Aswan becomes a 3/2 Bat with flying and lifelink.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Creeping Morass</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>3B</manacost>
+ <cmc>4</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+When Creeping Morass enters the battlefield, you may search your library for a Swamp card, reveal it, put it into your hand, then shuffle.
+Enchanted land has “B, T: Target opponent loses 1 life and you gain 1 life.”</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Deathjaw</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>4B</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Lizard </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+Homeland — When Deathjaw enters the battlefield, if you control three or more Swamps, target creature an opponent controls gets -3/-3 until end of turn.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Despise</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>B</manacost>
+ <cmc>1</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Target opponent reveals their hand. You choose a creature or planeswalker card from it. That player discards that card.</text>
+ <flavor-text>The spirits of legendary chiefs make nightly marches around their grave-sites, destroying anyone foolish enough to meet their gaze.</flavor-text>
+</card>
+<card>
+ <name>Effervescent Ada</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Shade </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>2B: Effervescent Ada gets +2/+2 until end of turn.
+Swampcycling 2 (2, Discard this card: Search your library for a Swamp card, reveal it, put it into your hand, then shuffle.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Faithless Desecrator</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Human Warrior </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Homeland — 2B, Exile Faithless Desecrator from your graveyard: Return up to two target creature cards from your graveyard to your hand. Activate this ability only if you control three or more Swamps.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Grasp of Dark Secrets</name>
+ <set rarity="rare">RAK</set>
+ <color>B</color>
+ <manacost>2B</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+When Grasp of Dark Secrets enters the battlefield, up to one target creature gets -3/-3 until end of turn.
+At the beginning of your end step, if you control Paradise, target opponent loses 3 life.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Grasp the Currents</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Return all cards with landcycling abilities from your graveyard to your hand.</text>
+ <flavor-text>“The gods must forgive us—we need this mana now!”
+—Pohama, voyager</flavor-text>
+</card>
+<card>
+ <name>Grim Tikbalang</name>
+ <set rarity="rare">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Nightmare Horse </type>
+ <pt>*/*</pt>
+ <tablerow>2</tablerow>
+ <text>Grim Tikbalang’s power and toughness are each equal to the number of Swamps you control.</text>
+ <flavor-text>“To avoid the Tikbalang, stick to the path that is bright and straight: in life and in the wild.”
+—Wepu, Haku Haku elder</flavor-text>
+</card>
+<card>
+ <name>Haku Haku Dredgers</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>2B</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Peasant </type>
+ <pt>2/3</pt>
+ <tablerow>2</tablerow>
+ <text>When Haku Haku Dredgers enters the battlefield, you may pay 3 life. If you do, draw a card.</text>
+ <flavor-text>“No one gets rich by sitting at home.”
+—Gurahso, Favored Slayer</flavor-text>
+</card>
+<card>
+ <name>Haku Haku Thug</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Merfolk Rogue </type>
+ <pt>2/1</pt>
+ <tablerow>2</tablerow>
+ <text>Homeland — T: Target opponent loses 1 life and you gain 1 life. Activate this ability only if you control three or more Swamps.</text>
+ <flavor-text>“I got no nostalgia for Ru Kano. Home is where the food is!”</flavor-text>
+</card>
+<card>
+ <name>Haku Haku Tyrant</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>3B</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Human Noble </type>
+ <pt>3/4</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+As long as you control Paradise, Haku Haku Tyrant gets +2/+0 and has menace.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Kanokai, the Deep Blood</name>
+ <set rarity="mythic">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Legendary Creature - Merfolk Warrior </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Flash
+When Kanokai, the Deep Blood enters the battlefield, Merfolk cards in your graveyard gain flash and “You may cast this card from your graveyard” until end of turn.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Kanokai's Orders</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>You draw two cards. You lose 4 life unless an opponent lost life this turn.</text>
+ <flavor-text>Win or lose, Kanokai sates his hunger.</flavor-text>
+</card>
+<card>
+ <name>Make Prey</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>1BB</manacost>
+ <cmc>3</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Exile target creature or enchantment if it has mana value 3 or less. You gain 3 life.</text>
+ <flavor-text>Hak Bora eats whatever she wants.</flavor-text>
+</card>
+<card>
+ <name>Murk Feeder</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Fish </type>
+ <pt>2/1</pt>
+ <tablerow>2</tablerow>
+ <text>When Murk Feeder dies, search your library for a Swamp card, reveal it, put it into your hand, then shuffle.</text>
+ <flavor-text>Worth two coins sold fresh—four coins if the fish in its gut are fresh too.</flavor-text>
+</card>
+<card>
+ <name>Murono's Demands</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Target opponent loses 3 life and you gain 3 life.
+Awaken 3—5B (If you cast this spell for 5B, also put three +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Murono's Malediction</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Each opponent sacrifices a creature.
+Awaken 3—4B (If you cast this spell for 4B, also put three +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Pelagic Peddler</name>
+ <set rarity="rare">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Merfolk Rogue </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>When Pelagic Peddler enters the battlefield or dies, reveal the top card of your library. Any opponent may pay 2 life. If any player does, exile it. Otherwise, put it into your hand.</text>
+ <flavor-text>“Five hundred pounds of genuine skywhale, freshly drowned!”</flavor-text>
+</card>
+<card>
+ <name>Rahoke's Pact</name>
+ <set rarity="rare">RAK</set>
+ <color>B</color>
+ <manacost>3B</manacost>
+ <cmc>4</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>At the beginning of your upkeep, sacrifice a creature. If you do, you draw two cards. Otherwise, you lose the game.
+Awaken 4—6B (When you cast this spell for 5B, put four +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Reemergence</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>1BB</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Return target creature card from your graveyard to the battlefield. It gains haste until end of turn. Return it to your hand at the beginning of the next end step.</text>
+ <flavor-text>“In my experience, things that fall into the volcano stay dead.”
+—Hupo, Meke fire-shaman</flavor-text>
+</card>
+<card>
+ <name>Riptide Ambusher</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>4B</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Merfolk Warrior </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Flash
+When Riptide Ambusher dies, create two 1/1 black Merfolk creature token with “Whenever this creature attacks, each opponent loses 1 life.”</text>
+ <flavor-text>Murono’s teachings are scratched onto bone, added onto with each fresh kill.</flavor-text>
+</card>
+<card>
+ <name>Sharkling Attack</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>2B</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Create two 1/1 black Merfolk creature tokens with “Whenever this creature attacks, each opponent loses 1 life.”</text>
+ <flavor-text>Sharklings toy with their food, allowing quarry to escape only to swim right into the jaws of their hunt-mate.</flavor-text>
+</card>
+<card>
+ <name>Shoal Swallower</name>
+ <set rarity="rare">RAK</set>
+ <color>B</color>
+ <manacost>4BB</manacost>
+ <cmc>6</cmc>
+ <type>Creature - Leviathan </type>
+ <pt>5/5</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+Whenever Shoal Swallower deals combat damage to an opponent, that player reveals the top five cards of their library. Exile each nonland card revealed this way, and that player mills the rest. For as long as those cards remain exiled, you may cast them, and you may spend mana as though it was mana of any color to cast them.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Third-Tooth Brute</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>2B</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Merfolk Warrior </type>
+ <pt>2/4</pt>
+ <tablerow>2</tablerow>
+ <text>At the beginning of your end step, each opponent that lost life this turn loses 1 life. You gain life equal to the life lost this way.</text>
+ <flavor-text>“Don’t die too quick, now, you’ll ruin the fun!”</flavor-text>
+</card>
+<card>
+ <name>Third-Tooth Ravager</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>2BB</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Merfolk Warrior </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Third-Tooth Ravager enters the battlefield with two +1/+1 counters on it if an opponent lost life this turn.</text>
+ <flavor-text>“When I need a massacre, I call upon the Third-Tooth clan.”
+—Kanokai</flavor-text>
+</card>
+<card>
+ <name>Toll of the Death Gods</name>
+ <set rarity="common">RAK</set>
+ <color>B</color>
+ <manacost>2B</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant creature
+Enchanted creature gets -2/-2.
+Awaken 2—4B (When you cast this spell for 4B, put two +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Tua Rahi Spotwing</name>
+ <set rarity="uncommon">RAK</set>
+ <color>B</color>
+ <manacost>1B</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Bat </type>
+ <pt>1/3</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+As long as you control Paradise, Tua Rahi Spotwing gets +1/+1 and has lifelink.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Avatar of the Volcano</name>
+ <set rarity="mythic">RAK</set>
+ <color>R</color>
+ <manacost>2RRR</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Avatar </type>
+ <pt>6/5</pt>
+ <tablerow>2</tablerow>
+ <text>Menace
+Whenever Avatar of the Volcano or a Mountain enters the battlefield under your control, create two 1/1 red Elemental creature tokens. They gain haste until end of turn.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Bombardment Zone</name>
+ <set rarity="rare">RAK</set>
+ <color>R</color>
+ <manacost>3RR</manacost>
+ <cmc>5</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>Discard a land card: Bombardment Zone deals 3 damage to any target.
+Mountaincycling 2 (2, Discard this card: Search your library for a Mountain card, reveal it, put it into your hand, then shuffle.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Brewing Storm</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>1R</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>When Brewing Storm enters the battlefield, scry 2.
+R, Sacrifice Brewing Storm: Copy target instant or sorcery spell you control. You may choose new targets for the copy.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Caldera Tyrant</name>
+ <set rarity="mythic">RAK</set>
+ <color>R</color>
+ <manacost>5RR</manacost>
+ <cmc>7</cmc>
+ <type>Creature - Dragon </type>
+ <pt>6/6</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+Whenever Caldera Tyrant attacks, exile the top five cards of your library. Until end of turn, you may play cards exiled this way. Caldera Tyrant gets +1/+0 until end of turn for each land card exiled this way.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Call of the Fire Gods</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>1R</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Create two 1/1 red Elemental creature tokens.
+Awaken 3—5R (If you cast this spell for 5R, also put three +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Champion's Tattoo</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment - Aura Tattoo </type>
+ <tablerow>1</tablerow>
+ <text>Enchant creature
+When Champion’s Tattoo enters the battlefield, if enchanted creature is red, draw a card.
+Enchanted creature gets +3/+0 and has menace.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Crater Walker</name>
+ <set rarity="rare">RAK</set>
+ <color>R</color>
+ <manacost>4RR</manacost>
+ <cmc>6</cmc>
+ <type>Creature - Elemental Giant </type>
+ <pt>5/5</pt>
+ <tablerow>2</tablerow>
+ <text>Haste
+Whenever Crater Walker attacks, choose a non-red, non-Mountain permanent at random. Destroy that permanent.</text>
+ <flavor-text>More brawn than brains, it’s just smart enough to avoid stepping on the wrong color.</flavor-text>
+</card>
+<card>
+ <name>Crest the Waters</name>
+ <set rarity="rare">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+Creatures you control have haste.
+At the beginning of combat on your turn, if you control Paradise, you may put a creature card from your hand onto the battlefield.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Dazzling Sarimanok</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>1R</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Bird </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text></text>
+ <flavor-text>The sarimanok hunt is the most popular event leading up to the yearly Meke grand tournament. Those who catch one are said to earn luck both in their own matches or those they bet on.</flavor-text>
+</card>
+<card>
+ <name>Demolish</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>3R</manacost>
+ <cmc>4</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Destroy target artifact or land.</text>
+ <flavor-text>“Nothing lasts forever, especially if I hate how it looks!”
+—Toahanga</flavor-text>
+</card>
+<card>
+ <name>Devotee of Kalanua</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>R</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Elemental Bard </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>When Devotee of Kalanua dies, create a 1/1 red Elemental creature token.</text>
+ <flavor-text>Kalanua creates life whenever Rahoke destroys it. Together, they maintain balance throughout Rakoa.</flavor-text>
+</card>
+<card>
+ <name>Draconic Vigor</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Exile the top three cards of your library. Until end of turn, you may play cards exiled this way. Draconic Vigor deals 1 damage to each opponent for each land card exiled this way.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Dual Destruction</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>4R</manacost>
+ <cmc>5</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Dual Destruction deals 3 damage to each of up to two target creatures and/or planeswalkers.</text>
+ <flavor-text>“...then comes fire. The sky and the earth burn with fury at ancient injustices.”
+—Kula, Omalu Priest</flavor-text>
+</card>
+<card>
+ <name>Harness the Eruption</name>
+ <set rarity="rare">RAK</set>
+ <color>R</color>
+ <manacost>3RR</manacost>
+ <cmc>5</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Exile the top four cards of your library. Until end of turn, you may play cards exiled this way. Add RRR for each land card exiled this way. Until end of turn, you don’t lose this mana as steps and phases end.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Heartfire Dance</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Creatures you control get +2/+0 until end of turn.</text>
+ <flavor-text>“Our hearts burn, stoked by pride! Lay down your arms and submit! We rise above you in every way!”</flavor-text>
+</card>
+<card>
+ <name>Hupiri's Rebirth</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>1R</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Discard a card, then draw two cards.
+Awaken 3—3R (If you cast this spell for 3R, also put three +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Kalanua's Wrath</name>
+ <set rarity="rare">RAK</set>
+ <color>R</color>
+ <manacost>3RR</manacost>
+ <cmc>5</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Kalanua’s Wrath deals 5 damage to each nonland creature and each planeswalker.
+Awaken 5—5RRR (If you cast this spell for 5RRR, also put five +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Lava Blast</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>6R</manacost>
+ <cmc>7</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Lava Blast deals 7 damage to any target.
+Mountaincycling 2 (2, Discard this card: Search your library for a Mountain card, reveal it, put it into your hand, then shuffle.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Lava Tubes Quarry</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>1R</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Elemental Boar </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Haste
+Homeland — 1R, Exile Lava Tubes Quarry from your graveyard: Create two 1/1 red Elemental creature tokens. Activate only as a sorcery and only if you control three or more Mountains.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Lavaflow Fields</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+When Lavaflow Fields enters the battlefield, you may search your library for a Mountain card, reveal it, put it into your hand, then shuffle.
+Enchanted land has “R, T: This land deals 1 damage to any target.”</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Leviathan Beam</name>
+ <set rarity="rare">RAK</set>
+ <color>R</color>
+ <manacost>2RR</manacost>
+ <cmc>4</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>When you cast this spell, if you control a creature with power 5 or greater, copy this spell. You may choose new targets for the copy.
+Leviathan Beam deals 5 damage to target creature or planeswalker.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Loyalist Champion</name>
+ <set rarity="rare">RAK</set>
+ <color>R</color>
+ <manacost>1RR</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Warrior </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>First strike
+At the beginning of your end step, each player gains control of all permanents they own.
+Whenever a player casts a spell that targets a permanent they don’t control, Loyalist Champion deals 3 damage to that player.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Loyalty Shift</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.
+Awaken 2—4R (If you cast this spell for 4R, also put two +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Magma Maul</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Homeland — Magma Maul deals 3 damage to target creature or planeswalker. If you control three or more Mountains, Magma Maul deals 3 damage to that permanent’s controller.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Maw of Rahoke</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>XR</manacost>
+ <cmc>1</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Maw of Rahoke deals X damage to target creature.
+Awaken X—XRRR (If you cast this spell for XRRR, also put X +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Meke Knifemaster</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Warrior </type>
+ <pt>2/3</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+Meke Knifemaster has double strike as long as you control Paradise.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Meke Lavarunner</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>3R</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Human Warrior </type>
+ <pt>4/3</pt>
+ <tablerow>2</tablerow>
+ <text>Homeland — Meke Lavarunner has haste as long as you control three or more Mountains.</text>
+ <flavor-text>“It’s like a footrace against your own flammability.”</flavor-text>
+</card>
+<card>
+ <name>Neon Diver</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>1R</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Fish </type>
+ <pt>1/3</pt>
+ <tablerow>2</tablerow>
+ <text>1, T, Sacrifice Neon Diver: Add two mana in any combination of colors.</text>
+ <flavor-text>“They’re beautiful, sure, but the real fun is eating them.”
+—Gurahso, Favored Slayer</flavor-text>
+</card>
+<card>
+ <name>Pantheon Celebrant</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Shaman </type>
+ <pt>2/3</pt>
+ <tablerow>2</tablerow>
+ <text>Spells you cast for their awaken costs cost 2 less to cast.</text>
+ <flavor-text>She twirls her golden sash, inviting the gods to dance.</flavor-text>
+</card>
+<card>
+ <name>Rupture Field</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>1R</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>1R, Sacrifice a creature: Rupture Field deals 2 damage to any target.</text>
+ <flavor-text>Stand your ground, and you’ll find it ripped out from under you.</flavor-text>
+</card>
+<card>
+ <name>Sunset Horizon</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+Enchanted land has “T, Discard a card: Draw a card.”</text>
+ <flavor-text>Each day gives a chance to try again.</flavor-text>
+</card>
+<card>
+ <name>Tua Rahi Sentry</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Elemental </type>
+ <pt>3/2</pt>
+ <tablerow>2</tablerow>
+ <text>Reach
+Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+At the beginning of your upkeep, if you control Paradise, Tua Rahi Sentry deals 2 damage to each opponent.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Utaman Avenger</name>
+ <set rarity="rare">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Elemental Warrior </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>When Utaman Avenger enters the battlefield, create a 1/1 red Elemental creature token.
+Whenever an Elemental you control dies, Utaman Avenger deals 1 damage to any target.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Utaman Bruiser</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>4R</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Elemental Warrior </type>
+ <pt>4/3</pt>
+ <tablerow>2</tablerow>
+ <text>When Utaman Bruiser enters the battlefield, create a 1/1 red Elemental creature token.</text>
+ <flavor-text>Utamu is slowly consuming Meke’s ancient battlegrounds, turning long-dead warriors into molten elementals.</flavor-text>
+</card>
+<card>
+ <name>Utaman Challenger</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Elemental Bard Warrior </type>
+ <pt>3/2</pt>
+ <tablerow>2</tablerow>
+ <text>Homeland — Other creatures you control get +1/+0 as long as you control three or more Mountains.</text>
+ <flavor-text>A heart of fire to set other hearts ablaze.</flavor-text>
+</card>
+<card>
+ <name>Utaman Daring</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>1R</manacost>
+ <cmc>2</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>As an additional cost to cast Utaman Daring, sacrifice a creature.
+Utaman Daring deals 4 damage to any target.</text>
+ <flavor-text>Death is not so scary to those who have lived through it before.</flavor-text>
+</card>
+<card>
+ <name>Volcanic Dragon</name>
+ <set rarity="uncommon">RAK</set>
+ <color>R</color>
+ <manacost>4RR</manacost>
+ <cmc>6</cmc>
+ <type>Creature - Dragon </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Flying, haste</text>
+ <flavor-text>“Are they usually that big?” Sarasa asked. “That’s nothing.” Toahanga replied. “Just last month I wrestled one twice that size.”</flavor-text>
+</card>
+<card>
+ <name>Avatar of the Jungle</name>
+ <set rarity="mythic">RAK</set>
+ <color>G</color>
+ <manacost>2GGG</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Avatar </type>
+ <pt>5/6</pt>
+ <tablerow>2</tablerow>
+ <text>Reach
+Whenever Avatar of the Jungle or a Forest enters the battlefield under your control, put three +1/+1 counters on up to one target noncreature land you control. Untap it. It becomes a 0/0 Elemental creature with haste that’s still a land.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Band of Anggitay</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Centaur Archer </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Reach</text>
+ <flavor-text>“All we know is that they live in the jungle. By the time we even notice their attack they’ve already ran off with half our shipment.”
+—So’olako, pounamu miner</flavor-text>
+</card>
+<card>
+ <name>Barkskin Pummeler</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>4G</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Dryad </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Homeland — This spell has flash as long as you control three or more Forests.
+When Barkskin Pummeler enters the battlefield, target creature gets +3/+3 until end of turn.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Beastmaster's Tattoo</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>3G</manacost>
+ <cmc>4</cmc>
+ <type>Enchantment - Aura Tattoo </type>
+ <tablerow>1</tablerow>
+ <text>Enchant creature
+When Beastmaster’s Tattoo enters the battlefield, if enchanted creature is green, draw a card.
+Enchanted creature gets +2/+2 and has trample.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Brutish Buwaya</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Crocodile </type>
+ <pt>*/3</pt>
+ <tablerow>2</tablerow>
+ <text>Brutish Buwaya power is equal to the number of creature cards in your graveyard.</text>
+ <flavor-text>“The taboo against entering the wetlands isn’t for preserving the wildlife—it’s for preserving ourselves.”
+—Koe, Sentinel</flavor-text>
+</card>
+<card>
+ <name>Caretaker of Paradise</name>
+ <set rarity="rare">RAK</set>
+ <color>G</color>
+ <manacost>G</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Human Spellshaper </type>
+ <pt>0/1</pt>
+ <tablerow>2</tablerow>
+ <text>G, T, Discard a card: Create a 0/1 green Bird creature token named Birds of Paradise. It has flying and “T: Add one mana of any color.”</text>
+ <flavor-text>She paints their feathers with all the colors of the world.</flavor-text>
+</card>
+<card>
+ <name>Crowd of Kakamora</name>
+ <set rarity="rare">RAK</set>
+ <color>G</color>
+ <manacost>XGG</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Ouphe </type>
+ <pt>0/0</pt>
+ <tablerow>2</tablerow>
+ <text>Trample, vigilance
+Crowd of Kakamora enters the battlefield with twice X +1/+1 counters on it.
+Forestcycling 2 (2, Discard this card: Search your library for a Forest card, reveal it, put it into your hand, then shuffle.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Fertile Budmother</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Dryad </type>
+ <pt>1/3</pt>
+ <tablerow>2</tablerow>
+ <text>T: Add G.</text>
+ <flavor-text>“All this talk of a voyage to Tua Rahi interests my people none. The humans will find few eager recruits among the children, let alone my sisters.”</flavor-text>
+</card>
+<card>
+ <name>Greenstone Carver</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>3G</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Elf Warrior </type>
+ <pt>4/3</pt>
+ <tablerow>2</tablerow>
+ <text>When Greenstone Carver enters the battlefield, put a +1/+1 counter on another target creature you control.</text>
+ <flavor-text>“You covet the sharp ones? The stone I gave you is best—worn down by the touch of history.”</flavor-text>
+</card>
+<card>
+ <name>Haven of the Earth Gods</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+Whenever enchanted land is tapped for mana, add an additional one mana of any color.
+Awaken 4—5G (When you cast this spell for 6G, put four +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Heart of the Gods</name>
+ <set rarity="mythic">RAK</set>
+ <color>G</color>
+ <manacost>5G</manacost>
+ <cmc>6</cmc>
+ <type>Creature - Elemental </type>
+ <pt>8/8</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+As long as you control Paradise, Heart of the Gods has vigilance, reach, trample, hexproof, and haste.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Heliha, Steward of Tua Rahi</name>
+ <set rarity="rare">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Legendary Creature - Dryad Shaman </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+T: Add one mana of any color.
+As long as you control Paradise, you may pay WUBRG rather than pay the mana cost for spells that you cast.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Hero's Triumph</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Homeland — Put a +1/+1 counter on target creature you control if you control three or more Forests. Then that creature fights target creature you don’t control.</text>
+ <flavor-text>After centuries of sinking ships, it made its first and final mistake: challenging fate.</flavor-text>
+</card>
+<card>
+ <name>Hunter's Technique</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Target creature you control gains indestructible until end of turn. It fights up to one target creature an opponent controls.</text>
+ <flavor-text>“Just us, the open sea, and a giant monster than wants to swallow us whole! Haha!”
+—Toahanga</flavor-text>
+</card>
+<card>
+ <name>Kalanua's Convert</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Dryad Shaman </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Land creatures you control get +1/+1 and have ward 2. (Whenever one of those creatures becomes the target of a spell or ability an opponent controls, counter it unless that player pays 2.)</text>
+ <flavor-text>The budmothers do not always have a firm grasp on their daughters.</flavor-text>
+</card>
+<card>
+ <name>Kalanua's Strength</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Put two +1/+1 counters on target permanent.
+Awaken 4—6G (If you cast this spell for 6G, also put four +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Kohea's Wisdom</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Return target card from your graveyard to your hand. Exile Kohea’s Wisdom.
+Awaken 4—5G (If you cast this spell for 5G, also put four +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Leafy Companion</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Plant Dog </type>
+ <pt>2/3</pt>
+ <tablerow>2</tablerow>
+ <text>When Leafy Companion enters the battlefield, you may search your library for a Forest card, reveal it, put it into your hand, then shuffle.</text>
+ <flavor-text>“Go fetch!”</flavor-text>
+</card>
+<card>
+ <name>Luaho Commune</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Look at the top five cards of your library. Reveal up to one land card and up to one Aura card from among them, put those cards into your hand, then put the rest on the bottom of your library in a random order.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Luaho Feather-Worker</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Elf Shaman </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+As long as you control Paradise, Luaho Feather-Worker gets +2/+2.</text>
+ <flavor-text>“We must celebrate the gods!”</flavor-text>
+</card>
+<card>
+ <name>Luaho Lorekeeper</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>3G</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Dryad Shaman </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Homeland — When Luaho Lorekeeper enters the battlefield, if you control three or more Forests, draw a card.</text>
+ <flavor-text>“I remember a time before the gods, and before they reshaped the world to their own ends.”</flavor-text>
+</card>
+<card>
+ <name>Luaho Trackers</name>
+ <set rarity="rare">RAK</set>
+ <color>G</color>
+ <manacost>2GG</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Human Scout </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Trample
+When Luaho Trackers enters the battlefield, search your library for a green creature card, reveal it, then shuffle and put that card on top.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Monument Core</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+When Monument Core enters the battlefield, create two Treasure tokens. (They’re artifacts with “T, Sacrifice this artifact: Add one mana of any color.”)
+Enchanted land has “2G, T: Put a +1/+1 counter on target creature you control. Activate only as a sorcery.”</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Naturalize</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Destroy target artifact or enchantment.</text>
+ <flavor-text>“The sword rusted in my hand, and the tattoos faded from my skin. The dryads surely thought they were helping, but I’d never felt so...violated.”
+—Hupo, Meke fire-shaman</flavor-text>
+</card>
+<card>
+ <name>Opaku Warden</name>
+ <set rarity="rare">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Elf Archer </type>
+ <pt>3/2</pt>
+ <tablerow>2</tablerow>
+ <text>Reach
+Whenever Opaku Warden attacks, you may pay 1G. If you do, Opaku Warden gets +2/+2 and gains trample until end of turn.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Palm-Neck Crocodile</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>4G</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Crocodile </type>
+ <pt>2/5</pt>
+ <tablerow>2</tablerow>
+ <text>Reach
+Forestcycling 2 (2, Discard this card: Search your library for a Forest card, reveal it, put it into your hand, then shuffle.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Path to Paradise</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Search your library for a land card with a basic land type, put it onto the battlefield under your control, then shuffle.</text>
+ <flavor-text>“The gods once walked this land.”
+—Mehu’o, voyager</flavor-text>
+</card>
+<card>
+ <name>Patron Mo-o</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Elemental Lizard </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Whenever Patron Mo-o attacks, look at the top card of your library. You may put that card into your graveyard.
+1G: Return Patron Mo-o from your graveyard to the battlefield face down and tapped. It’s a colorless land with “T: Add C.”</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Primal Reaction</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Choose one —
+• Target creature gets +4/+4 until end of turn.
+• Destroy target creature with flying.</text>
+ <flavor-text>Any imbalance of nature is rooted out by the gods and their servants.</flavor-text>
+</card>
+<card>
+ <name>Spawning Grounds</name>
+ <set rarity="rare">RAK</set>
+ <color>G</color>
+ <manacost>6GG</manacost>
+ <cmc>8</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+Enchanted land has “T: Create a 5/5 green Beast creature token with trample.”</text>
+ <flavor-text>“Those earthcrafters make habitats for birds, monkeys... boring things like that. Nothing like what I make.”
+—Toahanga</flavor-text>
+</card>
+<card>
+ <name>Speaker of the Kakamora</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>G</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Elf Shaman </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>When Speaker of the Kakamora enters the battlefield, scry 2.
+Homeland — T: Add G. Activate this ability only if you control three or more Forests.</text>
+ <flavor-text>On full moon nights, the Kakamora gather to honor the tenders of the jungle.</flavor-text>
+</card>
+<card>
+ <name>Trained Kiwi</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Bird </type>
+ <pt>3/1</pt>
+ <tablerow>2</tablerow>
+ <text></text>
+ <flavor-text>Luaho elves decorate their kiwis to honor the goddess Kohea, who crafted the gods’ clothing from kiwi feathers.</flavor-text>
+</card>
+<card>
+ <name>Tua Rahi Orchid</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Plant Snake </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Hexproof
+Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+As long as you control Paradise, Tua Rahi Orchid gets +1/+1 and has deathtouch.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Unassuming Duwende</name>
+ <set rarity="common">RAK</set>
+ <color>G</color>
+ <manacost>G</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Ouphe </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>2G, Exile a card from your graveyard: Put a +1/+1 counter on Unassuming Duwende.</text>
+ <flavor-text>The duwende hide in the oldest trees, planning mischief.</flavor-text>
+</card>
+<card>
+ <name>Unwieldy Catch</name>
+ <set rarity="rare">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Look at the top six cards of your library. You may exile a creature card from among them. If you do, any opponent may have you put that card onto the battlefield. If no player does, you draw three cards.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Verdant Extent</name>
+ <set rarity="uncommon">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment - Aura </type>
+ <tablerow>1</tablerow>
+ <text>Enchant land
+When Verdant Extent enters the battlefield, you may search your library for a Forest card, reveal it, put it into your hand, then shuffle.
+Enchanted land has “G, T: Target creature gets +3/+3 until end of turn. Activate only as a sorcery.”</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Vivid Vortex</name>
+ <set rarity="rare">RAK</set>
+ <color>G</color>
+ <manacost>1G</manacost>
+ <cmc>2</cmc>
+ <type>Enchantment</type>
+ <tablerow>1</tablerow>
+ <text>Whenever you tap a creature for mana, add an additional one mana of any color.
+Awaken 2—3G (When you cast this spell for 3G, put two +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Wild Storyteller</name>
+ <set rarity="rare">RAK</set>
+ <color>G</color>
+ <manacost>2G</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Bard </type>
+ <pt>2/4</pt>
+ <tablerow>2</tablerow>
+ <text>At the beginning of your upkeep, if you control a red enchantment, a blue token, and a white creature with mana value 5 or greater, and there’s a black sorcery card in your graveyard, you win the game.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Clean Slate</name>
+ <set rarity="mythic">RAK</set>
+ <color>WU</color>
+ <manacost>3WWUU</manacost>
+ <cmc>7</cmc>
+ <type>Sorcery</type>
+ <tablerow>3</tablerow>
+ <text>Destroy all lands. Take an extra turn after this one. Exile Clean Slate.</text>
+ <flavor-text>“Hupiri is defeated, but I fear the gods will never wake again. Its up to us now to take this world into its future.”
+—Oteo, to his voyagers</flavor-text>
+</card>
+<card>
+ <name>Gurahso, Favored Slayer</name>
+ <set rarity="rare">RAK</set>
+ <color>BR</color>
+ <manacost>3BR</manacost>
+ <cmc>5</cmc>
+ <type>Legendary Creature - Human Warrior </type>
+ <pt>5/4</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+Whenever a non-Human creature an opponent controls dies, create a Treasure token.
+WUBRG: Destroy target creature. Activate this ability only if you control Paradise.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Hupiri, Vengeant Storm</name>
+ <set rarity="mythic">RAK</set>
+ <color>UR</color>
+ <manacost>4UR</manacost>
+ <cmc>6</cmc>
+ <type>Legendary Creature - Elemental Shaman </type>
+ <pt>6/5</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+When Hupiri, Vengeant Storm enters the battlefield, exile any number of instant and/or sorcery cards from your graveyard and put a storm counter on each of them. (When you cast this spell, copy it for each spell cast before it this turn.)
+Whenever you cast an instant or sorcery spell, you may cast a card you own in exile with a storm counter on it.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Oteo, Conqueror Redeemed</name>
+ <set rarity="rare">RAK</set>
+ <color>WU</color>
+ <manacost>WU</manacost>
+ <cmc>2</cmc>
+ <type>Legendary Creature - Human Warrior </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+5, T: Search your library for a card with voyage, reveal it, put it into your hand, then shuffle.
+WUBRG: Draw a card for each color among nonland permanents you control. Activate this ability only if you control Paradise.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Toahanga, Shifter Champion</name>
+ <set rarity="mythic">RAK</set>
+ <color>RG</color>
+ <manacost>2RG</manacost>
+ <cmc>4</cmc>
+ <type>Legendary Planeswalker - Toahanga </type>
+ <loyalty>4</loyalty>
+ <tablerow>1</tablerow>
+ <text>[+1]: You may discard a card. If you do, reveal the top card of your library. If it’s a land card, put it onto the battlefield. Otherwise, put it into your hand.
+[0]: Until end of turn, Toahanga, Shifter Champion becomes a 4/4 green Boar creature with indestructible and haste.
+[-3]: Destroy target permanent. Its controller reveals the top card of their library. If it’s a permanent card, they put it onto the battlefield.</text>
+</card>
+<card>
+ <name>World Elemental</name>
+ <set rarity="mythic">RAK</set>
+ <color>WUBRG</color>
+ <manacost>2WUBRG</manacost>
+ <cmc>7</cmc>
+ <type>Creature - Elemental </type>
+ <pt>0/0</pt>
+ <tablerow>2</tablerow>
+ <text>World Elemental gets +1/+1 for each differently named permanent you control.
+Whenever World Elemental attacks, gain control of target permanent that doesn’t share a name with a permanent you control.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Animus Bonder</name>
+ <set rarity="uncommon">RAK</set>
+ <color>UR</color>
+ <manacost>U/RU/RU/RU/R</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Human Shaman </type>
+ <pt>3/4</pt>
+ <tablerow>2</tablerow>
+ <text>Whenever you cast a noncreature spell, create a 1/1 blue Bird creature token with flying.</text>
+ <flavor-text>Elite shamans train at the Grave of Hupiri, where an undying thunderstorm clashes with an unceasing eruption.</flavor-text>
+</card>
+<card>
+ <name>Ascended Aswan</name>
+ <set rarity="rare">RAK</set>
+ <color>WUBRG</color>
+ <manacost>B/RB/GB/WB/U</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Vampire Shapeshifter </type>
+ <pt>4/5</pt>
+ <tablerow>2</tablerow>
+ <text>Flash
+Menace, deathtouch, lifelink</text>
+ <flavor-text>Once an Aswan has gathered enough power, it has no more need to obscure its true form.</flavor-text>
+</card>
+<card>
+ <name>Cinder Dancer</name>
+ <set rarity="common">RAK</set>
+ <color>BR</color>
+ <manacost>3B/R</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Human Bard Shaman </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>When Cinder Dancer enters the battlefield, it deals 1 damage to any target.</text>
+ <flavor-text>The last performance at Meke festivals tells of how the god Rahoke burnt his sister Hupiri to ash.</flavor-text>
+</card>
+<card>
+ <name>Coralshell Wurm</name>
+ <set rarity="common">RAK</set>
+ <color>RG</color>
+ <manacost>5R/G</manacost>
+ <cmc>6</cmc>
+ <type>Creature - Coral Wurm </type>
+ <pt>6/5</pt>
+ <tablerow>2</tablerow>
+ <text>Trample</text>
+ <flavor-text>It rests for years after a meal, allowing the reef to thrive until it surfaces again.</flavor-text>
+</card>
+<card>
+ <name>Elven Lifeweaver</name>
+ <set rarity="uncommon">RAK</set>
+ <color>WG</color>
+ <manacost>G/WG/WG/WG/W</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Elf Shaman </type>
+ <pt>3/5</pt>
+ <tablerow>2</tablerow>
+ <text>Whenever Elven Lifeweaver attacks, choose up to two target creatures or enchanted lands. Untap those permanents.</text>
+ <flavor-text>Wherever she walks, the world sighs in relief.</flavor-text>
+</card>
+<card>
+ <name>Exiled Mender</name>
+ <set rarity="common">RAK</set>
+ <color>WB</color>
+ <manacost>1W/B</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Human Cleric Warrior </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Lifelink</text>
+ <flavor-text>“I’ve broken taboo before, and I’ll do it again if that means doing the right thing—something the royals would know nothing about.”</flavor-text>
+</card>
+<card>
+ <name>Gilded Adarna</name>
+ <set rarity="rare">RAK</set>
+ <color>WUBRG</color>
+ <manacost>R/GR/WR/UR/B</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Phoenix </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Flying, trample
+Whenever Gilded Adarna deals combat damage to an opponent, create that many Treasure tokens.
+WUBRG: Return Gilded Adarna from your graveyard to your hand.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Glowstream Karu</name>
+ <set rarity="common">RAK</set>
+ <color>UR</color>
+ <manacost>U/R</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Jellyfish </type>
+ <pt>0/3</pt>
+ <tablerow>2</tablerow>
+ <text>1: Glowstream Karu gets +1/-1 until end of turn.</text>
+ <flavor-text>“My annual visit with Gau Loni was cut short this year. As we approached the lagoon, a thunderstorm formed overhead, and the karu assaulted our fleet.”
+—Kohoru, high earthcrafter</flavor-text>
+</card>
+<card>
+ <name>Grounded Kakapo</name>
+ <set rarity="common">RAK</set>
+ <color>WG</color>
+ <manacost>4G/W</manacost>
+ <cmc>5</cmc>
+ <type>Creature - Griffin </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Vigilance</text>
+ <flavor-text>“The elves molded their griffins, having them give up flight in exchange for speed and strength. Much better suited to scout the craftlands.”
+—Sarasa’s notes</flavor-text>
+</card>
+<card>
+ <name>Kelp Chimera</name>
+ <set rarity="rare">RAK</set>
+ <color>WUBRG</color>
+ <manacost>G/WG/UG/BG/R</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Chimera </type>
+ <pt>5/5</pt>
+ <tablerow>2</tablerow>
+ <text>When Kelp Chimera enters the battlefield, you may sacrifice another creature. When you do, Kelp Chimera deals damage to target creature an opponent controls equal to the sacrificed creature’s power and you gain life equal to the sacrificed creature’s toughness. If the sacrificed creature had mana value 4 or greater, draw a card.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Long-Spear Instructor</name>
+ <set rarity="uncommon">RAK</set>
+ <color>WR</color>
+ <manacost>R/WR/WR/WR/W</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Human Scout </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>First strike
+At the beginning of combat on your turn, another target creature you control gets +2/+0 and gains first strike until end of turn.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Pristine Creation</name>
+ <set rarity="uncommon">RAK</set>
+ <color>UG</color>
+ <manacost>G/UG/UG/UG/U</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Shark Elemental </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Ward 4 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 4.)</text>
+ <flavor-text>“A survivor from an ancient time, when the traitor gods still lived.”
+—Morohu, Kalepa vorticer</flavor-text>
+</card>
+<card>
+ <name>Rahoke's Ruiner</name>
+ <set rarity="uncommon">RAK</set>
+ <color>BR</color>
+ <manacost>B/RB/RB/RB/R</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Elemental Demon </type>
+ <pt>6/6</pt>
+ <tablerow>2</tablerow>
+ <text>Menace
+When Rahoke’s Ruiner enters the battlefield, sacrifice a creature.</text>
+ <flavor-text>Sworn in service to chaos and carnage.</flavor-text>
+</card>
+<card>
+ <name>Reko's Protege</name>
+ <set rarity="common">RAK</set>
+ <color>WR</color>
+ <manacost>2R/W</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Human Warrior </type>
+ <pt>3/2</pt>
+ <tablerow>2</tablerow>
+ <text>Whenever Reko’s Protege attacks, it gets +1/+1 until end of turn.</text>
+ <flavor-text>“Strike like lightning—the thunder will follow.”
+—Reko of the Broken Grove</flavor-text>
+</card>
+<card>
+ <name>Reverent Fisher</name>
+ <set rarity="common">RAK</set>
+ <color>UG</color>
+ <manacost>1U/G</manacost>
+ <cmc>2</cmc>
+ <type>Creature - Elf Warrior </type>
+ <pt>2/1</pt>
+ <tablerow>2</tablerow>
+ <text>Reverent Fisher can’t be blocked by creatures with power 2 or less.</text>
+ <flavor-text>“I would never hunt small-fry. Not that it’s hard to do avoid them—they learned to stay away on their own.”</flavor-text>
+</card>
+<card>
+ <name>Ru Kano Scavengers</name>
+ <set rarity="uncommon">RAK</set>
+ <color>BG</color>
+ <manacost>B/GB/GB/GB/G</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Crab </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>B/GB/GB/GB/G, Exile Ru Kano Scavengers from your graveyard: Put four +1/+1 counters on target creature. Activate only as a sorcery.</text>
+ <flavor-text>The wreckage of the ancient city of Ru Kano teems with life hitherto unknown to the surface world.</flavor-text>
+</card>
+<card>
+ <name>Seeding Frenzy</name>
+ <set rarity="common">RAK</set>
+ <color>WU</color>
+ <manacost>3W/U</manacost>
+ <cmc>4</cmc>
+ <type>Instant</type>
+ <tablerow>3</tablerow>
+ <text>Create two 1/1 blue Bird creature tokens with flying. Scry 2.</text>
+ <flavor-text>“It’s hard to ignore the beacons reversing, or the waves of birds which wash over the island afterwards.”
+—Morohu, Kalepa vorticer</flavor-text>
+</card>
+<card>
+ <name>Shrewd Aristocrat</name>
+ <set rarity="uncommon">RAK</set>
+ <color>WB</color>
+ <manacost>W/BW/BW/BW/B</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Human Noble </type>
+ <pt>3/4</pt>
+ <tablerow>2</tablerow>
+ <text>When Shrewd Aristocrat enters the battlefield, you gain 3 life.
+T: Each player may pay 3 life. Each player that does draws a card.</text>
+ <flavor-text>“A good leader gives—a great leader receives.”</flavor-text>
+</card>
+<card>
+ <name>Snatching Poukai</name>
+ <set rarity="uncommon">RAK</set>
+ <color>WU</color>
+ <manacost>W/UW/UW/UW/U</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Bird </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+When Snatching Poukai enters the battlefield, tap target creature an opponent controls. It doesn’t untap during its controller’s next untap step.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Solitary Survivor</name>
+ <set rarity="rare">RAK</set>
+ <color>WUBRG</color>
+ <manacost>W/UW/BW/RW/G</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Whale Warrior </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Whenever Solitary Survivor becomes blocked by one or more creatures, it deals damage equal to its toughness to target creature blocking it and you gain that much life.
+1: Solitary Survivor gets -1/+1 until end of turn.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Sporewatch Nuno</name>
+ <set rarity="common">RAK</set>
+ <color>BG</color>
+ <manacost>2G/B</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Ouphe </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Deathtouch
+When Sporewatch Nuno enters the battlefield, mill three cards.</text>
+ <flavor-text>Walk with respect—You never know what might be beneath your feet.</flavor-text>
+</card>
+<card>
+ <name>Surfstream Cruiser</name>
+ <set rarity="rare">RAK</set>
+ <color>WUBRG</color>
+ <manacost>U/BU/RU/GU/W</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Human Shaman Turtle </type>
+ <pt>3/5</pt>
+ <tablerow>2</tablerow>
+ <text>Haste, defender
+T: Look at the top card of your library. If it has mana value 2 or less, you may reveal it and put it into your hand. Otherwise, put it into your graveyard.
+Whenever you cast a spell, untap Surfstream Cruiser.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Third-Tooth Tracker</name>
+ <set rarity="uncommon">RAK</set>
+ <color>UB</color>
+ <manacost>U/BU/BU/BU/B</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Merfolk Scout </type>
+ <pt>3/3</pt>
+ <tablerow>2</tablerow>
+ <text>At the beginning of your end step, if an opponent lost life this turn, you draw a card.</text>
+ <flavor-text>“It is said that every wound tells a story. I make sure that story ends in death.”</flavor-text>
+</card>
+<card>
+ <name>Toahanga's Charger</name>
+ <set rarity="uncommon">RAK</set>
+ <color>RG</color>
+ <manacost>R/GR/GR/GR/G</manacost>
+ <cmc>4</cmc>
+ <type>Creature - Boar </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Whenever Toahanga’s Charger attacks, you may choose another target attacking creature. That creature has base power and toughness equal to Toahanga’s Charger’s power and toughness until end of turn.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Wavebreaker Adept</name>
+ <set rarity="common">RAK</set>
+ <color>UB</color>
+ <manacost>2U/B</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Merfolk Shaman </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Flash
+Flying</text>
+ <flavor-text>Wavebreakers earn their title by challenging a stormy sea, and crossing it without being torn apart.</flavor-text>
+</card>
+<card>
+ <name>Caldera-Crown Idol</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>2</manacost>
+ <cmc>2</cmc>
+ <type>Artifact</type>
+ <tablerow>1</tablerow>
+ <text>2, T, Sacrifice Caldera-Crown Idol: It deals 3 damage to any target.</text>
+ <flavor-text>A celebration begins when it finally explodes, marking what the Meke call the king’s “second crowning”.</flavor-text>
+</card>
+<card>
+ <name>Conch Caller</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>6</manacost>
+ <cmc>6</cmc>
+ <type>Artifact Creature - Golem </type>
+ <pt>5/5</pt>
+ <tablerow>2</tablerow>
+ <text>Vigilance</text>
+ <flavor-text>If an allied ship approaches, you’ll know by the sound of the conch. If an enemy ship approaches, you’ll know by the sound of splintering wood.</flavor-text>
+</card>
+<card>
+ <name>Echoshells</name>
+ <set rarity="rare">RAK</set>
+ <color></color>
+ <manacost>4</manacost>
+ <cmc>4</cmc>
+ <type>Artifact</type>
+ <tablerow>1</tablerow>
+ <text>T: Add one mana of any type that a land you control could produce.
+3, T: Search your library for a land card that doesn’t share a name with a land you control, put it onto the battlefield, then shuffle.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Engraved Moai</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>3</manacost>
+ <cmc>3</cmc>
+ <type>Artifact</type>
+ <tablerow>1</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+T: Add one mana of any color.
+3, T: Tap target creature. Activate this ability only if you control Paradise.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Homebound Kaulua</name>
+ <set rarity="rare">RAK</set>
+ <color></color>
+ <manacost>2</manacost>
+ <cmc>2</cmc>
+ <type>Artifact - Vehicle </type>
+ <tablerow>1</tablerow>
+ <text>Haste
+Whenever a basic land enters the battlefield under your control, Homebound Kaulua becomes an artifact creature until end of turn.
+Crew 2 (Tap any number of creatures you control with total power 2 or greater: This Vehicle becomes an artifact creature until end of turn.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Hooksword</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>1</manacost>
+ <cmc>1</cmc>
+ <type>Artifact - Equipment </type>
+ <tablerow>1</tablerow>
+ <text>Equipped creature gets +1/+1.
+Equip 1</text>
+ <flavor-text>“The pounamu doesn’t make the weapon any stronger, it just helps my adoring fans recognize me.”
+—Pakefa, Meke champion</flavor-text>
+</card>
+<card>
+ <name>The Paradise Gem</name>
+ <set rarity="rare">RAK</set>
+ <color></color>
+ <manacost>4</manacost>
+ <cmc>4</cmc>
+ <type>Legendary Artifact</type>
+ <tablerow>1</tablerow>
+ <text>Lands you control are every basic land type in addition to their other types.
+Whenever a land enters the battlefield under your control, you gain 3 life.</text>
+ <flavor-text>“The skeptics back on Brimst won’t be able to ignore this!”
+—Sarasa</flavor-text>
+</card>
+<card>
+ <name>Paradise Mantle</name>
+ <set rarity="uncommon">RAK</set>
+ <color></color>
+ <manacost>0</manacost>
+ <cmc>0</cmc>
+ <type>Artifact - Equipment </type>
+ <tablerow>1</tablerow>
+ <text>Equipped creature has “T: Add one mana of any color.”
+Equip 1</text>
+ <flavor-text>The stories told by veterans of the grand voyage inspire art imitating the fabled beauty of Tua Rahi.</flavor-text>
+</card>
+<card>
+ <name>Pearlescent Egg</name>
+ <set rarity="uncommon">RAK</set>
+ <color></color>
+ <manacost>2</manacost>
+ <cmc>2</cmc>
+ <type>Artifact</type>
+ <tablerow>1</tablerow>
+ <text>Voyage (WUBRG: Create Paradise, a legendary land token with hexproof and “T: Add one mana of any color.”)
+When Pearlescent Egg enters the battlefield, draw a card.
+1, T: Add one mana of any color. If you control Paradise, add two mana in any combination of colors instead.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Pounamu Keepsake</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>2</manacost>
+ <cmc>2</cmc>
+ <type>Artifact - Equipment </type>
+ <tablerow>1</tablerow>
+ <text>Equipped creature gets +2/+0.
+Whenever equipped creature leaves the battlefield, you may attach Pounamu Keepsake to a creature you control that shares a color with that creature.
+Equip 2</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Skyrider's Vessel</name>
+ <set rarity="uncommon">RAK</set>
+ <color></color>
+ <manacost>3</manacost>
+ <cmc>3</cmc>
+ <type>Artifact - Vehicle </type>
+ <tablerow>1</tablerow>
+ <text>Whenever Skyrider’s Vessel enters the battlefield or deals combat damage to an opponent, create a 1/1 blue Bird creature token with flying.
+Crew 3 (Tap any number of creatures you control with total power 3 or greater: This Vehicle becomes an artifact creature until end of turn.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Sturdy Canoe</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>2</manacost>
+ <cmc>2</cmc>
+ <type>Artifact - Vehicle </type>
+ <tablerow>1</tablerow>
+ <text>When Sturdy Canoe enters the battlefield, scry 1.
+Crew 1 (Tap any number of creatures you control with total power 1 or greater: This Vehicle becomes an artifact creature until end of turn.)</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Toahanga's Tusker</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>4</manacost>
+ <cmc>4</cmc>
+ <type>Artifact Creature - Boar Construct </type>
+ <pt>4/3</pt>
+ <tablerow>2</tablerow>
+ <text>Toahanga’s Tusker attacks each combat if able.</text>
+ <flavor-text>“Pounamu is a precious green stone used to decorate things of great value. I shaped all of mine into giant animals, of course.”
+—Toahanga, to Sarasa</flavor-text>
+</card>
+<card>
+ <name>Voyager's Vault</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost>1</manacost>
+ <cmc>1</cmc>
+ <type>Artifact Creature - Wall </type>
+ <pt>0/3</pt>
+ <tablerow>2</tablerow>
+ <text>Defender
+2, T, Sacrifice Voyager’s Vault: Add two mana of different colors. Draw a card.</text>
+ <flavor-text>Its records extend all the way back to the first grand voyage.</flavor-text>
+</card>
+<card>
+ <name>Coral Barrens</name>
+ <set rarity="uncommon">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <text>T: Add C.
+1, T, Sacrifice Coral Barrens: Destroy target nonbasic land. Activate this ability only if you control three or more basic lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Crafting Hut</name>
+ <set rarity="uncommon">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <text>T: Add C.
+2, T, Sacrifice Crafting Hut: Return target Aura card from your graveyard to your hand.</text>
+ <flavor-text>Elven handiwork is seen inside Rakoa’s houses and across Rakoa’s landscapes.</flavor-text>
+</card>
+<card>
+ <name>Crossroads of Paradise</name>
+ <set rarity="uncommon">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <cipt>1</cipt>
+ <text>Crossroads of Paradise enters the battlefield tapped.
+T: Add C.
+3, T, Sacrifice Crossroads of Paradise: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>The Draconic Crevice</name>
+ <set rarity="rare" splitterPath="/The Draconic Crevice.full.png" >RAK</set>
+ <color></color>
+ <related attach="attach">Laza Kolo, the Shaper</related>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <text>The Draconic Crevice enters the battlefield tapped.
+T: Add R.
+3R, T, Sacrifice two lands: Transform The Draconic Crevice, then untap it. Activate only during your turn.
+---
+(Back): Laza Kolo, the Shaper</text>
+</card>
+<card>
+ <name>Laza Kolo, the Shaper</name>
+ <set rarity="rare" splitterPath="/Laza Kolo, the Shaper.full.png" >RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Legendary Creature - Dragon </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+Whenever Laza Kolo, the Shaper attacks, you may sacrifice a land. If you do, create a 2/2 red Dragon creature token with flying.
+---
+(Front): The Draconic Crevice</text>
+</card>
+<card>
+ <name>Elipo Ono Craftland</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land - Plains </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add W.)
+Elipo Ono Craftland enters the battlefield tapped.
+Homeland — When Elipo Ono Craftland enters the battlefield, if you control three or more Plains, target creature you control gets +2/+2 until end of turn.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>The Fangmarked Cave</name>
+ <set rarity="rare" splitterPath="/The Fangmarked Cave.full.png" >RAK</set>
+ <color></color>
+ <related attach="attach">Hak Bora, the Voracious</related>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <text>The Fangmarked Cave enters the battlefield tapped.
+T: Add B.
+3B, T, Pay 8 life: Transform The Fangmarked Cave, then untap it. Activate only during your turn.
+---
+(Back): Hak Bora, the Voracious</text>
+</card>
+<card>
+ <name>Hak Bora, the Voracious</name>
+ <set rarity="rare" splitterPath="/Hak Bora, the Voracious.full.png" >RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Legendary Creature - Snake Demon </type>
+ <pt>5/5</pt>
+ <tablerow>2</tablerow>
+ <text>Menace
+Whenever another creature dies, you gain 1 life.
+1B, Sacrifice another creature: Draw a card.
+---
+(Front): The Fangmarked Cave</text>
+</card>
+<card>
+ <name>Flourishing Village</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land - Forest Plains </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add G or W.)
+Flourishing Village enters the battlefield tapped unless you control three or more other lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>The Fogwrapped Valley</name>
+ <set rarity="rare" splitterPath="/The Fogwrapped Valley.full.png" >RAK</set>
+ <color></color>
+ <related attach="attach">Ea Ea, the Beloved</related>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <text>The Fogwrapped Valley enters the battlefield tapped.
+T: Add W.
+3W, T, Tap three untapped creatures you control: Transform The Fogwrapped Valley, then untap it. Activate only during your turn.
+---
+(Back): Ea Ea, the Beloved</text>
+</card>
+<card>
+ <name>Ea Ea, the Beloved</name>
+ <set rarity="rare" splitterPath="/Ea Ea, the Beloved.full.png" >RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Legendary Creature - Whale </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+Creatures your opponents control enter the battlefield tapped.
+Whenever Ea Ea, the Beloved attacks, you gain 1 life for each attacking creature.
+---
+(Front): The Fogwrapped Valley</text>
+</card>
+<card>
+ <name>Hazed Spire</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land - Swamp Mountain </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add B or R.)
+Hazed Spire enters the battlefield tapped unless you control three or more other lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>The Luminescent Lagoon</name>
+ <set rarity="rare" splitterPath="/The Luminescent Lagoon.full.png" >RAK</set>
+ <color></color>
+ <related attach="attach">Gau Loni, the Enlightened</related>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <text>The Luminescent Lagoon enters the battlefield tapped.
+T: Add U.
+3U, T, Exile five instant or sorcery cards from your graveyard: Transform The Luminescent Lagoon, then untap it. Activate only during your turn.
+---
+(Back): Gau Loni, the Enlightened</text>
+</card>
+<card>
+ <name>Gau Loni, the Enlightened</name>
+ <set rarity="rare" splitterPath="/Gau Loni, the Enlightened.full.png" >RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Legendary Creature - Jellyfish </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+Ward 2
+Whenever Gau Loni, the Enlightened deals combat damage to an opponent, draw a card.
+---
+(Front): The Luminescent Lagoon</text>
+</card>
+<card>
+ <name>Mohele Beacon</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land - Island </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add U.)
+Mohele Beacon enters the battlefield tapped.
+Homeland — When Mohele Beacon enters the battlefield, if you control three or more Islands, you may scry 2.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Mushroom Bog</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land  - Swamp Forest </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add B or G.)
+Mushroom Bog enters the battlefield tapped unless you control three or more other lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Opaku Monument</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land - Forest </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add G.)
+Opaku Monument enters the battlefield tapped.
+Homeland — When Opaku Monument enters the battlefield, if you control three or more Forests, put a +1/+1 counter on target creature you control.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Peaceful Lagoon</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land - Plains Island </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add W or U.)
+Peaceful Lagoon enters the battlefield tapped unless you control three or more other lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>The Resting Place</name>
+ <set rarity="rare" splitterPath="/The Resting Place.full.png" >RAK</set>
+ <color></color>
+ <related attach="attach">Namo-o, the Ancestor</related>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <text>The Resting Place enters the battlefield tapped.
+T: Add G.
+3G, T, Exile five creature cards from your graveyard: Transform The Resting Place, then untap it. Activate only during your turn.
+---
+(Back): Namo-o, the Ancestor</text>
+</card>
+<card>
+ <name>Namo-o, the Ancestor</name>
+ <set rarity="rare" splitterPath="/Namo-o, the Ancestor.full.png" >RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Legendary Creature - Elemental Hydra </type>
+ <pt>5/5</pt>
+ <tablerow>2</tablerow>
+ <text>Namo-o, the Ancestor can’t be blocked by creatures with power 2 or less.
+Whenever Namo-o, the Ancestor attacks, look at the top three cards of your library. Put any number of them into your graveyard, and the rest back on top in any order.
+---
+(Front): The Resting Place</text>
+</card>
+<card>
+ <name>Robust Tangle</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land - Mountain Forest </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add R or G.)
+Robust Tangle enters the battlefield tapped unless you control three or more other lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Ru Kano Ruins</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land - Swamp </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add B.)
+Ru Kano Ruins enters the battlefield tapped.
+Homeland — When Ru Kano Ruins enters the battlefield, if you control three or more Swamps, each opponent loses 1 life and you gain 1 life.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Sea-Soaked Cliff</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land  - Island Mountain </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add U or R.)
+Sea-Soaked Cliff enters the battlefield tapped unless you control three or more other lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Seaside Cavern</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land - Island Swamp </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add U or B.)
+Seaside Cavern enters the battlefield tapped unless you control three or more other lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Shaded Shelter</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land  - Plains Swamp </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add W or B.)
+Shaded Shelter enters the battlefield tapped unless you control three or more other lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Shellback Tradepost</name>
+ <set rarity="uncommon">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <text>Shellback Tradepost enters the battlefield tapped.
+When Shellback Tradepost enters the battlefield, it doesn’t untap during its controller’s next untap step.
+T: Add one mana of any color.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Tropical Channel</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land  - Forest Island </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add G or U.)
+Tropical Channel enters the battlefield tapped unless you control three or more other lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Utamu Tubes</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land - Mountain </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add R.)
+Utamu Tubes enters the battlefield tapped.
+Homeland — When Utamu Tubes enters the battlefield, if you control three or more Mountains, create a 1/1 red Elemental creature token.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Valley Shrine</name>
+ <set rarity="uncommon">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <text>T: Add C.
+Spells you cast that target Valley Shrine cost 1 less to cast.</text>
+ <flavor-text>Each morning it’s slightly larger than the last, built up by the Menehune during the night.</flavor-text>
+</card>
+<card>
+ <name>World Seed</name>
+ <set rarity="mythic">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land</type>
+ <tablerow>0</tablerow>
+ <text>Flying, vigilance, trample, menace, lifelink
+World Seed enters the battlefield tapped.
+T: Add C.
+10: World Seed becomes a 10/10 Elemental creature until end of turn.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Zephyr Peak</name>
+ <set rarity="common">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Land  - Mountain Plains </type>
+ <tablerow>0</tablerow>
+ <text>(T: Add R or W.)
+Zephyr Peak enters the battlefield tapped unless you control three or more other lands.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>Paradise</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Legendary Land</type>
+ <tablerow>0</tablerow>
+ <text>Hexproof
+T: Add one mana of any color.</text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Plains 1</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Plains </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Plains 2</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Plains </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Plains 3</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Plains </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Plains 4</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Plains </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Plains Fullart</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Plains </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Island 1</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Island </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Island 2</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Island </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Island 3</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Island </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Island 4</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Island </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Island Fullart</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Island </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Swamp 1</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Swamp </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Swamp 2</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Swamp </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Swamp 3</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Swamp </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Swamp 4</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Swamp </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Swamp Fullart</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Swamp </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Mountain 1</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Mountain </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Mountain 2</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Mountain </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Mountain 3</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Mountain </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Mountain 4</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Mountain </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Mountain Fullart</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Mountain </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Forest 1</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Forest </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Forest 2</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Forest </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Forest 3</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Forest </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Forest 4</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Forest </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+<card>
+ <name>RAK Forest Fullart</name>
+ <set rarity="">RAK</set>
+ <color></color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Basic Land - Forest </type>
+ <tablerow>0</tablerow>
+ <text></text>
+ <flavor-text></flavor-text>
+</card>
+
+<!-->Tokens</-->
+
+<card>
+ <name>RAK Red Elemental</name>
+ <set>RAK</set>
+ <color>R</color>
+ <type>Token Creature - Elemental </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+<reverse-related>Roving Home</reverse-related>
+<reverse-related>Devotee of Kalanua</reverse-related>
+<reverse-related>Utamu Tubes</reverse-related>
+<reverse-related>Rahoke's Punishment</reverse-related>
+<reverse-related count="2">Avatar of the Volcano</reverse-related>
+<reverse-related>Call of the Fire Gods</reverse-related>
+<reverse-related count="2">Lava Tubes Quarry</reverse-related>
+<reverse-related>Utaman Avenger</reverse-related>
+
+</card>
+<card>
+ <name>RAK Warrior 2</name>
+ <set>RAK</set>
+ <color>W</color>
+ <type>Token Creature - Warrior </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+<reverse-related>Craftland Dwelling</reverse-related>
+<reverse-related count="2">Assemble the Voyagers</reverse-related>
+<reverse-related>Reko of the Broken Grove</reverse-related>
+<reverse-related>Avatar of the Expanse</reverse-related>
+<reverse-related>Koe and Hau, Sentinels</reverse-related>
+
+</card>
+<card>
+ <name>RAK Bird 1</name>
+ <set>RAK</set>
+ <color>U</color>
+ <type>Token Creature - Bird </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+<reverse-related>Roving Home</reverse-related>
+<reverse-related>Kalepa Drake</reverse-related>
+<reverse-related>Te Matu's Watcher</reverse-related>
+<reverse-related>Animus Bonder</reverse-related>
+<reverse-related>Seeding Frenzy</reverse-related>
+<reverse-related>Skyrider's Vessel</reverse-related>
+
+</card>
+<card>
+ <name>RAK Warrior 1</name>
+ <set>RAK</set>
+ <color>W</color>
+ <type>Token Creature - Warrior </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+<reverse-related>Craftland Dwelling</reverse-related>
+<reverse-related count="2">Assemble the Voyagers</reverse-related>
+<reverse-related>Reko of the Broken Grove</reverse-related>
+<reverse-related>Avatar of the Expanse</reverse-related>
+<reverse-related>Koe and Hau, Sentinels</reverse-related>
+
+</card>
+<card>
+ <name>RAK Bird 2</name>
+ <set>RAK</set>
+ <color>U</color>
+ <type>Token Creature - Bird </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+<reverse-related>Roving Home</reverse-related>
+<reverse-related>Kalepa Drake</reverse-related>
+<reverse-related>Te Matu's Watcher</reverse-related>
+<reverse-related>Animus Bonder</reverse-related>
+<reverse-related>Seeding Frenzy</reverse-related>
+<reverse-related>Skyrider's Vessel</reverse-related>
+
+</card>
+<card>
+ <name>RAK Red Elemental 2</name>
+ <set>RAK</set>
+ <color>R</color>
+ <type>Token Creature - Elemental </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+<reverse-related>Roving Home</reverse-related>
+<reverse-related>Devotee of Kalanua</reverse-related>
+<reverse-related>Utamu Tubes</reverse-related>
+<reverse-related>Rahoke's Punishment</reverse-related>
+<reverse-related count="2">Avatar of the Volcano</reverse-related>
+<reverse-related>Call of the Fire Gods</reverse-related>
+<reverse-related count="2">Lava Tubes Quarry</reverse-related>
+<reverse-related>Utaman Avenger</reverse-related>
+
+</card>
+<card>
+ <name>RAK Dragon 1</name>
+ <set>RAK</set>
+ <color>R</color>
+ <type>Token Creature - Dragon </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+<reverse-related>Laza Kolo, the Vigorous</reverse-related>
+
+</card>
+<card>
+ <name>RAK Beast 1</name>
+ <set>RAK</set>
+ <color>G</color>
+ <type>Token Creature - Beast </type>
+ <pt>5/5</pt>
+ <tablerow>2</tablerow>
+ <text>Trample</text>
+ <token>1</token>
+<reverse-related>Spawning Grounds</reverse-related>
+<reverse-related>Roving Home</reverse-related>
+
+</card>
+<card>
+ <name>RAK Beast 2</name>
+ <set>RAK</set>
+ <color>G</color>
+ <type>Token Creature - Beast </type>
+ <pt>5/5</pt>
+ <tablerow>2</tablerow>
+ <text>Trample</text>
+ <token>1</token>
+<reverse-related>Spawning Grounds</reverse-related>
+<reverse-related>Roving Home</reverse-related>
+
+</card>
+<card>
+ <name>RAK Dragon 2</name>
+ <set>RAK</set>
+ <color>R</color>
+ <type>Token Creature - Dragon </type>
+ <pt>2/2</pt>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+<reverse-related>Laza Kolo, the Vigorous</reverse-related>
+
+</card>
+<card>
+ <name>RAK Merfolk 1</name>
+ <set>RAK</set>
+ <color>B</color>
+ <type>Token Creature - Merfolk </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>Whenever this creature attacks, each opponent loses 1 life.</text>
+ <token>1</token>
+<reverse-related>Riptide Ambusher</reverse-related>
+<reverse-related>Sharkling Attack</reverse-related>
+<reverse-related>Abyssal Crevice</reverse-related>
+<reverse-related>Roving Home</reverse-related>
+
+</card>
+<card>
+ <name>RAK Merfolk 2</name>
+ <set>RAK</set>
+ <color>B</color>
+ <type>Token Creature - Merfolk </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>Whenever this creature attacks, each opponent loses 1 life.</text>
+ <token>1</token>
+<reverse-related>Riptide Ambusher</reverse-related>
+<reverse-related>Sharkling Attack</reverse-related>
+<reverse-related>Abyssal Crevice</reverse-related>
+<reverse-related>Roving Home</reverse-related>
+
+</card>
+<card>
+ <name>Sky Whale 1</name>
+ <set>RAK</set>
+ <color>W</color>
+ <type>Token Creature - Whale </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+<reverse-related>Skywhale Migration</reverse-related>
+
+</card>
+<card>
+ <name>Sky Whale 2</name>
+ <set>RAK</set>
+ <color>W</color>
+ <type>Token Creature - Whale </type>
+ <pt>4/4</pt>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+<reverse-related>Skywhale Migration</reverse-related>
+
+</card>
+<card>
+ <name>RAK Birds of Paradise 1</name>
+ <set>RAK</set>
+ <color>G</color>
+ <type>Token Creature - Bird </type>
+ <pt></pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+T: Add one mana of any color.</text>
+ <token>1</token>
+<reverse-related>Caretaker of Paradise</reverse-related>
+
+</card>
+<card>
+ <name>RAK Birds of Paradise 2</name>
+ <set>RAK</set>
+ <color>G</color>
+ <type>Token Creature - Bird </type>
+ <pt></pt>
+ <tablerow>2</tablerow>
+ <text>Flying
+T: Add one mana of any color.</text>
+ <token>1</token>
+<reverse-related>Caretaker of Paradise</reverse-related>
+
+</card>
+<card>
+ <name>RAK Food 1</name>
+ <set>RAK</set>
+ <color></color>
+ <type>Artifact Token - Food </type>
+ <tablerow>1</tablerow>
+ <text></text>
+ <token>1</token>
+<reverse-related>Blessing of Prosperity</reverse-related>
+
+</card>
+<card>
+ <name>RAK Food 2</name>
+ <set>RAK</set>
+ <color></color>
+ <type>Artifact Token - Food </type>
+ <tablerow>1</tablerow>
+ <text></text>
+ <token>1</token>
+<reverse-related>Blessing of Prosperity</reverse-related>
+
+</card>
+
+</cards>
+</cockatrice_carddatabase>

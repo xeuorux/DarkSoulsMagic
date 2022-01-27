@@ -1,0 +1,44 @@
+[
+  {
+    "mechanicName": "Voyage",
+    "mechanicDescription": "",
+    "mechanicFeatures": [ "Crest the Waters", "Pearlescent Egg", "Budding Seadrake" ],
+    "mechanicColorCodes": [ "W", "U", "B", "R", "G" ],
+    "showColorsAsHybrid": true
+  },
+  {
+    "mechanicName": "Homeland",
+    "mechanicDescription": "",
+    "mechanicFeatures": [ "Omalu Prince", "Disrupting Vortex", "Ru Kano Ruins" ],
+    "mechanicColorCodes": [ "W", "U", "B", "R", "G" ],
+    "showColorsAsHybrid": true
+  },
+  {
+    "mechanicName": "Awaken",
+    "mechanicDescription": "",
+    "mechanicFeatures": [ "Supplicate the Sleeping Gods", "Rahoke's Pact", "Kalanua's Wrath" ],
+    "mechanicColorCodes": [ "W", "U", "B", "R", "G" ],
+    "showColorsAsHybrid": true
+  },
+  {
+    "mechanicName": "Hybrid",
+    "mechanicDescription": "",
+    "mechanicFeatures": [ "Shrewd Aristocrat", "Ascended Aswan", "Toahanga's Charger" ],
+    "mechanicColorCodes": [ "W", "U", "B", "R", "G" ],
+    "showColorsAsHybrid": true
+  },
+  {
+    "mechanicName": "Tattoos",
+    "mechanicDescription": "",
+    "mechanicFeatures": [ "Beastmaster's Tattoo", "Honor-Bound Honu", "Vorticer's Tattoo" ],
+    "mechanicColorCodes": [ "W", "U", "B", "R", "G" ],
+    "showColorsAsHybrid": true
+  },
+  {
+    "mechanicName": "Landcycling",
+    "mechanicDescription": "",
+    "mechanicFeatures": [ "Lava Blast", "Grasp the Currents", "Bombardment Zone" ],
+    "mechanicColorCodes": [ "W", "U", "B", "R", "G" ],
+    "showColorsAsHybrid": true
+  }
+]

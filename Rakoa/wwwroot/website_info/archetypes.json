@@ -1,0 +1,82 @@
+[
+  {
+    "archetypeName": "White/Blue Flyers",
+    "archetypeColorCode": "WU",
+    "archetypeDescription": "",
+    "archetypeFeature": "Snatching Poukai",
+    "archetypeKeyCommons": [ "", "", "" ],
+    "archetypeKeyUncommons": [ "", "", "" ]
+  },
+  {
+    "archetypeName": "Blue/Black Life Loss",
+    "archetypeColorCode": "UB",
+    "archetypeDescription": "",
+    "archetypeFeature": "Third-Tooth Tracker",
+    "archetypeKeyCommons": [ "", "", "" ],
+    "archetypeKeyUncommons": [ "", "", "" ]
+  },
+  {
+    "archetypeName": "Black/Red Sacrifice",
+    "archetypeColorCode": "BR",
+    "archetypeDescription": "",
+    "archetypeFeature": "Rahoke's Ruiner",
+    "archetypeKeyCommons": [ "", "", "" ],
+    "archetypeKeyUncommons": [ "", "", "" ]
+  },
+  {
+    "archetypeName": "Red/Green Awaken",
+    "archetypeColorCode": "RG",
+    "archetypeDescription": "",
+    "archetypeFeature": "Toahanga's Charger",
+    "archetypeKeyCommons": [ "", "", "" ],
+    "archetypeKeyUncommons": [ "", "", "" ]
+  },
+  {
+    "archetypeName": "Green/White Land Auras",
+    "archetypeColorCode": "GW",
+    "archetypeDescription": "",
+    "archetypeFeature": "Elven Lifeweaver",
+    "archetypeKeyCommons": [ "", "", "" ],
+    "archetypeKeyUncommons": [ "", "", "" ]
+  },
+  {
+    "archetypeName": "WB Lifegain",
+    "archetypeColorCode": "WB",
+    "archetypeDescription": "",
+    "archetypeFeature": "Shrewd Aristocrat",
+    "archetypeKeyCommons": [ "", "", "" ],
+    "archetypeKeyUncommons": [ "", "", "" ]
+  },
+  {
+    "archetypeName": "UR Spells",
+    "archetypeColorCode": "UR",
+    "archetypeDescription": "",
+    "archetypeFeature": "Animus Bonder",
+    "archetypeKeyCommons": [ "", "", "" ],
+    "archetypeKeyUncommons": [ "", "", "" ]
+  },
+  {
+    "archetypeName": "Black/Green Graveyard",
+    "archetypeColorCode": "BG",
+    "archetypeDescription": "",
+    "archetypeFeature": "Ru Kano Scavengers",
+    "archetypeKeyCommons": [ "", "", "" ],
+    "archetypeKeyUncommons": [ "", "", "" ]
+  },
+  {
+    "archetypeName": "Red/White Weenie",
+    "archetypeColorCode": "RW",
+    "archetypeDescription": "",
+    "archetypeFeature": "Long-Spear Instructor",
+    "archetypeKeyCommons": [ "", "", "" ],
+    "archetypeKeyUncommons": [ "", "", "" ]
+  },
+  {
+    "archetypeName": "GU Voltron",
+    "archetypeColorCode": "GU",
+    "archetypeDescription": "",
+    "archetypeFeature": "Pristine Creation",
+    "archetypeKeyCommons": [ "", "", "" ],
+    "archetypeKeyUncommons": [ "", "", "" ]
+  }
+]

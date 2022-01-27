@@ -1,0 +1,59 @@
+﻿@page "/"
+
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.IO;
+
+@inject Services.MagicSiteServices.CardDatabase CardDatabase
+@inject Services.MagicSiteServices.WebsiteConfig config
+
+<h1 id="tagline">@config.info.tagline</h1>
+
+@if (config.info.features)
+{
+    @if (features == null)
+    {
+        <p class="loading-bar">@config.info.loadingText</p>
+    }
+    else
+    {
+        <div class="content-box features-div">
+            @if (config.info.homePageFeaturesTitle != null)
+            {
+                <h1 class="features-title">@config.info.homePageFeaturesTitle</h1>
+            }
+            <div class="mechanics-and-themes">
+                @foreach (FeatureInfo info in features)
+                {
+                    <div class="mechanics-and-themes-feature">
+                        <h3>@info.featureTitle</h3>
+                        <img class="card-image" src="@($"/rak_card_images/{info.featureCardName}.full.png")" alt="@info.featureCardName" />
+                    </div>
+                }
+            </div>
+        </div>
+    }
+}
+
+@code {
+    private class FeatureInfo
+    {
+        public string featureTitle { get; set; }
+        public string featureCardName { get; set; }
+    }
+
+    private FeatureInfo[] features;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using (FileStream fs = File.OpenRead("wwwroot/website_info/features.json"))
+        {
+            features = await JsonSerializer.DeserializeAsync<FeatureInfo[]>(fs);
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        CardDatabase.Initialize();
+    }
+}

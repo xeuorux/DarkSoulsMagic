@@ -1,0 +1,124 @@
+﻿@using System.Text.RegularExpressions
+@using MagicSite;
+
+<div class="content-box spoiler-holder @holderClass @(fullInfo ? "full-info" : "")">
+    @{
+        if (cards == null)
+        {
+            <p>No cards loaded.</p>
+        }
+        else
+        {
+            IEnumerator<Card> enumerator = cards.GetEnumerator();
+            while (enumerator.MoveNext())
+            {
+                Card card = enumerator.Current;
+                string source = "/rak_card_images/" + card.name + ".full.png";
+
+                <div class="individual-card-spoiler-info-holder">
+                    <div class="@(usesFlex ? "" : "card-info-grid")">
+                        @if (rendersHaveLargeHovers)
+                        {
+                            <CardTooltip CardName="@card.name" UseCardImage="true" ImageClass="spoiler-render" />
+                        }
+                        else
+                        {
+                            <img class="card-image spoiler-render" src=@source alt="@(card.name)" />
+                        }
+                        <div style="grid-area: info" class="individual-card-info">
+                            <h3><strong>@card.name</strong></h3>
+                            <div class="mana-cost">
+                                @{
+                                    List<string> symbols = new List<string>();
+                                    Match match = Regex.Match(card.manacost, @"^(?<generic>[0-9]*)(?<X>X*)(?<hybrid>(?:{[0-9A-Za-z]\/[0-9A-Za-z]})*)(?<else>[A-Za-z]*)");
+                                    try
+                                    {
+                                        symbols.Add(match.Groups["generic"].Value);
+                                    }
+                                    catch { };
+                                    try
+                                    {
+                                        for (int i = 0; i < match.Groups["X"].Length; i++)
+                                            symbols.Add("X");
+                                    }
+                                    catch { };
+
+                                    try
+                                    {
+                                        for (int i = 0; i < match.Groups["hybrid"].Length; i += 5)
+                                        {
+                                            string sub = match.Groups["hybrid"].Value.Substring(i, 5);
+                                            symbols.Add(sub[1] + "" + sub[3]);
+                                        }
+                                    }
+                                    catch { };
+
+                                    try
+                                    {
+                                        for (int i = 0; i < match.Groups["else"].Length; i++)
+                                            symbols.Add(match.Groups["else"].Value.Substring(i, 1));
+                                    }
+                                    catch { };
+
+                                    foreach (string str in symbols)
+                                    {
+                                        <img src="@($"/mana_symbols/mana_{str}.png")" alt="@str" />
+                                    }
+                                }
+                            </div>
+                            <div>
+                                <p><strong>@card.typeLine</strong></p>
+                                <p>@((MarkupString)formatRulesText(card.text))</p>
+                                @if (card.flavorText.Length > 0)
+                                {
+                                    <hr />
+                                    <p><i>@((MarkupString)formatFlavorText(card.flavorText))</i></p>
+                                }
+                                @if (card.typeLine.ToLower().Contains("creature"))
+                                {
+                                    <h2 class="power-toughness">@card.power/@card.toughness</h2>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string holderClass { get; set; }
+
+    [Parameter]
+    public IEnumerable<Card> cards { get; set; }
+
+    [Parameter]
+    public bool fullInfo { get; set; } = false;
+
+    [Parameter]
+    public bool usesFlex { get; set; } = false;
+
+    [Parameter]
+    public bool spaceBetween { get; set; } = false;
+
+    [Parameter]
+    public bool rendersHaveLargeHovers { get; set; } = false;
+
+    private string formatRulesText(string text)
+    {
+        string reminderTextItalicized = Regex.Replace(text, @"\([^\(\)]+\)", (e => "<span style=\"font-style: italic;\">" + e + "</span>"));
+        string newLinesInserted = Regex.Replace(reminderTextItalicized, "\\n", (e => "<br/>"));
+        string pseudosItalicized = Regex.Replace(newLinesInserted, @"^(?!.*\b[Cc]hoose.*).*( —)", (e => $"<span style=\"font-style: italic;\">{e.Groups[0].Value}</span>"));
+
+        return pseudosItalicized;
+    }
+
+    private string formatFlavorText(string text)
+    {
+        string newLinesInserted = Regex.Replace(text, "\\n", (e => "<br/>"));
+
+        return newLinesInserted;
+    }
+}

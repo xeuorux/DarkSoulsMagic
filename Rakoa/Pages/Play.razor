@@ -1,0 +1,540 @@
+﻿@page "/Play"
+
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.IO;
+@using Microsoft.CSharp
+@using System.CodeDom.Compiler
+@using System.Text
+@using System.Reflection
+@using System;
+@using System.Collections.Generic;
+@using System.Linq;
+@using Microsoft.CodeAnalysis;
+@using Microsoft.CodeAnalysis.CSharp;
+@using Microsoft.CodeAnalysis.Emit;
+@using MagicSite;
+@using System.Composition;
+@using System.Text.RegularExpressions;
+
+@inject Services.MagicSiteServices.CardDatabase cards
+@inject Services.MagicSiteServices.WebsiteConfig config
+@inject IJSRuntime JSRuntime
+
+@if (config.info.playPage)
+{
+    @if (config.info.playPageTitle != null)
+    {
+        <h2>@config.info.playPageTitle</h2>
+    }
+
+    <div class="page-tab-selector">
+        <button class="@(selectedIndex == 0 ? "active" : "")" @onclick="@(e => selectedIndex = 0)">
+            Digital Play
+        </button>
+        <button class="@(selectedIndex == 1 ? "active" : "")" @onclick="@(e => selectedIndex = 1)">
+            Physical Play
+        </button>
+        <button class="@(selectedIndex == 2 ? "active" : "")" @onclick="@(e => selectedIndex = 2)">
+            Make Booster Packs
+        </button>
+    </div>
+
+    @if (selectedIndex == 0)
+    {
+        <div class="content-box play-page-content">
+            <h2>Cockatrice</h2>
+            <p>Cockatrice is an open-source, multiplatform program for playing tabletop card games over a network. It supports playing custom cards! If you and your opponent both have Hollows of Lordran installed, you can easily play games using its cards either on their own or alongside canon cards!</p>
+            <p>Learn how to install Cockatrice cards and how to play using Cockatrice <a href="https://github.com/Cockatrice/Cockatrice/wiki">on their wiki.</a></p>
+            <p><a href="">Download Cockatrice</a></p>
+            <h4>Download Files for Cockatrice: Main Set and Commander Expansion</h4>
+            <h5>Version 1.32</h5>
+            <div class="big-download-links-holder">
+                <a href="downloads/HLW_1.32 Loose.zip" class="download-link big" download>Download Loose Files</a>
+                <a href="downloads/HLW_1.32 Full.zip" class="download-link big" download>Download Full Install</a>
+            </div>
+            <h2>Planesculptors</h2>
+            <p>Online drafting of Rakoa is done with <a href="http://www.planesculptors.net/">Planesculptors</a>.</p>
+            <h4>Online drafting instructions:</h4>
+            <ol>
+                <li>Click the "Login" link on the top right of the site. If you don't have an account, make one. Log into the site.</li>
+                <li>Once logged in, click the "Host Event" link also on the top right. Select which format you'd like to play.</li>
+                <li>Either scroll down the list until you find Rakoa, or use CTRL+F to search for it.</li>
+                <li>For "Booster draft" press the "Add 3x" on the left of Rakoan's entry once. For "Sealed deck" press it twice.</li>
+                <li>Scroll back to the top of the page, and press "Open the event"</li>
+                <li>Copy the provided URL (not the URL you are at yourself, that is seperate!) and send it out to all interested players. Also make sure to press "Join as a player" if you will be playing!</li>
+                <li>Once all players have joined, press "Start event"</li>
+                <li>Once the draft or sealed deckbuilding is complete, each player should click "Export deck" on the top bar of the deckbuilding area to get a copy-pasteable list of their cards to use in Cockatrice.</li>
+            </ol>
+        </div>
+    }
+
+    @if (selectedIndex == 1)
+    {
+<div class="content-box play-page-content">
+    <h2>Home Printing</h2>
+    <p>If you want to play with the cards physically, download the PDFs below and print each out on letter size paper. Cut each card out either by hand or with a paper cutter. If printed on copy paper, you can give them stiffness by sleeving up basic lands or other worthless cards in plastic sleeves, and put the printed cards inside also into the sleeve in front. Using them in sleeves also allows you to play these cards alongside official cards if you so wish.</p>
+    <p>For an easy way simulate a draft environment, we recommend printing 4 copies of the common sheet, 2 copies of the uncommons sheet, and 1 copy each of the rare, mythic, and hollow tokens sheets. Print as many of the basics and tokens sheets as you think you'll need. Then, use the booster pack generator in the "Make Booster Packs" tab to help you create realistic booster packs! If you can't make them exactly perfect due to too many of 1 card or another, don't worry.</p>
+    <h4>Download Print Sheets</h4>
+    <h5>Version 1.32</h5>
+    <div class="big-download-links-holder">
+        <a href="downloads/HLW_1.32 Pdf.zip" class="download-link big" download>Low-Res Print Sheets</a>
+        <a href="https://drive.google.com/file/d/1PJe6pOkYNSZqEjfFjUjc6Dgm1CgC9Gll/view?usp=sharing" class="download-link big" download>Extreme-Res Print Sheets</a>
+    </div>
+    <h2>MakePlayingCards Printing</h2>
+    <p>MakePlayingCards.com (MPC) is a website where you can order prints of high quality playing cards with images you provide. We recommend using Paypal as your payment method of choise, as (fair warning) there have been some reports of Credit Card fraud on the site.</p>
+    <div class="big-download-links-holder">
+        <a href="https://drive.google.com/drive/u/3/folders/133KosrUiOyg5T2NhS2ZXy99RoWwWKVzG" class="download-link big" download>MPC-Ready Cards</a>
+    </div>
+    <h4>MPC Printing Guide</h4>
+    <p style="font-style: italic;">(This guide's text, images, and cardback courtesy of TorchProxies.)</p>
+    <ol>
+        <li>Begin by <a href="https://www.makeplayingcards.com/design/custom-blank-card.html">clicking this link.</a> <img src="/images/Guide_1.png" /></li>
+        <li>At this point we advise creating an account or signing in with a Google account. It makes it easier to save your project and proceed to check-out.</li>
+        <li>
+            Leave all options on standard except for "size of deck", which you will set to the number of cards you'd like to order. Notice that this is divided into brackets (e.g. Card totals from 56-72 all use the same option). To see the price of your selection, check the table to the left.
+            "Quantity" in that table means how many copies of the same deck you want to order, whereas "deck size" is the number of unique cards in each deck. This does not include shipping!
+        </li>
+        <li>The whole set, inlcuding tokens and basics, is 251 unique cards, which sadly means that if you want each card at least once you'd need to pick the 396 cards option.</li>
+        <li>Once you're finished here, click "start your design".</li>
+        <li>Click "Different Images" (different for all fronts) on this page. <img src="/images/Guide_2.png" /></li>
+        <li>On the next step you will have to upload the Images you want to print. Simply select all the images in the folder on your PC and drag and drop them on the right field below "upload images".</li>
+        <li>After that is done you can drag and drop the images to their place or double click them to put them in the next free slot. MPC also has an autofill option, which will put all images not already in a slot into the next free slot. Good for printing singleton lists. /></li>
+        <li>Take a quick look at the red dotted line inside the card images. Inside of the lines is definitely safe from miscuts. Make sure all rules text is inside these red lines. <img src="/images/Guide_4.png" /></li>
+        <li>Once all images are uploaded, click "next step". This brings you to the step where you would add text to the front. We don't need to do that, so you can immediately click next to skip this.</li>
+        <li>
+            Now we return to a familiar screen, but this time we are selecting our card back(s). Click "Same image" (Same for all backs). The set doesn't include double sided cards so we only need one back image.
+            If you want double sided tokens click "different images", but be warned you will also have to slot in each back for the standard back separately. MPC won't print the real MtG card back, so there's is a custom Dark Souls one provided in the above download.
+            <img src="/images/Guide_5.png" />
+        </li>
+        <li>Pressing "next step" once again brings us to a text-adding step which we can skip.</li>
+        <li>The last step is "Preview & Add to Cart". After you've checked that everything is correct, you can purchase the project or save it for a later date.</li>
+    </ol>
+</div>
+    }
+
+    @if (selectedIndex == 2)
+    {
+        @if (spoilers == null)
+        {
+            <p style="margin-top: 40px;" class="loading-bar">@config.info.loadingText</p>
+        }
+        else
+        {
+            <div class="content-box booster-pack-gen">
+                <h4>Make Booster Packs</h4>
+                <div class="booster-holder">
+                    <img class="booster" src="/boosters/FBrsiZt.png" style="transform: rotate(-12deg) translate(0px, 20px)" />
+                    <img class="booster" src="/boosters/FLioR4z.png" style="z-index: 1;"/>
+                    <img class="booster" src="/boosters/wQvreff.png" style="transform: rotate(12deg) translate(0px, 20px)"/>
+                </div>
+                <div class="buttons">
+                    @foreach (SpoilerInfo info in spoilers)
+                    {
+                        if (info.boosterPackSlot != null)
+                        {
+                            <button @onclick="@(e => GeneratePackWithRestrictions(info))">@((spoilers.Where(e => e.boosterPackSlot != null).Count() == 1 ? "Make Pack" : $"Make {info.spoilerName} Pack"))</button>
+                        }
+                    }
+                </div>
+
+                <div class="text-readout">
+                    <button class="copy-to-clipboard" @onclick="CopyPackToClipboard"><span class="oi oi-clipboard"></span>Copy</button>
+                    <ul>
+                        @if (generatedPack == null || generatedPack.Count == 0)
+                        {
+                            <li>No pack yet.</li>
+                        }
+                        else
+                        {
+                            @foreach (Card card in generatedPack)
+                            {
+                                <li>@card.name</li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+
+
+            <SpoilerHolder holderClass="booster-pack left" cards="@generatedPack" fullInfo="false" rendersHaveLargeHovers="true" usesFlex="true" />
+        }
+    }
+}
+
+@code
+{
+    Random rand = new Random();
+
+    private SpoilerInfo[] spoilers;
+
+    public List<Card> generatedPack = new List<Card>();
+
+    private List<MetadataReference> references;
+
+    private Dictionary<string, Type> fakeSelectorsDictionary;
+
+    private string colorCompString;
+
+    private int selectedIndex;
+
+    private ElementReference _copyElement;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using (FileStream fs = File.OpenRead("wwwroot/website_info/spoilers.json"))
+        {
+            spoilers = await JsonSerializer.DeserializeAsync<SpoilerInfo[]>(fs);
+        }
+
+        references = GetGlobalReferences();
+
+        fakeSelectorsDictionary = new Dictionary<string, Type>();
+
+        foreach (SpoilerInfo info in spoilers)
+        {
+            //create the special logic objects
+            if (info.boosterPackSlot != null)
+            {
+                foreach (BoosterPackSlot arrangement in info.boosterPackSlot)
+                {
+                    if (arrangement.selectionLogic != null)
+                    {
+                        Type fakeSelector = CreateSelector(arrangement.selectionLogic);
+                        fakeSelectorsDictionary.TryAdd(arrangement.selectionLogic, fakeSelector);
+                    }
+                    else if (arrangement.ratios != null)
+                    {
+                        foreach (BoosterPackRatio ratio in arrangement.ratios)
+                        {
+                            if (ratio.selectionLogic != null)
+                            {
+                                Type fakeSelector = CreateSelector(ratio.selectionLogic);
+                                fakeSelectorsDictionary.TryAdd(ratio.selectionLogic, fakeSelector);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        colorCompString = Color.Colors.Aggregate("", (string accumulate, Color c) => accumulate + c.code);
+    }
+
+    private async Task GeneratePackWithRestrictions(SpoilerInfo info)
+    {
+        int count = 0;
+        generatedPack = new List<Card>();
+        bool fitsRestrictions;
+
+        do
+        {
+            count++;
+
+            if (count > 100)
+            {
+                await Console.Error.WriteLineAsync("Regenerated pack too much!");
+                break;
+            }
+
+            await GeneratePack(info);
+            fitsRestrictions = true;
+
+            if (info.boosterPackRestrictions != null)
+            {
+
+                if (info.boosterPackRestrictions.noDuplicates)
+                {
+                    HashSet<Card> set = new HashSet<Card>();
+                    foreach (Card c in generatedPack)
+                        if (!set.Add(c))
+                        {
+                            Console.WriteLine("Regenerating pack due to having duplicate on card: " + c.name);
+                            fitsRestrictions = false;
+                        }
+                }
+
+                if (info.boosterPackRestrictions.atLeastXCardOfEachColor != 0)
+                {
+                    foreach (Color color in Color.Colors)
+                    {
+                        int numberOfColor = 0;
+                        foreach (Card card in generatedPack)
+                        {
+                            if (card.colors.Length == 1 && card.colors[0] == color)
+                            {
+                                numberOfColor++;
+                            }
+                        }
+                        if (numberOfColor < info.boosterPackRestrictions.atLeastXCardOfEachColor)
+                        {
+                            fitsRestrictions = false;
+                            break;
+                        }
+                    }
+
+                    if (!fitsRestrictions)
+                    {
+                        Console.WriteLine($"Regenerating pack due to not having at least {info.boosterPackRestrictions.atLeastXCardOfEachColor} of each color.");
+                    }
+                }
+
+                if (info.boosterPackRestrictions.noMoreThanXCardOfEachColor != 0)
+                {
+                    foreach (Color color in Color.Colors)
+                    {
+                        int numberOfColor = 0;
+                        foreach (Card card in generatedPack)
+                        {
+                            if (card.colors.Length == 1 && card.colors[0] == color)
+                            {
+                                numberOfColor++;
+                            }
+                        }
+                        if (numberOfColor > info.boosterPackRestrictions.noMoreThanXCardOfEachColor)
+                        {
+                            fitsRestrictions = false;
+                            break;
+                        }
+                    }
+
+                    if (!fitsRestrictions)
+                    {
+                        Console.WriteLine($"Regenerating pack due to having more than {info.boosterPackRestrictions.noMoreThanXCardOfEachColor} of at least one color.");
+                    }
+                }
+            }
+        } while (!fitsRestrictions);
+
+        Console.WriteLine(count);
+    }
+
+    private async Task GeneratePack(SpoilerInfo info)
+    {
+        if (info.boosterPackSlot == null)
+            return;
+
+        generatedPack.Clear();
+
+        List<Card> allCards = cards.Cards[info.spoilerXMLName];
+
+        //go each slot in order
+        foreach (BoosterPackSlot slot in info.boosterPackSlot)
+        {
+            @*            //the default count is 1
+                int count = 1;
+                if (arrangement.count > 0)
+                {
+                    count = arrangement.count;
+                }*@
+
+            if (slot.rarity != null)
+            {
+                List<Card> cardsOfRarity = allCards.Where(e => e.rarity.name.ToLower().Equals(slot.rarity.ToLower())).ToList();
+                for (int i = 0; i < slot.count; i++)
+                {
+                    generatedPack.Add(cardsOfRarity[rand.Next(cardsOfRarity.Count)]);
+                }
+            }
+            else if (slot.selectionLogic != null)
+            {
+                List<Card> cardsOfSelection = EvaluateSelection(slot.selectionLogic, allCards, slot.selectionLogic);
+
+                try
+                {
+                    for (int i = 0; i < slot.count; i++)
+                    {
+                        generatedPack.Add(cardsOfSelection[rand.Next(cardsOfSelection.Count)]);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Unable to generated special logic slot.");
+                    Console.WriteLine(e.Message);
+                }
+            }
+            else if (slot.ratios != null)
+            {
+                int totalParts = 0;
+                foreach (BoosterPackRatio ratio in slot.ratios)
+                {
+                    totalParts += ratio.parts;
+                }
+
+                for (int i = 0; i < slot.count; i++)
+                {
+                    int accumulatedParts = 0;
+                    foreach (BoosterPackRatio ratio in slot.ratios)
+                    {
+                        accumulatedParts += ratio.parts;
+                        if (rand.Next(totalParts) < accumulatedParts)
+                        {
+                            if (ratio.rarity != null)
+                            {
+                                List<Card> cardsOfRarity = allCards.Where(e => e.rarity.name.ToLower().Equals(ratio.rarity.ToLower())).ToList();
+
+                                for (int k = 0; k < ratio.count; k++)
+                                {
+                                    generatedPack.Add(cardsOfRarity[rand.Next(cardsOfRarity.Count)]);
+                                }
+                            }
+                            else if (ratio.selectionLogic != null)
+                            {
+                                List<Card> cardsOfSelection = EvaluateSelection(ratio.selectionLogic, allCards, ratio.selectionLogic);
+
+                                try
+                                {
+                                    for (int k = 0; k < ratio.count; k++)
+                                    {
+                                        generatedPack.Add(cardsOfSelection[rand.Next(cardsOfSelection.Count)]);
+                                    }
+                                }
+                                catch (Exception e)
+                                {
+                                    Console.WriteLine("Unable to generated special logic ratio.");
+                                    Console.WriteLine(e.Message);
+                                }
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private List<Card> EvaluateSelection(string logicstring, List<Card> cards, string code)
+    {
+        Type type = fakeSelectorsDictionary[logicstring];
+        object obj = Activator.CreateInstance(type);
+        object invocationResult = type.InvokeMember("Filter",
+                BindingFlags.Default | BindingFlags.InvokeMethod,
+                null,
+                obj,
+                new object[] { cards });
+
+        return (List<Card>)invocationResult;
+    }
+
+    private Type CreateSelector(string code)
+    {
+        // define source code, then parse it (to the type used for compilation)
+        string codeText =
+    @"
+using System;
+using System.Diagnostics;
+using System.Collections.Generic;
+using MagicSite;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace RoslynCompileSample
+{
+public class CardFilterer
+{
+public List<Card> Filter(List<Card> cards)
+{
+return cards.Where(card => (" + code + @")).ToList();
+}
+}
+}
+";
+        SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(codeText);
+
+        // define other necessary objects for compilation
+        string assemblyName = Path.GetRandomFileName();
+
+        // analyse and generate IL code from syntax tree
+        CSharpCompilation compilation = CSharpCompilation.Create(
+            assemblyName,
+            syntaxTrees: new[] { syntaxTree },
+            references: references,
+            options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));
+
+        using (var ms = new MemoryStream())
+        {
+            // write IL code into memory
+            EmitResult result = compilation.Emit(ms);
+
+            if (!result.Success)
+            {
+                // handle exceptions
+                IEnumerable<Diagnostic> failures = result.Diagnostics.Where(diagnostic =>
+                diagnostic.IsWarningAsError ||
+                diagnostic.Severity == DiagnosticSeverity.Error);
+
+                foreach (Diagnostic diagnostic in failures)
+                {
+                    Console.Error.WriteLine("{0}: {1}", diagnostic.Id, diagnostic.GetMessage());
+                }
+            }
+            else
+            {
+                // load this 'virtual' DLL so that we can use
+                ms.Seek(0, SeekOrigin.Begin);
+                Assembly assembly = Assembly.Load(ms.ToArray());
+
+                // create instance of the desired class and call the desired function
+                Type type = assembly.GetType("RoslynCompileSample.CardFilterer");
+
+                return type;
+            }
+        }
+
+        return null;
+    }
+
+    private List<MetadataReference> GetGlobalReferences()
+    {
+        var assemblies = new[]
+            {
+            /*Making sure all MEF assemblies are loaded*/
+            typeof(System.Composition.Convention.AttributedModelProvider).Assembly, //System.Composition.AttributeModel
+            typeof(System.Composition.Convention.ConventionBuilder).Assembly,   //System.Composition.Convention
+            typeof(System.Composition.Hosting.CompositionHost).Assembly,        //System.Composition.Hosting
+            typeof(System.Composition.CompositionContext).Assembly,             //System.Composition.Runtime
+            typeof(System.Composition.CompositionContextExtensions).Assembly,   //System.Composition.TypedParts
+
+            /*Used for the GeneratedCode attribute*/
+            typeof(System.CodeDom.Compiler.CodeCompiler).Assembly,              //System.CodeDom.Compiler
+        };
+
+        var refs = from a in assemblies
+                   select MetadataReference.CreateFromFile(a.Location);
+        List<MetadataReference> returnList = refs.ToList<MetadataReference>();
+
+        //The location of the .NET assemblies
+        var assemblyPath = Path.GetDirectoryName(typeof(object).Assembly.Location);
+
+        /*
+            * Adding some necessary .NET assemblies
+            * These assemblies couldn't be loaded correctly via the same construction as above,
+            * in specific the System.Runtime.
+            */
+        returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "mscorlib.dll")));
+        returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "System.dll")));
+        returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "System.Core.dll")));
+        returnList.Add(MetadataReference.CreateFromFile(Path.Combine(assemblyPath, "System.Runtime.dll")));
+        returnList.Add(MetadataReference.CreateFromFile(typeof(object).Assembly.Location));
+        returnList.Add(MetadataReference.CreateFromFile(typeof(Enumerable).Assembly.Location));
+        returnList.Add(MetadataReference.CreateFromFile(typeof(Card).Assembly.Location));
+        returnList.Add(MetadataReference.CreateFromFile(typeof(Regex).Assembly.Location));
+        @*        returnList.Add(MetadataReference.CreateFromFile(@"C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.0\System.Collections.dll"));
+        *@
+        returnList.Add(MetadataReference.CreateFromFile(typeof(Stack<>).Assembly.Location));
+        return returnList;
+    }
+
+    private async Task CopyPackToClipboard()
+    {
+        if (generatedPack == null || generatedPack.Count == 0)
+            return;
+
+        StringBuilder builder = new StringBuilder();
+        foreach (Card card in generatedPack)
+        {
+            builder.Append(card.name + "\n");
+        }
+        await JSRuntime.InvokeVoidAsync("clipboardCopy.copyText", builder.ToString());
+    }
+}

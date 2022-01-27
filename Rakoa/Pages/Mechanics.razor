@@ -1,0 +1,92 @@
+﻿@page "/Mechanics"
+
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using System.IO;
+
+@inject Services.MagicSiteServices.WebsiteConfig config
+
+@if (config.info.mechanicsPage)
+{
+    @if (config.info.mechanicsPageTitle != null)
+    {
+        <h2>@config.info.mechanicsPageTitle</h2>
+    }
+
+    <div class="content-box mechanics-box">
+        @if (mechanics == null)
+        {
+            <p class="loading-bar">@config.info.loadingText</p>
+        }
+        else
+        {
+            <div class="page-tab-selector">
+                @if (mechanics != null)
+                {
+                    @for (int i = 0; i < mechanics.Length; i++)
+                    {
+                        int iLock = i;
+                        <button class="@(selectedIndex == i ? "active" : "")" @onclick="@(e => selectedIndex = iLock)">
+                            @mechanics[iLock].mechanicName
+                        </button>
+                    }
+                }
+            </div>
+
+            @for (int i = 0; i < mechanics.Length; i++)
+            {
+                MechanicInfo info = mechanics[i];
+                <div class="mechanic-description @(i == selectedIndex ? "displayed" : "undisplayed")">
+                    <div class="mechanic-description-body">
+                        <h3 class="header-with-mana">
+                            <span>@info.mechanicName</span>
+                           @* @if (info.showColorsAsHybrid)
+                            {
+                                string img = info.mechanicColorCodes.Aggregate((accumulation, newValue) => accumulation + newValue);
+                                <img class="header-mana" src="mana_symbols/@($"mana_{img}.png")" />
+                            }
+                            else
+                            {
+                                foreach (string color in info.mechanicColorCodes)
+                                {
+                                    <img src="mana_symbols/@($"mana_{color}.png")" />
+                                }
+                            }*@
+                        </h3>
+                        <p>@info.mechanicDescription</p>
+                    </div>
+                    <div class="card-feature-flex-small">
+                        @foreach (string str in info.mechanicFeatures)
+                        {
+                            <img class="card-image" src="@($"/rak_card_images/{str}.full.png")" />
+                        }
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    @code {
+
+        private class MechanicInfo
+        {
+            public string mechanicName { get; set; }
+            public string mechanicDescription { get; set; }
+            public string[] mechanicFeatures { get; set; }
+            public string[] mechanicColorCodes { get; set; }
+            public bool showColorsAsHybrid { get; set; }
+        }
+
+        private MechanicInfo[] mechanics;
+
+        private int selectedIndex = 0;
+
+        protected override async Task OnInitializedAsync()
+        {
+            using (FileStream fs = File.OpenRead("wwwroot/website_info/mechanics.json"))
+            {
+                mechanics = await JsonSerializer.DeserializeAsync<MechanicInfo[]>(fs);
+            }
+        }
+    }
+}

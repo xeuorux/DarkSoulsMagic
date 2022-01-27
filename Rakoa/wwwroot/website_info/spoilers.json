@@ -1,0 +1,43 @@
+[
+  {
+    "spoilerName": "Rakoa",
+    "spoilerDescription": "",
+    "spoilerXMLName": "RAK",
+    "boosterPackSlot": [
+      {
+        "ratios": [
+          {
+            "rarity": "rare",
+            "parts": 7
+          },
+          {
+            "rarity": "mythic",
+            "parts": 1
+          }
+        ]
+      },
+      {
+        "rarity": "uncommon",
+        "count": 3
+      },
+      {
+        "rarity": "common",
+        "count": 10
+      },
+      {
+        "selectionLogic": "!card.typeLine.ToLower().Contains(\"basic\") && card.rarity == Rarity.Common"
+      },
+      {
+        "selectionLogic": "card.typeLine.ToLower().Contains(\"basic land\")"
+      },
+      {
+        "selectionLogic": "card.typeLine.ToLower().Contains(\"token\")"
+      }
+    ],
+    "boosterPackRestrictions": {
+      "noDuplicates": true,
+      "atLeastXCardOfEachColor": 2,
+      "noMoreThanXCardOfEachColor": 4
+    }
+  }
+]

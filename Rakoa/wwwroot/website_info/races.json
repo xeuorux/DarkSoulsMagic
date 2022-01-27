@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Elves",
+    "colorCode": "WG",
+    "cardImageName": "Versatile Earthcrafter",
+    "description": "",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Ramari",
+    "colorCode": "UB",
+    "cardImageName": "Wavebreaker Adept",
+    "description": "",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Utaman",
+    "colorCode": "R",
+    "cardImageName": "Utaman Bruiser",
+    "description": "",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Humans",
+    "colorCode": "WUBRG",
+    "cardImageName": "New-Shore Claimer",
+    "description": "",
+    "backgroundColorGold": true,
+    "showColorsAsHybrid": true
+  },
+  {
+    "name": "Dryads",
+    "colorCode": "G",
+    "cardImageName": "Fertile Budmother",
+    "description": "",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  }
+]

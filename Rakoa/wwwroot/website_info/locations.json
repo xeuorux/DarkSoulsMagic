@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Omalu",
+    "colorCode": "W",
+    "cardImageName": "Omalu Diplomat",
+    "description": "",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Kalepa",
+    "colorCode": "U",
+    "cardImageName": "Favorable Winds",
+    "description": "",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Haku Haku",
+    "colorCode": "B",
+    "cardImageName": "Haku Haku Dredgers",
+    "description": "",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Meke",
+    "colorCode": "R",
+    "cardImageName": "Meke Knifemaster",
+    "description": "",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  },
+  {
+    "name": "Luaho",
+    "colorCode": "G",
+    "cardImageName": "Luaho Commune",
+    "description": "",
+    "backgroundColorGold": false,
+    "showColorsAsHybrid": false
+  }
+]

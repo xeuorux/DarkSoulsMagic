@@ -48,6 +48,9 @@
     <Content Update="wwwroot\website_info\story.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\website_info\locations.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\website_info\world.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -60,10 +63,7 @@
     <Content Update="wwwroot\website_info\characters.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\website_info\factions.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Update="wwwroot\website_info\credits.json">
+    <Content Update="wwwroot\website_info\races.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\website_info\colors.json">

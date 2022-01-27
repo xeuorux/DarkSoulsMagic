@@ -215,7 +215,7 @@ app {
 }
 
 .card-image {
-    border-radius: 12px;
+    border-radius: 18px;
 }
 
 .spoiler-inputs {
@@ -973,4 +973,11 @@ img.booster {
 
 .play-page-content img {
     max-width: 95%;
+}
+
+img.world-map {
+    width: 95%;
+    border: 6px black solid;
+    margin: auto;
+    margin: 12px;
 }

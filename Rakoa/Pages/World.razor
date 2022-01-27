@@ -12,16 +12,20 @@
 }
 else
 {
-    <p><a href="https://inkarnate.com/m/4L0b2y--rakoa/">Rakoa World Map</a></p>
-
     <div class="page-tab-selector">
+        @{ int finalIndex = 0; }
         @for (int i = 0; i < worldSections.Length; i++)
         {
             int iLock = i;
             <button class="@(selectedIndex == iLock ? "active" : "")" @onclick="@(e => selectedIndex = iLock)">
                 @worldSections[iLock].sectionName
             </button>
+            finalIndex = i;
         }
+        @{finalIndex++;}
+        <button class="@(selectedIndex == finalIndex ? "active" : "")" @onclick="@(e=> selectedIndex = finalIndex)">
+            Map
+        </button>
     </div>
 
     @for (int i = 0; i < worldSections.Length; i++)
@@ -29,6 +33,15 @@ else
         int iLock = i;
         <WorldSection Title="@worldSections[iLock].sectionName" JsonFileName="@worldSections[iLock].sectionJSONName" Description="@worldSections[iLock].sectionDescription" Displayed="@(selectedIndex == iLock)" />
     }
+    if (selectedIndex == finalIndex)
+    {
+        <div class="content-box">
+            <h2>Rakoa Map</h2>
+            <p>(Click to go to a version with more features.)</p>
+            <a href="https://inkarnate.com/m/4L0b2y--rakoa/" target="_blank"><img class="world-map" src="/Rakoa.jpg" /></a>
+        </div>
+    }
+
 }
 @code {
     private class WorldSectionInfo

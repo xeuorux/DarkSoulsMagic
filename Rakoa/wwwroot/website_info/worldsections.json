@@ -5,12 +5,17 @@
     "sectionJSONName": "world"
   },
   {
-    "sectionName": "Factions",
+    "sectionName": "Races",
     "sectionDescription": "",
-    "sectionJSONName": "factions"
+    "sectionJSONName": "races"
   },
   {
-    "sectionName": "Major Characters",
+    "sectionName": "Regions",
+    "sectionDescription": "",
+    "sectionJSONName": "locations"
+  },
+  {
+    "sectionName": "Legends",
     "sectionDescription": "",
     "sectionJSONName": "characters"
   },

@@ -25,13 +25,19 @@
         "count": 10
       },
       {
-        "selectionLogic": "!card.typeLine.ToLower().Contains(\"basic\") && card.rarity == Rarity.Common"
+        "selectionLogic": "card.typeLine.ToLower().Split(' ').Length >= 5 && !card.typeLine.ToLower().Contains(\"basic\") && card.typeLine.ToLower().Contains(\"land\")"
       },
       {
-        "selectionLogic": "card.typeLine.ToLower().Contains(\"basic land\")"
-      },
-      {
-        "selectionLogic": "card.typeLine.ToLower().Contains(\"token\")"
+        "ratios": [
+          {
+            "selectionLogic": "card.typeLine.ToLower().Contains(\"basic land\")",
+            "parts": 1
+          },
+          {
+            "selectionLogic": "card.typeLine.ToLower().Contains(\"token\")",
+            "parts": 1
+          }
+        ]
       }
     ],
     "boosterPackRestrictions": {

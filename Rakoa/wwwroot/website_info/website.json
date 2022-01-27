@@ -21,7 +21,7 @@
   "futurePage": true,
   "futurePageLinkLabel": "Design",
   "futurePageTitle": null,
-  "creditsPage": true,
+  "creditsPage": false,
   "creditsPageLinkLabel": "Credits",
   "creditsPageTitle": "Credits"
 }

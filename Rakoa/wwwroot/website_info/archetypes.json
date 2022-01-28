@@ -4,79 +4,79 @@
     "archetypeColorCode": "WU",
     "archetypeDescription": "",
     "archetypeFeature": "Snatching Poukai",
-    "archetypeKeyCommons": [ "", "", "" ],
-    "archetypeKeyUncommons": [ "", "", "" ]
+    "archetypeKeyCommons": [ "Seeding Frenzy", "Tanifa's Judgement", "Te Matu's Watcher" ],
+    "archetypeKeyUncommons": [ "Favorable Winds", "Suntouched", "Kalepa Drake" ]
   },
   {
     "archetypeName": "Blue/Black Life Loss",
     "archetypeColorCode": "UB",
     "archetypeDescription": "",
     "archetypeFeature": "Third-Tooth Tracker",
-    "archetypeKeyCommons": [ "", "", "" ],
-    "archetypeKeyUncommons": [ "", "", "" ]
+    "archetypeKeyCommons": [ "Reef Eel", "Third-Tooth Ravager", "Sharkling Attack" ],
+    "archetypeKeyUncommons": [ "Vorticer Trainee", "Riptide Ambusher", "Third-Tooth Brute" ]
   },
   {
     "archetypeName": "Black/Red Sacrifice",
     "archetypeColorCode": "BR",
     "archetypeDescription": "",
     "archetypeFeature": "Rahoke's Ruiner",
-    "archetypeKeyCommons": [ "", "", "" ],
-    "archetypeKeyUncommons": [ "", "", "" ]
+    "archetypeKeyCommons": [ "Utaman Daring", "Call of the Fire Gods", "Devotee of Kalanua" ],
+    "archetypeKeyUncommons": [ "Rupture Field", "Abyssal Crevice", "Lava Tubes Quarry" ]
   },
   {
     "archetypeName": "Red/Green Awaken",
     "archetypeColorCode": "RG",
     "archetypeDescription": "",
     "archetypeFeature": "Toahanga's Charger",
-    "archetypeKeyCommons": [ "", "", "" ],
-    "archetypeKeyUncommons": [ "", "", "" ]
+    "archetypeKeyCommons": [ "Haven of the Earth Gods", "Call of the Fire Gods", "Leafy Companion" ],
+    "archetypeKeyUncommons": [ "Kalanua's Convert", "Pantheon Celebrant", "Maw of Rahoke" ]
   },
   {
     "archetypeName": "Green/White Land Auras",
     "archetypeColorCode": "GW",
     "archetypeDescription": "",
     "archetypeFeature": "Elven Lifeweaver",
-    "archetypeKeyCommons": [ "", "", "" ],
-    "archetypeKeyUncommons": [ "", "", "" ]
+    "archetypeKeyCommons": [ "Peaceful Imprisonment", "Haven of the Earth Gods", "Band of Anggitay" ],
+    "archetypeKeyUncommons": [ "Versatile Earthcrafter", "Luaho Commune", "Tectonic Seal" ]
   },
   {
     "archetypeName": "WB Lifegain",
     "archetypeColorCode": "WB",
     "archetypeDescription": "",
     "archetypeFeature": "Shrewd Aristocrat",
-    "archetypeKeyCommons": [ "", "", "" ],
-    "archetypeKeyUncommons": [ "", "", "" ]
+    "archetypeKeyCommons": [ "Haku Haku Dredgers", "Toll of the Death Gods", "Craftland Dwelling" ],
+    "archetypeKeyUncommons": [ "Wander the Unknown", "Make Prey", "Skywhale Migration" ]
   },
   {
     "archetypeName": "UR Spells",
     "archetypeColorCode": "UR",
     "archetypeDescription": "",
     "archetypeFeature": "Animus Bonder",
-    "archetypeKeyCommons": [ "", "", "" ],
-    "archetypeKeyUncommons": [ "", "", "" ]
+    "archetypeKeyCommons": [ "Magma Maul", "Swell of the Sea Gods", "Lava Blast" ],
+    "archetypeKeyUncommons": [ "Brewing Storm", "Dual Destruction", "Devastating Deluge" ]
   },
   {
     "archetypeName": "Black/Green Graveyard",
     "archetypeColorCode": "BG",
     "archetypeDescription": "",
     "archetypeFeature": "Ru Kano Scavengers",
-    "archetypeKeyCommons": [ "", "", "" ],
-    "archetypeKeyUncommons": [ "", "", "" ]
+    "archetypeKeyCommons": [ "Unassuming Duwende", "Sporewatch Nuno", "Murk Feeder" ],
+    "archetypeKeyUncommons": [ "Brutish Buwaya", "Patron Mo-o", "Faithless Desecrator" ]
   },
   {
     "archetypeName": "Red/White Weenie",
     "archetypeColorCode": "RW",
     "archetypeDescription": "",
     "archetypeFeature": "Long-Spear Instructor",
-    "archetypeKeyCommons": [ "", "", "" ],
-    "archetypeKeyUncommons": [ "", "", "" ]
+    "archetypeKeyCommons": [ "Wistful Peka-Bird", "Reko's Protege", "Meke Lavarunner" ],
+    "archetypeKeyUncommons": [ "Omalu Diplomat", "Omalu Prince", "Utaman Challenger" ]
   },
   {
     "archetypeName": "GU Voltron",
     "archetypeColorCode": "GU",
     "archetypeDescription": "",
     "archetypeFeature": "Pristine Creation",
-    "archetypeKeyCommons": [ "", "", "" ],
-    "archetypeKeyUncommons": [ "", "", "" ]
+    "archetypeKeyCommons": [ "Vorticer's Tattoo", "Hero's Triumph", "Beastmaster's Tattoo" ],
+    "archetypeKeyUncommons": [ "Monument Core", "Wavebreaker Shaman", "Quest of the First Ancestor" ]
   }
 ]

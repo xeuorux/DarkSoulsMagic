@@ -2,7 +2,23 @@
   {
     "name": "The Sleeping Gods",
     "colorCode": "",
-    "cardImageName": "",
+    "cardImageName": "Haven of the Earth Gods",
+    "description": "",
+    "backgroundColorGold": true,
+    "showColorsAsHybrid": true
+  },
+  {
+    "name": "The Grand Voyage",
+    "colorCode": "",
+    "cardImageName": "Voyager's Vault",
+    "description": "",
+    "backgroundColorGold": true,
+    "showColorsAsHybrid": true
+  },
+  {
+    "name": "Spirits",
+    "colorCode": "",
+    "cardImageName": "Familial Aumakua",
     "description": "",
     "backgroundColorGold": true,
     "showColorsAsHybrid": true
@@ -13,30 +29,6 @@
     "cardImageName": "Barrier Reef",
     "description": "",
     "backgroundColorGold": true,
-    "showColorsAsHybrid": true
-  },
-  {
-    "name": "The Grand Voyage",
-    "colorCode": "",
-    "cardImageName": "",
-    "description": "",
-    "backgroundColorGold": true,
-    "showColorsAsHybrid": true
-  },
-  {
-    "name": "Tattoos",
-    "colorCode": "",
-    "cardImageName": "",
-    "description": "",
-    "backgroundColorGold": true,
-    "showColorsAsHybrid": true
-  },
-  {
-    "name": "Spirits",
-    "colorCode": "",
-    "cardImageName": "",
-    "description": "",
-    "backgroundColorGold": false,
     "showColorsAsHybrid": true
   }
 ]

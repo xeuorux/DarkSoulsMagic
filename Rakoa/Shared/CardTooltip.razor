@@ -1,13 +1,14 @@
 ﻿<span class="my-tooltip">
     @if (UseCardImage)
     {
-        <img class="card-image @ImageClass" src=@($"/rak_card_images/{CardName}.full.png")>
+        <img class="card-image" src=@($"/card_images/{CardName}.full.png")>
     }
     else
     {
         @CardName
     }
-    <img class="hover-image" src=@($"/rak_card_images/{CardName}.full.png")>
+    <img class="hover-image" src=@($"/card_images/{CardName}_dfc.full.png")>
+
 </span>
 
 @code {
@@ -19,4 +20,15 @@
 
     [Parameter]
     public string ImageClass { get; set; }
+
+    [Parameter]
+    public string BackSideCardName { get; set; }
+
+    private string DFCClass
+    {
+        get
+        {
+            return String.IsNullOrEmpty(BackSideCardName) ? "single" : "ToolTipDFC";
+        }
+    }
 }

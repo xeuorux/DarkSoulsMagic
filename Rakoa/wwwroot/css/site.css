@@ -10,7 +10,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bora Bora', Arial, sansserif;
+    font-family: Times New Roman, serif;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -73,13 +73,14 @@ app {
     font-size: 4rem;
     display: inline-block;
     margin: 0px 20px;
-    text-shadow: 0px 0px 3.5px #fff5f2;
+    text-shadow: 3px 3px 1px #fff5f2;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     background-color: #c35f00;
     color: transparent;
     text-align: center;
+    font-family: 'Bora';
 }
 
 .top-row > a, .main .top-row .btn-link {
@@ -103,7 +104,7 @@ app {
 }
 
 .set-symbol {
-    background-image: radial-gradient(circle, yellow 4%, orange, transparent 50%);
+    filter: drop-shadow(-3px -3px 2px rgba(255,255,255,.6));
 }
 
 .oi {
@@ -980,4 +981,19 @@ img.world-map {
     border: 6px black solid;
     margin: auto;
     margin: 12px;
+}
+
+.background {
+}
+
+.background img {
+    position: absolute;
+}
+
+.DFC
+{
+    object-fit: none;
+    object-position: -1px;
+    width: 373px;
+    height: 522px;
 }

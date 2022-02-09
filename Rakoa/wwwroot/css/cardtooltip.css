@@ -8,6 +8,7 @@
 
     .my-tooltip .hover-image {
         display: none;
+        border-radius: 18px;
     }
 
     .my-tooltip:hover .hover-image {

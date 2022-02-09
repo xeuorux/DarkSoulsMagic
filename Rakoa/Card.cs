@@ -23,6 +23,8 @@ namespace MagicSite
         public int cardNumber;
 
         public static int cardCount = 0;
+
+        public string backSide;
     }
 
     public class Color

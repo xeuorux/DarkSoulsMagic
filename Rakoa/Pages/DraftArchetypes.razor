@@ -14,7 +14,7 @@
     }
 
     <div class="content-box">
-        <p>Note: The 2-Color archetypes of Rakoa are quite loose. The set encourages going closer to monocolor for Homeland benefits, and also encourages going all the way up to 5-color for Voyage! You can build decks in many more ways than are shown here.</p>
+        <p>NOTE: The 2-Color archetypes of Rakoa are quite loose. The set encourages going closer to monocolor for Homeland benefits, and also encourages going all the way up to 5-color for Voyage! You can build decks in many more ways than are shown here.</p>
     </div>
 
     <div class="content-box draft-archetypes-box">
@@ -68,9 +68,21 @@
                                 }
                             }
                         }
+
+                        @{
+                            if (info.archetypeRares != null)
+                            {
+                                <h4>Choice Rares:</h4>
+                                foreach (string cardName in info.archetypeRares)
+                                {
+                                    <CardTooltip CardName="@cardName" />
+                                    <br />
+                                }
+                            }
+                        }
                     </div>
                     <div>
-                        <img class="card-image" src="@($"/rak_card_images/{info.archetypeFeature}.full.png")" />
+                        <img class="card-image" src="@($"/card_images/{info.archetypeFeature}.full.png")" />
                     </div>
                 </div>
             }
@@ -87,6 +99,7 @@
             public string archetypeFeature { get; set; }
             public string[] archetypeKeyCommons { get; set; }
             public string[] archetypeKeyUncommons { get; set; }
+            public string[] archetypeRares { get; set; }
         }
 
         private ArchetypeInfo[] archetypes;

@@ -13,13 +13,13 @@
             while (enumerator.MoveNext())
             {
                 Card card = enumerator.Current;
-                string source = "/rak_card_images/" + card.name + ".full.png";
+                string source = "/card_images/" + card.name + ".full.png";
 
                 <div class="individual-card-spoiler-info-holder">
                     <div class="@(usesFlex ? "" : "card-info-grid")">
                         @if (rendersHaveLargeHovers)
                         {
-                            <CardTooltip CardName="@card.name" UseCardImage="true" ImageClass="spoiler-render" />
+                            <CardTooltip CardName="@card.name" UseCardImage="true" ImageClass="spoiler-render" BackSideCardName="@card.backSide" />
                         }
                         else
                         {

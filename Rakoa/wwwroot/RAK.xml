@@ -77,10 +77,10 @@ Whenever you cast a Tattoo spell, scry 1, then draw a card.</text>
  <name>Abandoned Sanctuary</name>
  <set rarity="common">RAK</set>
  <color>W</color>
- <manacost>3W</manacost>
- <cmc>4</cmc>
+ <manacost>2W</manacost>
+ <cmc>3</cmc>
  <type>Creature - Turtle </type>
- <pt>2/6</pt>
+ <pt>1/5</pt>
  <tablerow>2</tablerow>
  <text></text>
  <flavor-text>“Did you know that our family is the last to live on turtles? Long ago, everyone lived like us, because there was no land in the entire ocean. But then the gods created islands, and most people left their turtles behind.”
@@ -142,8 +142,8 @@ Enchanted land has “T: Create a Food token.” (It’s an artifact with “2, 
  <type>Creature - Human Warrior Spirit </type>
  <pt>3/3</pt>
  <tablerow>2</tablerow>
- <text>Double strike
-Ward—Tap two untapped creatures you control. (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player taps two untapped creatures they control.)</text>
+ <text>Ward—Tap two untapped creatures you control. (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player taps two untapped creatures they control.)
+Double strike</text>
  <flavor-text>Spear and tooth defend the grove, ensuring that Reko’s conquests will never be forgotten.</flavor-text>
 </card>
 <card>
@@ -357,7 +357,7 @@ Awaken 3—6W (When you cast this spell for 6W, put three +1/+1 counters on targ
  <text>2U: Create a 1/1 blue Bird creature token with flying.
 2B: Create a 1/1 black Merfolk creature token with “Whenever this creature attacks, each opponent loses 1 life.”
 1R: Create a 1/1 red Elemental creature token.
-7G: Create a 5/5 green Beast creature token.</text>
+8G: Create a 5/5 green Beast creature token.</text>
  <flavor-text></flavor-text>
 </card>
 <card>
@@ -720,7 +720,7 @@ As long as you control Paradise, Kalepa Dreamer gets +1/+1 and has flying.</text
  <flavor-text>“There’s no telling what’s out there!”</flavor-text>
 </card>
 <card>
- <name>Long-Head Scout</name>
+ <name>Long-Head Coward</name>
  <set rarity="common">RAK</set>
  <color>U</color>
  <manacost>1U</manacost>
@@ -728,7 +728,7 @@ As long as you control Paradise, Kalepa Dreamer gets +1/+1 and has flying.</text
  <type>Creature - Merfolk Scout </type>
  <pt>3/2</pt>
  <tablerow>2</tablerow>
- <text>Homeland — Whenever Long-Head Scout becomes the target of a spell, exile it unless you control three or more Islands.</text>
+ <text>Homeland — Whenever Long-Head Coward becomes the target of a spell, exile Long-Head Coward unless you control three or more Islands.</text>
  <flavor-text>The scattered remnants of the Long-Head clan have settled in the human-dominated seas of Kalepa.</flavor-text>
 </card>
 <card>
@@ -809,25 +809,25 @@ Whenever enchanted creature deals combat to an opponent, draw a card.</text>
  <name>Ramari Vagabond</name>
  <set rarity="common">RAK</set>
  <color>U</color>
- <manacost>3U</manacost>
- <cmc>4</cmc>
- <type>Creature - Merfolk Scout </type>
- <pt>3/4</pt>
+ <manacost>2U</manacost>
+ <cmc>3</cmc>
+ <type>Creature - Merfolk Rogue </type>
+ <pt>2/3</pt>
  <tablerow>2</tablerow>
- <text></text>
+ <text>When Ramari Vagabond enters the battlefield, if an opponent lost life this turn, draw a card.</text>
  <flavor-text>Most of the Ramari fled from their ancient home at Ru Kano after the prized seafloor city was pushed to the surface during a great earthquake.</flavor-text>
 </card>
 <card>
  <name>Reef Eel</name>
  <set rarity="common">RAK</set>
  <color>U</color>
- <manacost>2U</manacost>
- <cmc>3</cmc>
+ <manacost>3U</manacost>
+ <cmc>4</cmc>
  <type>Creature - Fish </type>
- <pt>3/1</pt>
+ <pt>3/3</pt>
  <tablerow>2</tablerow>
  <text>When Reef Eel enters the battlefield, tap target creature an opponent controls. It doesn’t untap during its controller’s next untap step.</text>
- <flavor-text>“We should be happy that we have boats.”
+ <flavor-text>“Be happy that we have boats.”
 —Hau, Sentinel</flavor-text>
 </card>
 <card>
@@ -1047,7 +1047,7 @@ Enchanted creature gets +1/+1 and has lifelink.</text>
  <manacost>2BBB</manacost>
  <cmc>5</cmc>
  <type>Creature - Avatar </type>
- <pt>5/5</pt>
+ <pt>5/6</pt>
  <tablerow>2</tablerow>
  <text>Flash
 Whenever Avatar of the Abyss or a Swamp enters the battlefield under your control, Avatar of the Abyss deals 3 damage to target player or planeswalker and you gain 3 life.</text>
@@ -1354,7 +1354,7 @@ Awaken 3—4B (If you cast this spell for 4B, also put three +1/+1 counters on t
  <type>Enchantment</type>
  <tablerow>1</tablerow>
  <text>At the beginning of your upkeep, sacrifice a creature. If you do, you draw two cards. Otherwise, you lose the game.
-Awaken 4—6B (When you cast this spell for 5B, put four +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+Awaken 4—6B (When you cast this spell for 6B, put four +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
  <flavor-text></flavor-text>
 </card>
 <card>
@@ -1512,8 +1512,8 @@ Whenever Caldera Tyrant attacks, exile the top five cards of your library. Until
  <name>Call of the Fire Gods</name>
  <set rarity="common">RAK</set>
  <color>R</color>
- <manacost>1R</manacost>
- <cmc>2</cmc>
+ <manacost>2R</manacost>
+ <cmc>3</cmc>
  <type>Sorcery</type>
  <tablerow>3</tablerow>
  <text>Create two 1/1 red Elemental creature tokens.
@@ -1566,10 +1566,10 @@ At the beginning of combat on your turn, if you control Paradise, you may put a 
  <manacost>1R</manacost>
  <cmc>2</cmc>
  <type>Creature - Bird </type>
- <pt>2/2</pt>
+ <pt>1/3</pt>
  <tablerow>2</tablerow>
- <text></text>
- <flavor-text>The sarimanok hunt is the most popular event leading up to the yearly Meke grand tournament. Those who catch one are said to earn luck both in their own matches or those they bet on.</flavor-text>
+ <text>1, T, Sacrifice Dazzling Sarimanok: Add two mana in any combination of colors.</text>
+ <flavor-text>During the lead up to the yearly Meke grand tournament, competitors and betters alike hunt the sarimanok to pluck one of its lucky feathers.</flavor-text>
 </card>
 <card>
  <name>Demolish</name>
@@ -1587,13 +1587,13 @@ At the beginning of combat on your turn, if you control Paradise, you may put a 
  <name>Devotee of Kalanua</name>
  <set rarity="common">RAK</set>
  <color>R</color>
- <manacost>R</manacost>
- <cmc>1</cmc>
+ <manacost>1R</manacost>
+ <cmc>2</cmc>
  <type>Creature - Elemental Bard </type>
- <pt>1/1</pt>
+ <pt>2/2</pt>
  <tablerow>2</tablerow>
- <text>When Devotee of Kalanua dies, create a 1/1 red Elemental creature token.</text>
- <flavor-text>Kalanua creates life whenever Rahoke destroys it. Together, they maintain balance throughout Rakoa.</flavor-text>
+ <text>Whenever cast an instant or sorcery spell, Devotee of Kalanua gets +1/+1 until end of turn. If you spent 5 or more mana to cast that spell, put a +1/+1 counter on Devotee of Kalanua instead.</text>
+ <flavor-text></flavor-text>
 </card>
 <card>
  <name>Draconic Vigor</name>
@@ -1789,19 +1789,6 @@ Meke Knifemaster has double strike as long as you control Paradise.</text>
  <flavor-text>“It’s like a footrace against your own flammability.”</flavor-text>
 </card>
 <card>
- <name>Neon Diver</name>
- <set rarity="common">RAK</set>
- <color>R</color>
- <manacost>1R</manacost>
- <cmc>2</cmc>
- <type>Creature - Fish </type>
- <pt>1/3</pt>
- <tablerow>2</tablerow>
- <text>1, T, Sacrifice Neon Diver: Add two mana in any combination of colors.</text>
- <flavor-text>“They’re beautiful, sure, but the real fun is eating them.”
-—Gurahso, Favored Slayer</flavor-text>
-</card>
-<card>
  <name>Pantheon Celebrant</name>
  <set rarity="uncommon">RAK</set>
  <color>R</color>
@@ -1864,16 +1851,28 @@ Whenever an Elemental you control dies, Utaman Avenger deals 1 damage to any tar
  <flavor-text></flavor-text>
 </card>
 <card>
- <name>Utaman Bruiser</name>
+ <name>Utaman Band</name>
  <set rarity="common">RAK</set>
  <color>R</color>
  <manacost>4R</manacost>
  <cmc>5</cmc>
  <type>Creature - Elemental Warrior </type>
- <pt>4/3</pt>
+ <pt>6/3</pt>
  <tablerow>2</tablerow>
- <text>When Utaman Bruiser enters the battlefield, create a 1/1 red Elemental creature token.</text>
- <flavor-text>Utamu is slowly consuming Meke’s ancient battlegrounds, turning long-dead warriors into molten elementals.</flavor-text>
+ <text></text>
+ <flavor-text>Utamu is slowly consuming Meke’s ancient battlegrounds, transforming long-dead warriors into undying molten elementals.</flavor-text>
+</card>
+<card>
+ <name>Utaman Bruiser</name>
+ <set rarity="common">RAK</set>
+ <color>R</color>
+ <manacost>R</manacost>
+ <cmc>1</cmc>
+ <type>Creature - Elemental Warrior </type>
+ <pt>1/1</pt>
+ <tablerow>2</tablerow>
+ <text>When Utaman Bruiser dies, create a 1/1 red Elemental creature token.</text>
+ <flavor-text>Kalanua creates life whenever Rahoke destroys it. Together, they maintain balance throughout Rakoa.</flavor-text>
 </card>
 <card>
  <name>Utaman Challenger</name>
@@ -1885,7 +1884,7 @@ Whenever an Elemental you control dies, Utaman Avenger deals 1 damage to any tar
  <pt>3/2</pt>
  <tablerow>2</tablerow>
  <text>Homeland — Other creatures you control get +1/+0 as long as you control three or more Mountains.</text>
- <flavor-text>A heart of fire to set other hearts ablaze.</flavor-text>
+ <flavor-text>A heart of fire to set others ablaze.</flavor-text>
 </card>
 <card>
  <name>Utaman Daring</name>
@@ -2036,7 +2035,7 @@ Forestcycling 2 (2, Discard this card: Search your library for a Forest card, re
  <tablerow>1</tablerow>
  <text>Enchant land
 Whenever enchanted land is tapped for mana, add an additional one mana of any color.
-Awaken 4—5G (When you cast this spell for 6G, put four +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
+Awaken 4—5G (When you cast this spell for 5G, put four +1/+1 counters on target land you control and it becomes a 0/0 Elemental creature with haste. It’s still a land.)</text>
  <flavor-text></flavor-text>
 </card>
 <card>
@@ -2414,7 +2413,7 @@ WUBRG: Destroy target creature. Activate this ability only if you control Paradi
  <flavor-text></flavor-text>
 </card>
 <card>
- <name>Hupiri, Vengeant Storm</name>
+ <name>Hupiri, Vengeant Goddess</name>
  <set rarity="mythic">RAK</set>
  <color>UR</color>
  <manacost>4UR</manacost>
@@ -2423,8 +2422,8 @@ WUBRG: Destroy target creature. Activate this ability only if you control Paradi
  <pt>6/5</pt>
  <tablerow>2</tablerow>
  <text>Flying
-When Hupiri, Vengeant Storm enters the battlefield, exile any number of instant and/or sorcery cards from your graveyard and put a storm counter on each of them. (When you cast this spell, copy it for each spell cast before it this turn.)
-Whenever you cast an instant or sorcery spell, you may cast a card you own in exile with a storm counter on it.</text>
+When Hupiri, Vengeant Goddess enters the battlefield, exile any number of instant and/or sorcery cards from your graveyard and put a storm counter on each of them.
+Whenever you cast an instant or sorcery spell, you may cast a card you own in exile with a storm counter on it. (You still pay its cost.)</text>
  <flavor-text></flavor-text>
 </card>
 <card>
@@ -2810,12 +2809,12 @@ Flying</text>
  <name>Echoshells</name>
  <set rarity="rare">RAK</set>
  <color></color>
- <manacost>4</manacost>
- <cmc>4</cmc>
+ <manacost>3</manacost>
+ <cmc>3</cmc>
  <type>Artifact</type>
  <tablerow>1</tablerow>
  <text>T: Add one mana of any type that a land you control could produce.
-3, T: Search your library for a land card that doesn’t share a name with a land you control, put it onto the battlefield, then shuffle.</text>
+1, T, Sacrifice Echoshells: Search your library for a land card that doesn’t share a name with a land you control, put it onto the battlefield tapped, then shuffle.</text>
  <flavor-text></flavor-text>
 </card>
 <card>
@@ -3668,7 +3667,6 @@ T: Add one mana of any color.</text>
  <text></text>
  <token>1</token>
 <reverse-related>Roving Home</reverse-related>
-<reverse-related>Devotee of Kalanua</reverse-related>
 <reverse-related>Utamu Tubes</reverse-related>
 <reverse-related>Rahoke's Punishment</reverse-related>
 <reverse-related count="2">Avatar of the Volcano</reverse-related>
@@ -3753,7 +3751,6 @@ T: Add one mana of any color.</text>
  <text></text>
  <token>1</token>
 <reverse-related>Roving Home</reverse-related>
-<reverse-related>Devotee of Kalanua</reverse-related>
 <reverse-related>Utamu Tubes</reverse-related>
 <reverse-related>Rahoke's Punishment</reverse-related>
 <reverse-related count="2">Avatar of the Volcano</reverse-related>

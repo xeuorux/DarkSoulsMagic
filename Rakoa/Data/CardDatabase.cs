@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -172,6 +173,27 @@ namespace Services.MagicSiteServices
                         //Console.Error.Write(e);
                     }
 
+                    string backSide = "";
+                    try
+                    {
+                        //Don't parse the backside of DFCs
+                        Match frontMatch = Regex.Match(text, "\\(Front\\): ([A-Za-z0-9,'\\- ]+)");
+                        if (frontMatch.Success)
+                        {
+                            continue;
+                        }
+
+                        Match backMatch = Regex.Match(text, "\\(Back\\): ([A-Za-z0-9,'\\- ]+)");
+                        if (backMatch.Success)
+                        {
+                            backSide = backMatch.Groups[0].Value;
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        //Console.Error.Write(e);
+                    }
+
                     Card newCard = new Card
                     {
                         name = cardName,
@@ -184,7 +206,8 @@ namespace Services.MagicSiteServices
                         flavorText = flavorText,
                         power = power,
                         toughness = toughness,
-                        cardNumber = Card.cardCount++
+                        cardNumber = Card.cardCount++,
+                        backSide = backSide,
                     };
 
                     newCards.Add(newCard);

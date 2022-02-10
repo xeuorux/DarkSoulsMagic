@@ -14,6 +14,11 @@
             {
                 Card card = enumerator.Current;
                 string source = "/card_images/" + card.name + ".full.png";
+                string backsource = "/card_images/" + card.backSide + ".full.png";
+                string cardFullName = card.name;
+                if (!String.IsNullOrEmpty(card.backSide))
+                    cardFullName = cardFullName + "//" + card.backSide;
+                string dfcSource = source;
 
                 <div class="individual-card-spoiler-info-holder">
                     <div class="@(usesFlex ? "" : "card-info-grid")">
@@ -23,10 +28,25 @@
                         }
                         else
                         {
-                            <img class="card-image spoiler-render" src=@source alt="@(card.name)" />
+                            @if (String.IsNullOrEmpty(card.backSide))
+                            {
+                                <img class="card-image spoiler-render" src=@source alt="@(card.name)" />
+                            }
+                            else
+                            {
+                                <img class="card-image spoiler-render dfc-flipper" src="@( (dfcsFlipped.ContainsKey(card.name) && dfcsFlipped[card.name]) ? backsource : source )" alt="@(cardFullName)"
+                                     @onmouseover="(e =>
+                                    {
+                                        dfcsFlipped[card.name] = true;
+                                    })"
+                                    @onmouseout="(e =>
+                                    {
+                                        dfcsFlipped[card.name] = false;
+                                    })"/>
+                            }
                         }
                         <div style="grid-area: info" class="individual-card-info">
-                            <h3><strong>@card.name</strong></h3>
+                            <h3><strong>@cardFullName</strong></h3>
                             <div class="mana-cost">
                                 @{
                                     List<string> symbols = new List<string>();
@@ -105,6 +125,8 @@
 
     [Parameter]
     public bool rendersHaveLargeHovers { get; set; } = false;
+
+    private Dictionary<String, bool> dfcsFlipped = new Dictionary<string, bool>();
 
     private string formatRulesText(string text)
     {

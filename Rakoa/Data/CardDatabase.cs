@@ -186,7 +186,7 @@ namespace Services.MagicSiteServices
                         Match backMatch = Regex.Match(text, "\\(Back\\): ([A-Za-z0-9,'\\- ]+)");
                         if (backMatch.Success)
                         {
-                            backSide = backMatch.Groups[0].Value;
+                            backSide = backMatch.Groups[1].Value;
                         }
                     }
                     catch (Exception e)

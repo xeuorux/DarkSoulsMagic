@@ -7,7 +7,14 @@
     {
         @CardName
     }
-    <img class="hover-image" src=@($"/card_images/{CardName}_dfc.full.png")>
+    @if (String.IsNullOrEmpty(BackSideCardName))
+    {
+        <img class="hover-image" src=@($"/card_images/{CardName}.full.png")>
+    }
+    else
+    {
+        <img class="hover-image" src=@($"/card_images/{CardName}_dfc.full.png")>
+    }
 
 </span>
 
